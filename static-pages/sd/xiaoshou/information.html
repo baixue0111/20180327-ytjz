@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工单信息</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css"  href="css/inform.css">
+    <link rel="stylesheet" type="text/css"  href="css/error.css">
+		<!--兼容ie下不能识别的标签-->
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="lib/html5shiv.min.js"></script>
+			<script type="text/javascript" src="lib/respond.min.js"></script>
+		<![endif]-->
+</head>
+<body>
+	<div id="informtion">
+		<div class="inform_top">
+			<!--<img src="img/dx.png"/>-->
+			<p>销售助手管理平台</p>
+		</div>
+		<!--用户基础信息-->
+		<div id="user">
+			<div class="user_informtion">
+				<img src="img/yhjc.png"/>
+				<div class="user_infor">用户基础信息</div>
+			</div>
+			<table border="1" cellspacing="0" cellpadding="2" id="user_table"  bordercolor="#8eaadb">
+				<tbody>
+					<tr>
+						<th>用户号码： &nbsp;</th>
+						<td id="acc_nbr"></td>
+						<th>用户性别： &nbsp;</th>
+						<td id="user_sex"></td>		
+										
+					</tr>
+					<tr>
+						<th>出生日期： &nbsp;</th>
+						<td id="user_date_birth"></td>
+						<th>归属地： &nbsp;</th>
+						<td id="eparchy_name"></td>
+						
+					</tr>
+					<tr>
+						<th>乡镇： &nbsp;</th>
+						<td id="village_name"></td>
+						<th>入网时间： &nbsp;</th>
+						<td id="innet_date"></td>
+					</tr>
+					<tr>
+						<th>用户状态： &nbsp;</th>
+						<td id="user_status_name"></td>
+						<th>业务类型： &nbsp;</th>
+						<td id="net_type_code"></td>
+					</tr>
+					<tr>
+						<th>套餐名称： &nbsp;</th>
+						<td id="tc_name"></td>
+						<th>套餐费用： &nbsp;</th>
+						<td id="tc_fee"></td>
+					</tr>
+					<tr>
+						<th>套内流量： &nbsp;</th>
+						<td id="tc_flowall"></td>
+						<th>套内语音： &nbsp;</th>
+						<td id="tc_callall"></td>
+					</tr>
+					<tr>
+						<th>出帐： &nbsp;</th>
+						<td id="cur_income"></td>
+						<th>通话时长： &nbsp;</th>
+						<td id="call_duration"></td>
+					</tr>
+					<tr>
+						<th>通话次数： &nbsp;</th>
+						<td id="call_times"></td>
+						<th>收费语音时长： &nbsp;</th>
+						<td id="fee_duration"></td>
+					</tr>
+					<tr>
+						<th>总流量： &nbsp;</th>
+						<td id="total_flow"></td>
+						<th>短信次数： &nbsp;</th>
+						<td id="message_times"></td>
+					</tr>
+					<tr>
+						<th>是否三无： &nbsp;</th>
+						<td id="is_3wu"></td>
+						<th>是否极低： &nbsp;</th>
+						<td id="is_jd"></td>
+					</tr>
+					<tr>
+						<th>使用网络类型： &nbsp;</th>
+						<td id="use_net_type"></td>
+						<th>硬件终端类型： &nbsp;</th>
+						<td id="yj_type"></td>
+					</tr>
+					<tr>
+						<th>联通终端类型： &nbsp;</th>
+						<td id="lt_type"></td>
+						<th>定制类型： &nbsp;</th>
+						<td id="dz_type"></td>
+					</tr>
+					<tr>
+						<th>手机品牌： &nbsp;</th>
+						<td id="phone_brand"></td>
+						<th>手机型号： &nbsp;</th>
+						<td id="phone_type"></td>
+					</tr>
+					<tr>
+						<th>单双卡： &nbsp;</th>
+						<td id="dual_type"></td>
+						<th>终端上市价格： &nbsp;</th>
+						<td id="dz_jg"></td>
+					</tr>
+					<tr>
+						<th>终端最新价格： &nbsp;</th>
+						<td id="zd_jg_new"></td>
+						<th>终端曝光时间： &nbsp;</th>
+						<td id="zd_bgrq"></td>
+					</tr>
+					<tr>
+						<th>终端入网时间： &nbsp;</th>
+						<td id="zd_fisttime"></td>
+						<th>终端使用时长： &nbsp;</th>
+						<td id="zd_user_sysc"></td>
+					</tr>
+					<tr>
+						<th>用户终端使用时长： &nbsp;</th>
+						<td id="user_zd_sysc"></td>
+						<th>是否二手机： &nbsp;</th>
+						<td id="zd_is_2sj"></td>
+					</tr>
+					<tr>
+						<th>主副卡类型： &nbsp;</th>
+						<td id="is_master"></td>
+						<th>主副卡生效时间： &nbsp;</th>
+						<td id="join_masterdate"></td>
+					</tr>
+					<tr>
+						<th>融合类型： &nbsp;</th>
+						<td id="rh_type"></td>
+						<th>此用户加入融合时间： &nbsp;</th>
+						<td id="rh_mem_startdate"></td>
+					</tr>
+					<tr>
+						<th>此用户结束融合时间： &nbsp;</th>
+						<td id="rh_mem_enddate"></td>
+						<th>本用户归属融合的生效时间： &nbsp;</th>
+						<td id="rh_startdate"></td>
+					</tr>
+					<tr>
+						<th>本用户归属融合的结束时间： &nbsp;</th>
+						<td id="rh_enddate"></td>
+						<th>是否集客： &nbsp;</th>
+						<td id="is_group_member"></td>
+					</tr>
+					<tr>
+						<th>合约类型： &nbsp;</th>
+						<td id="sale_mode_now"></td>
+						<th>合约名称： &nbsp;</th>
+						<td id="hy_name"></td>
+					</tr>
+					<tr>
+						<th>合约开始时间： &nbsp;</th>
+						<td id="resale_start"></td>
+						<th>合约结束时间： &nbsp;</th>
+						<td id="resale_end"></td>
+					</tr>
+					<tr>
+						<th>接入方式: &nbsp;</th>
+						<td id="access_mode"></td>
+						<th>是否包年: &nbsp;</th>
+						<td id="is_pack_years"></td>
+					</tr>
+					<tr>
+						<th>宽带速率： &nbsp;</th>
+						<td id="broadband_speed"></td>
+						<th>在网时长: &nbsp;</th>
+						<td id="net_time"></td>
+					</tr>
+					<tr>
+						<th>地址： &nbsp;</th>
+						<td id="user_dress"></td>
+						<th>装机小区: &nbsp;</th>
+						<td id="installed_area"></td>
+					</tr>
+					<tr>
+						<th>发展人： &nbsp;</th>
+						<td id="development_people"></td>
+						<th>联系电话: &nbsp;</th>
+						<td id="user_phone"></td>
+						
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--上报及评估-->
+		<div id="reporting">
+			<div class="report_top">
+				<img src="img/shang.png"/>
+				<div class="user_infor">上报及评估</div>	
+			</div>
+			<!--备注及上报-->
+			<div class="reporting_left">
+				<div class="report">
+					<img src="img/marketing.png"/>
+					<div class="describeDiv">备注及上报</div>
+				</div>
+				<div class="describe_content" style="height: 238px;border: none;">
+					<textarea rows="8" cols="30" id="des"></textarea>
+				</div>
+				<!--上报按钮-->
+				<div id="shangbao">
+					<button class="but1" onclick="tongy('1')">执行成功</button>
+					<button class="but2" onclick="tongy('2')">执行失败</button>
+					<button class="but3" onclick="tongy('3')">延迟执行</button>
+				</div>
+			</div>
+			<div class="reporting_left">
+				<div class="report">
+					<img src="img/sales.png"/>
+					<div class="describeDiv">营销短信</div>
+				</div>
+				<textarea rows="8" cols="30" id="sms_content"  style="height: 238px;"></textarea>
+				<div id="shangbao">
+						<button class="duan_but1" onclick="singleSend()">发送短信</button>
+				</div>
+			</div>
+			<div class="reporting_left">
+				<div class="report">
+					<img src="img/shang.png"/>
+					<div class="describeDiv">营销话术</div>
+				</div>
+				<div class="describe_content" id="contents" style="height: 238px;"></div>
+				<div id="shangbao">
+					<button class="duan_but1" onclick="sendManager()">转派</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="wrapper"></div>
+	<div id="loginMask"></div>
+	<div id="newspapers">
+		<div class="newsmeagess"></div>
+       	<button class="news_determine" onclick="determine()">确定</button>
+	</div>
+	<!--loading-->
+	<div id="loadingMask">
+		<div class="Loading">
+			<img src="img/loading.gif" alt="">
+			<h2>正在加载中...</h2>
+		</div>
+	</div>
+	<!--转派-->
+	<div class="turnToSend">
+		<div class="box_login">
+			<h3 class="box_login1">转派工单接收人</h3>
+			<!--<span class="guanbi">╳</span>-->
+			<button class="guanbi"></button>
+		</div>
+		<!--搜索查询-->
+		<div id="sousuochaxun" style="margin-left: 17px;width: 264px;height: 34px;float: left; border-radius: 10px; border: 1px solid #ccc;margin-top: 20px;margin-bottom: 15px;">
+			<i class="sousuot"></i>
+			<input type="text" name="sousuokuang" class="sousuo" placeholder="查找转派工单接收人" id="jsrcha">
+		</div>
+		<button class="jinglicha" onclick="sendManager()">查询</button>
+		<div class="mingdan">
+			<!--<ul class="souming">
+                <li>
+                    <div class="jingliming">张总</div>
+                    <div>12635463212</div>
+                </li>
+                <li class="shiju">
+                    马兰坡支局
+                </li>
+                <li class="xian">
+                    大奥县
+                </li>
+                <li class="xuanzekuang" style="width: 25px;">
+                    <input type="checkbox" name="selected" value=""/><br>
+                </li>
+            </ul>-->
+		</div>
+		<div class="yijian">
+			<button class="sousuozhuan">一键转派</button>
+		</div>
+	</div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/JavaScript" src="js/json2.js"></script>
+    <script type="text/javascript" src="js/error.js"></script>
+    <script type="text/javascript" src="js/inform.js"></script>
+	<script type="text/javascript">
+		$("#user tr:odd").css({'background':'#d9e2f3'});	
+		$("#behavior tr:odd").css({'background':'#deeaf6'});	
+		$("#Sale tr:odd").css({'background':'#e2efd9'});	
+	</script>
+</body>
+</html>

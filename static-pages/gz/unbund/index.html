@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="0" />
+		<title>中国电信贵州加油站</title>
+		<link rel="stylesheet" type="text/css" href="css/login_binding.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div>
+            <div id="header">
+                <div id="headerImg">
+					<!--<img src="../gzbook/img/sub.png" alt="">-->
+				</div>
+				<p>当前绑定状态：<span id="bangding"></span></p>
+            </div>
+			<div id="content">
+				<p class="current1">
+					<img src="images/con1.png" alt="">
+					当前绑定号码：<span class="bingPhone"></span>
+				</p>
+				<button class="relieve" onclick="unbund()">解除绑定</button>
+				<!--<p class="current">
+					<img src="images/con2.png" alt="">
+					<input type="text" name="phone" placeholder="请输入手机号"  value="" id="newPhnoe"/>
+				</p>
+				<button class="relieve" onclick="modify()">更换绑定号码</button>-->
+			</div>
+			<p id="footer">温馨提示：解除绑定之后您当前账号的棒豆等权益将被清零，请慎重解绑！</p>
+		</div>
+		<div id="loginMask"></div>
+		<div id="login"></div>
+		<div id="loading">
+			<img src="img/loading.gif"/>
+		</div>
+		<!--正在生成中-->
+		<div id="loading1">
+			<div class="load">
+				<img src="img/loading.gif">
+				<p class="login_p"></p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+			/***************** rem、兼容********************/
+				var code,productId,openID_value,getphone;
+				var html = document.getElementsByTagName('html')[0];
+				var W = document.documentElement.clientWidth;
+				html.style.fontSize = W*0.15625+'px';
+				// alert(W)
+				window.onresize = function(){
+					var html = document.getElementsByTagName('html')[0];
+					var W = document.documentElement.clientWidth;
+					html.style.fontSize = W*0.15625+'px';
+				}
+		</script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

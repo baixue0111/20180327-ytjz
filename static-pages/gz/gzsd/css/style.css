@@ -1,0 +1,138 @@
+*{padding: 0;margin: 0;}
+img{border: 0; width:100%;display:block;}
+
+.button-click1{
+    height: 35%;
+    width: 80%;
+    background: url("../img/click.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 10%;
+    top: 44%;
+    border: none;
+    cursor: pointer;
+}
+
+/*login.css*/
+#load{background-color: #000;position: fixed;left: 0;top: 0;height: 100%;width: 100%;opacity: 0.75;z-index: 50;display: none}
+#login{
+    width:320px;
+    height: auto;
+    position:fixed;
+    left: 50%;top: 35%;
+    margin: -94px 0 0 -158px;
+    background:url("../img/login.png") no-repeat;
+    background-size: 320px auto;
+    border: none;
+    z-index:60;
+    vertical-align : middle;
+
+}
+#login div{
+    text-align: center;
+    font-size: 13px;
+    margin: 20px 0;
+}
+#login div input{
+    height: 30px;
+}
+#login .header{
+    height: 90px;
+    position:relative;
+}
+#login .span{position:absolute;right: 0px;top:-20px;font-size: 18px;cursor: pointer}
+#login .input1{
+    width: 250px;
+    background:url("../img/phone.png") no-repeat 220px;
+    background-color: white;
+    border-radius: 4px;
+}
+#login .input2{
+    width: 115px;
+    position: relative;
+    left: 8px;
+    border-radius: 5px;
+}
+#login .input3{
+    width: 129px;
+    height: 34px;
+    color: #473754;
+    position: relative;
+    background-color: #d8c8e5;
+    left: 13px;
+    border: none;
+    border-radius: 4px;
+}
+.input3[type=button], .input3[type=submit], .input3[type=file], .input3 { -webkit-appearance: none; } 
+#login .button{
+    height: 42px;
+    width: 250px;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 42px;
+    background-color: #ffcb40;
+    color: #bb3c38;
+    /* font-weight: bold; */
+    /* line-height: 105px; */
+    /* margin-top: -19px; */
+    /* background:url("../img/ok01.png") no-repeat; */
+    /* background-size: 100% 99%; */
+    border: none;
+}
+
+#errorMessage{
+    font-family: "Arial","Microsoft YaHei","微软雅黑",sans-serif;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px -1px 1px rgba(255, 0, 0, 0.8),2px -2px 1px rgba(0, 255, 0, 0.5),3px -3px 1px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    position: absolute;
+    margin: 2px 0px 0 0px;
+}
+.success{
+    color: white;
+    text-indent: 2em;
+    text-align:justify;
+    text-align-last:justify;/* ie9*/
+    -moz-text-align-last:justify;/*ff*/
+    -webkit-text-align-last:justify;/*chrome 20+*/
+    font-size: 18px;
+    margin: 0 15px;
+}
+.success2{
+    font-size: 25px;
+    color: #f9ef7c;
+}
+#content{
+	position: relative;
+}
+/*倒计时*/
+.daojishi {
+    position: absolute;
+    width: 84%;
+    left: 11%;
+    top: 49%;
+
+}
+.daojishi1{
+    position: absolute;
+    width: 100%;
+    height:16px;
+    top: 86%;
+    text-align: center;
+    white-space: 32px;
+    word-spacing: -3px;
+}
+.spans{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #7b6161;
+    background-color: white;
+    display: inline-block;
+    border-radius: 3px;
+}

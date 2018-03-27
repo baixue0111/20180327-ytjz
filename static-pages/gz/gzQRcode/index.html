@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="0" />
+		<title>中国电信贵州加油站</title>
+		<link rel="stylesheet" type="text/css" href="css/login_binding.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div>
+			<!--头部-->
+			<div id="header">
+				<img src="images/OR1.jpg"/>
+			</div>
+			<!--内容-->
+			<div id="content">
+				<div id="clickGeneration" onclick="generation()"></div>
+			</div>
+			<!--活动说明-->
+			<div id="footer">
+				<div class="footerDiv">
+					1.推荐人需在“中国电信贵州加油站”对话框发送关键字“推荐有礼”，参与本活动；<br />
+					2.推荐人可点击生成个人专属推荐二维码，生成二维码之后可将页面分享至朋友圈，方便用户订购；同时也可截屏至手机中，方便推荐用户订购；<br />
+					3.用户扫描二维码后将进入“中国电信贵州加油站”微信公众号“流量超市”页面，用户可根据自己的需求选择订购不同类型的流量包产品；<br />
+					4.推荐人每推荐一名用户订购流量超市中任一流量包并关注本公众号成功后，即可获得30棒豆奖励，棒豆将于次日到账；
+						在2017年12月31日推荐用户订购成功的将获得10倍棒豆的奖励，即每推荐一名用户订购成功任一流量包产品即可获赠300棒豆；
+						每个被推荐用户成功订购流量包后只奖励推荐人一次棒豆，不重复奖励；<br />
+					5.1棒豆=1M省内流量，可在本公众号菜单“我的棒豆”中随时兑换成流量；<br />
+					6.棒豆兑换流量时可兑至推荐人手机上，也可兑换至其他中国电信贵州公司移动手机用户。<br />
+
+				</div>
+			</div>
+		</div>
+		<!--弹出层-->
+		<div id="loginMask"></div>
+		<!--loadig-->
+		<div id="loading">
+			<img src="images/loading.gif"/>
+		</div>
+		<!--微信绑定-->
+		<div id="login_binding"></div>
+		<input type="hidden" value="10000004" id="productIdTianji"/>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+			/***************** rem、兼容********************/
+				var code,productId,openID_value,getphone;
+				var html = document.getElementsByTagName('html')[0];
+				var W = document.documentElement.clientWidth;
+				html.style.fontSize = W*0.1333333333333333+'px';
+				// alert(W)
+				window.onresize = function(){
+					var html = document.getElementsByTagName('html')[0];
+					var W = document.documentElement.clientWidth;
+					html.style.fontSize = W*0.1333333333333333+'px';
+				}
+		</script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

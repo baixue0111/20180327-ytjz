@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="0" />
+		<title>中国电信贵州加油站</title>
+		<link rel="stylesheet" type="text/css" href="css/code.css"/>
+	</head>
+	<body>
+		<div id="imgCode">
+      <div class="imgCodez">(每天500M只需2元)</div>
+      <div class="imgCodex">(含1G省内流量)</div>
+      <div class="imgCodec">(含1G全国流量+1G省内流量)</div>
+			<div class="codediv"></div>
+			<div id="rotate"></div>
+				<div id="orcode">
+					<img id="codeImg" style="width: 3.2rem;height: 3.1rem;margin-left: -3%;margin-top: -2%" src="" />
+			</div>
+		</div>
+		<div id="loading">
+			<img src="images/loading.gif"/>
+		</div>
+		<div id="loginMask"></div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+			/***************** rem、兼容********************/
+				var code,productId,openID_value,getphone;
+				var html = document.getElementsByTagName('html')[0];
+				var W = document.documentElement.clientWidth;
+				html.style.fontSize = W*0.1333333333333333+'px';
+				// alert(W)
+				window.onresize = function(){
+					var html = document.getElementsByTagName('html')[0];
+					var W = document.documentElement.clientWidth;
+					html.style.fontSize = W*0.1333333333333333+'px';
+				}
+		</script>
+		<script type="text/javascript" src="js/code.js">
+			
+		</script>
+	</body>
+</html>

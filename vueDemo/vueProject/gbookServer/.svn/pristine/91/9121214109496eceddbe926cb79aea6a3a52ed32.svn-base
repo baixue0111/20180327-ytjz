@@ -1,0 +1,131 @@
+var express = require('express');
+var mhelper = require('../models/mhelper.js');
+var _config=require('../common/_config');
+var http = require('http');
+var captchapng = require('captchapng');
+var qcloud = require('qcloud_cos');
+var fs = require('fs');
+var path = require('path');
+
+var router = express.Router();
+var baeBosUrl = _config.fileuploadpath.defaultPath;
+if (_config.isBaeBosUploadImages.isOpen) {
+	baeBosUrl = _config.isBaeBosUploadImages.url;
+}
+
+
+
+/*获取用户基本信息*/
+router.get('/getUser', function (req, res, next) {
+	var offset = req.query.offset;
+	var limit = req.query.limit;   
+	var id = req.query.id;  
+	var sql = "";
+	sql+=" SELECT user_id,name as user_name,nick_name,sex,headimg  ";  
+	sql+=" FROM user ";
+	sql+=" WHERE user_id = "+id;    
+	sql+= " LIMIT "+offset+","+limit; 
+
+	mhelper.query(sql).then(function (results) {
+		res.send(results[0]);
+		res.end();
+	});
+});
+
+router.get('/isExsis', function (req, res, next) {
+	var checkNumber = req.query.checkNumber;
+	var type = req.query.type;   
+	var sql = "";
+	sql+=" SELECT user_id,name as user_name,nick_name,sex,headimg  ";  
+	sql+=" FROM user ";
+	if ("mobile"==type){
+		sql+=" WHERE mobile = "+checkNumber;  
+	} 
+
+	mhelper.query(sql).then(function (results) {
+		res.send({is_exists:results[0].length,message:"cussous"});
+		res.end();
+	});
+});
+
+router.get('/getVCode', function (req, res, next) {
+	var code = parseInt(Math.random()*9000+1000);
+ 		var p = new captchapng(80,30,code); // width,height,numeric captcha
+        p.color(0, 0, 0, 0);  // First color: background (red, green, blue, alpha)
+        p.color(80, 80, 80, 255); // Second color: paint (red, green, blue, alpha)
+
+        var img = p.getBase64();
+        var imgbase64 = new Buffer(img,'base64');
+
+        var fileName = "../../static/uploads/"+code+'.png';
+        var filePath =  path.resolve(__dirname, fileName);
+        var ws = fs.createWriteStream(filePath, {start: 0});
+        ws.write(imgbase64, 'utf8', function (err, buffer) {
+        	// console.log('写入完成，回调函数没有参数');
+        	console.log(filePath);
+        });
+
+				//         var bucketName = "goldbooknews";
+				//         var access_url = "";
+				//         qcloud.conf.setAppInfo('1252421924','AKIDtfFdprxMqCQlxlvm274pOlx1wgx4K4IN','b6UlqiOyNfmhQxKUSDm8JI9rPktqcKqE'); 
+				//         qcloud.cos.upload(filePath, bucketName, 'images/'+fileName,'new myattr',1, function(ret){
+				//         	if (ret.code != 0) {
+				//         		console.log(ret);
+				//         	}else{
+				//         // 查询文件
+				//         qcloud.cos.statFile('bucket', 'text/1.txt', function(ret) {
+				//         	console.log(ret);
+				//         });
+				//         // 删除文件
+				//         qcloud.cos.deleteFile('bucket', 'text/1.txt', function(ret) {
+				//         	console.log(ret);
+				//         });
+				//     }
+				// });
+
+		// res.send(imgbase64);
+		res.send({imgUrl:"../"+fileName});
+		res.end();
+	// res.writeHead(200, {
+ //        'Content-Type': 'image/png'
+ //    });
+ //    res.end(imgbase64);		
+
+	});
+
+
+router.post('/login', function (req, res, next) {
+	var username = req.body.username;  
+	var password = req.body.password;  
+	var captcha_code = req.body.captcha_code;  
+	var sql = "";
+	sql+=" SELECT login_id,login_name,login_state,user_type ";  
+	sql+=" FROM login ";
+	sql+=" WHERE login_name ='"+username+"'"
+	sql+=" AND login_password = '"+password+"'"
+
+	mhelper.query(sql).then(function (results) {
+		res.send({data:results[0],message:"success"});
+		res.end();
+	});
+});
+
+router.post('/reguser', function (req, res, next) {
+	// var username = req.body.username;  
+	// var password = req.body.password;  
+	// var captcha_code = req.body.captcha_code;  
+	// var mobi_code = req.body.mobi_code; 
+	var data = eval(req.body);
+	var wData = {login_name:data.username};
+	var jData = {password:data.password,captcha_code:data.captcha_code,mobi_code:data.mobi_code};
+	mhelper.queryorinsert('login', wData, jData).then(function (results) {
+		res.send({data: {login_id:results[0][0].dataValues.login_id},message: 'success'});
+		res.end();
+	}).catch(function (error) {
+		console.log(error.stack);
+		res.send({message: 'failed', errormsg: error.stack});
+		res.end();
+	});	
+});
+
+module.exports = router;

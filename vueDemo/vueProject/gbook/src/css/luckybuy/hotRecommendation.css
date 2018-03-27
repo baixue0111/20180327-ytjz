@@ -1,0 +1,41 @@
+@charset "utf-8";
+*{margin:0;padding:0;font-size:12px;}
+body{background:none;}
+input,button,select,textarea{outline:none;}
+ul,li,dl,ol{list-style:none;}
+a{color:#666;text-decoration:none;}
+.glb_recommend{width: 1170px;float: left;}
+.glb_recommend_bt_p1{width: 120px;height:50px;line-height: 50px;font-size: 20px;text-align: center;float: left}
+.glb_recommend_bt_p1 i{ border-left: 4px solid #ec2d21;display: inline-block;font-size: 0px;height: 22px; margin-right: 7px;overflow: hidden;position: relative;top: 3px;width: 0px;}
+.glb_recommend_bt{width: 1156px;height: 50px;}
+.glb_recommend_bt_p2{width: 80px;height:30px;line-height: 30px;font-size: 14px;text-align: center;float: right;margin-right: 10px;color: #BEBEBE;margin-top: 10px}
+.glb_recommend_bt_p2 a{text-decoration:none;color: #7F7F7F }
+.glb_recommend_bt_p2 i{float: right;background-color:#BEBEBE; border-radius: 30px;width: 20px;height: 20px;color:white;margin-top: 5px;font-style:normal;line-height: 20px }
+.glb_recommend_con{width: 1156px;float: left;border: 1px solid #e6e6e6}
+.glb_recommend_div_z{width:910px;height:100%;float: left;padding-top:8px;padding-left: 11px}
+.glb_recommend_div_z1{width: 234px;height:100%;float: right;margin-right:0px;}
+.glb_recommend_div{width: 215px;height:340px;border: 1px solid #e6e6e6;float: left;margin-right:10px;margin-bottom: 10px;cursor:pointer}
+.glb_recommend_div:hover{ border: 1px solid #7997B9; -webkit-box-shadow: 0 0  3px 3px  #BCBCBC ; -moz-box-shadow: 3px 3px   #BCBCBC ; box-shadow: 0 0 3px 3px  #BCBCBC ;}
+.glb_recommend_img{width: 215px;height: 200px;}
+.glb_recommend_img img{width: 215px;height: 200px;}
+.glb_recommend_p{width: 210px;height: 150px;}
+.glb_recommend_p_con{width: 180px;height: 20px;font-size: 12px;margin-left: 15px;line-height: 20px;text-overflow:ellipsis;white-space:nowrap;overflow: hidden;}
+.glb_recommend_con1{width: 180px;height: 20px;font-size: 12px;margin-left: 15px;line-height:20px;color:#999 }
+.glb_recommend_jd{width: 180px;height: 8px;margin-left: 15px;margin-top: 5px}
+.glb_recommend_progress{width: 180px;height:8px;background-color: #FFEAAA}
+.glb_recommend_progress_cont{width: 180px;height:8px;　background: -moz-linear-gradient(left,#FECA36,#FF5115,#FF0D03); background: -webkit-linear-gradient(left,#FECA36,#FF5115,#FF0D03);background: -o-linear-gradient(left,#FECA36,#FF5115,#FF0D03);background: -ms-linear-gradient(left,#FECA36,#FF5115,#FF0D03);}
+.glb_recommend_con2{width: 200px;height: 20px;font-size: 12px;margin-left: 15px;line-height:20px;color:#999;margin-top: 5px }
+.glb_recommend_con2_sp{margin-left:50px}
+.glb_recommend_btn{width: 200px;height: 35px;margin-left: 15px;margin-top: 15px}
+.glb_recommend_btn_1{width:120px;height: 35px;background-color:#D70302;float: left;border-radius: 4px }
+.glb_recommend_btn_1 p{width:120px;height: 35px;line-height: 35px;text-align: center;color: white;font-size: 18px;}
+.glb_recommend_btn_1_img{width:80px;height: 35px;float: right}
+.glb_recommend_btn_1_img img{width:35px;height: 35px;margin-left: 20px}
+.glb_recommend_div_z1_p1{width: 230px;height: 50px;line-height: 50px;font-size: 20px;padding-left: 10px;border-bottom: 1px dotted  #e6e6e6;  }
+.glb_recommend_div_g{width: 230px;height:600px}
+.glb_recommend_div_con{width: 210px;height:85px;margin-left: 10px;border-bottom: 1px dotted  #e6e6e6;cursor:pointer}
+.glb_recommend_div_z1_p2{width: 230px;height: 50px;line-height: 50px;font-size: 14px;text-align: center}
+.glb_recommend_div_left{width: 50px;height: 85px;float: left}
+.glb_recommend_div_left img{width: 50px; height: 50px;border-radius: 50px;margin-top: 10px }
+.el-progress-bar__inner{position: absolute;left: 0;top: 0;height: 100%;text-align: right;border-radius: 100px;line-height: 1;background: -moz-linear-gradient(left,#FECA36,#FF5115,#FF0D03);background: -webkit-linear-gradient(left,#FECA36,#FF5115,#FF0D03);background: -o-linear-gradient(left,#FECA36,#FF5115,#FF0D03);background: -ms-linear-gradient(left,#FECA36,#FF5115,#FF0D03);}
+.el-progress-bar__outer {height: 6px;border-radius: 100px;background-color: #FFEAAA;overflow: hidden;position: relative;vertical-align: middle;}

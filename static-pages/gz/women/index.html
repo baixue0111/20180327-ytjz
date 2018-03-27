@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/css.css">
+    <title>三八节活动</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<div id="head">
+<div><img src="image/head.jpg"/></div>
+<div><img src="image/message.jpg"/></div>
+</div>
+<div class="container">
+    <div class="login">
+        <div><span class="span">手机号:</span><input class="phone" type="text" name="phone" id="phone" placeholder="请输入11位手机号" onfocus="scrollBodyUp()"/></div>
+        <div style="position: relative;"><span class="span">验证码:</span><input  class="code" type="text" name="code" id="code" placeholder="请输入验证码" onfocus="scrollBodyUp()"/><input class="button" type="button" value="获取验证码" onclick="loginCode(this)"/></div>
+        <div id="errorClick"></div>
+        <div align="center" id="loginButton"><p onclick="loginInfo()"><img style="width: 60%" src="image/order.png"></p></div>
+    </div>
+</div>
+<div><img src="image/foot.jpg"/></div>
+<div id="load" onclick="closetap()" ></div>
+<div id="error">
+    <div><img src="image/error.png">
+        <div><span onclick="closetap()"><img src="image/close.png"></span></div>
+    </div>
+    <div class="error_body">
+        <div id="successMessage"><p id="errorMessage"></p></div>
+        <div align="center" ><p class="close_bg" onclick="closetap()"></p></div><br/>
+    </div>
+</div>
+</body>
+</html>

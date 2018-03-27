@@ -1,0 +1,216 @@
+*{margin:0;padding: 0;}
+html{ font-size:100px;}
+img{border: 0;width: 100%;display: block; }
+#share_content{
+    width:100%;
+    height: 4.8rem;
+    position: relative;
+    background: url(../img/fenx1.jpg);
+    background-size:100% auto;
+}
+.bySending{
+    position: absolute;
+    width: 36%;
+    top: 19%;
+    left: 31%;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    border-radius: 0.5rem;
+    background: #e77381;
+    color: white;
+    font-size: 0.3rem;
+    text-align: center;
+}
+#package_three{
+        position: absolute;
+    width: 32%;
+    height: 0.6rem;
+    /*background: red;*/
+    left: 33%;
+    border-radius: 15px;
+    top: 30%;
+}
+#package_seven{
+    position: absolute;
+    width: 32%;
+    height: 0.6rem;
+    /*background: red;*/
+    left: 33%;
+    border-radius: 15px;
+    top: 82%;
+}
+/*遮罩层*/
+/*#loginMask{
+	position: fixed;
+	width: 100%;
+	height: 100%;	 	
+	top: 0;
+	left: 0;
+	z-index: 103;
+	background:rgba(0,0,0,0.75);
+	display: none;
+}*/
+/*出游七天包*/
+#login1{
+    position: fixed;
+    top: 16%;
+    left: 3%;
+    width: 6rem;
+    height: 6rem;
+    background: url(../img/login1.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    z-index: 10000;
+    overflow: hidden;
+    display: none;
+}
+.login1_close{
+       width: 0.3rem;
+    height: 0.3rem;
+    right: 0;
+    position: absolute;
+    background: url(../img/closeguanbi.png) 0 0 no-repeat;
+    /* background-color: red; */
+    background-size: 100% 100%;
+    top: 0;
+}
+#login1_succes{
+       width: 80%;
+    height: 2.3rem;
+    margin-top: 2.5rem;
+    margin-left: 10%;
+    /* background-color: red; */
+}
+.login1_top{
+    width: 100%;
+    float: left;
+    height: 0.8rem;
+    line-height: 0.2rem;
+    text-align: center;
+    /* background: red; */
+}
+.login1_bottom{
+    width: 100%;
+    text-align: center;
+    /* margin-top: 0.2rem; */
+    float: left;
+    margin-top: 0.2rem;
+    height: 0.8rem;
+    line-height: 0.2rem;
+}
+#login1_phone{
+    width: 3.72rem;
+    height: 0.70rem;
+    bor;
+    border: 1px solid #fac914;
+    border-radius: 0.15rem;
+    padding-left: 0.1rem;
+}
+#login1_validate{
+    width: 2.54rem;
+    height: 0.70rem;
+    border: 1px solid #fac914;
+    border-radius: 0.15rem;
+    padding-left: 0.1rem;
+}
+#login1_yzm{
+    background: #fac914;
+    border: 0;
+    border-radius: 0.15rem;
+    color: #fff;
+    padding: .07rem .23rem;
+    padding: 0.2rem 0.3rem;
+}
+#login1_yzm[type=button], button { cursor: pointer; -webkit-appearance: none; }
+#login1_errorMsg{
+    width: 100%;
+    text-align: center;
+    font-size: 0.3rem;
+    color: red;
+    /* background: green; */
+    /* margin-top: 0.1rem; */
+    height: 0.5rem;
+    line-height: 0.5rem;
+    float: left;
+}
+#login1Button{
+    width: 100%;
+    text-align: center;
+    height: 0.7rem;
+    line-height: 0.2rem;
+    /* background: red; */
+    margin-top: 0.rem;
+}
+#login1_but{
+    width: 50%;
+    height: 0.8rem;
+    border: none;
+    line-height: 0.8rem;
+    /*background-color: #e5a81c;*/
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color: white;
+    background: url(../img/login1_be.png);
+    background-size: 100% 100%;
+}
+.success3{
+    color: red;
+}
+
+
+
+
+/*重复订购*/
+#repeatOrder{
+    width: 90%;
+    height: 40%;
+    position: fixed;
+    top: 22%;
+    left: 5%;
+    z-index: 102;
+    display: none;
+    /* text-align: center; */
+    background: url(../img/loge.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-border-radius: 0.10rem;
+    -webkit-border-radius: 0.10rem;
+    border-radius: 0.10rem;
+}
+.repeatClose{	
+	width: 100%;	
+	text-align: center;
+}
+.repeatClose img{	
+	width: 13%;	
+	margin-left: 43%;
+	margin-top: 4%;
+}
+#repeatSucces{	
+}
+.repeatding{	
+	width: 100%;	
+	margin-top: 7%;	
+	color: red;	
+	text-align: center;
+}
+.repaeatConfirm{	
+	width: 100%;	
+	text-align: center;	
+	color: red;
+}
+#repeat{
+	width: 100%;
+	text-align: center;
+	margin-top: 13%;
+}
+.repatBut{
+	    width: 33%;
+    margin-left: 10%;
+    float: left;
+}
+.repatBut1{
+	width: 33%;
+    float: left;
+    margin-left: 13%;
+}

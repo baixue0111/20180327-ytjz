@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<title>详情介绍</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+</head>
+<body>
+
+<div class="demoPadding">
+	<div class="top">
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <!-- <div class="swiper-slide">
+		        	<img src="image/lunbo_img.jpg" alt="">
+		        </div> 
+		        <div class="swiper-slide">
+		        	<img src="image/lunbo_img.jpg" alt="">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="image/lunbo_img.jpg" alt="">
+		        </div> -->
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		</div>
+		<img src="image/return.png" alt="" class="returnImg" id="imgHide" onclick="returnHistory()">
+		<img src="image/myscribe.png" alt="" class="myScribe" onclick="mySubscribe()">
+	</div>
+	<div id="name_free">
+		<h1 class="phoneName"></h1>
+		<p class="free"><span>合约价：</span><span class="hyfree"></span></p>
+	</div>
+	<ul class="select">
+		<li class="select_li">
+			<div class="spcsImg">
+				<img src="image/spcs.png" alt="">
+				<div class="triangle-up"></div>
+			</div>
+			<div id="argumentParent" class="showHide" style="display:none">
+				<table class="argument">
+					<tr>
+						<td>品牌名称：</td>
+						<td class="colorText manufacturer"></td>
+					</tr>
+					<tr>
+						<td>主屏尺寸：</td>
+						<td class="colorText screenSize"></td>
+					</tr>
+					<tr>
+						<td>主屏分辨率：</td>
+						<td class="colorText screenPro"></td>
+					</tr>
+					<tr>
+						<td>ROM：</td>
+						<td class="colorText rom"></td>
+					</tr>
+					<tr>
+						<td>RAM：</td>
+						<td class="colorText ram"></td>
+					</tr>
+					<tr>
+						<td>前置摄像头：</td>
+						<td class="colorText frontPix"></td>
+					</tr>
+					<tr>
+						<td>后置摄像头：</td>
+						<td class="colorText rearPix"></td>
+					</tr>
+					<tr>
+						<td>CPU：</td>
+						<td class="colorText cpu"></td>
+					</tr>
+					<tr>
+						<td>网络类型：</td>
+						<td class="colorText networkType"></td>
+					</tr>	
+				</table>
+			</div>
+		</li>
+		<li>
+			<div class="spcsImg">
+				<img src="image/tchy.png" alt="">
+				<div class="triangle-up triangle-down"></div>
+			</div>
+			<div class="tchyImg showHide"><img src="image/tchy_img.png" alt="" class="cstable"></div>
+		</li>
+		<li>
+			<div class="spcsImg">
+				<img src="image/hdgz.png" alt="">
+				<div class="triangle-up triangle-down"></div>
+			</div>
+			<ul id="activity" class="showHide">
+				<li>1、活动时间：即日起至2017年7月31日。</li>
+				<li>2、用户可预约至就近的联通营业厅参加换机优惠活动。</li>
+				<li>3、若用户号码无合约且符合换机合约加载要求，可参与合约换机优惠；否则享受营业厅内裸机政策。</li>
+				<li>4、活动期间，用户通过预约至营业厅办理换机优惠合约且营业员成功登记，次月即可获赠1G省内4G网络流量。</li>
+				<li>5、此次活动由山东联通公司联合苹果、华为、OPPO、VIVO、金立等热门品牌推出多款畅销机型，具体机型以活动营业厅为准。</li>
+				<li>6、活动机型均为官方原厂手机，开具正规手机发票，享受官方售后服务。</li>
+				<li>7、活动最终解释权归中国联通山东分公司所有。</li>
+			</ul>
+		</li>
+	</ul>
+	<div class="foot">
+		<ul class="bottom_ul">
+			<li>
+				<div>
+					<img src="image/details.png" alt="">
+					<h1 class="colorH1">详情</h1>
+				</div>
+			</li>
+			<li>
+				<div onclick="typeContrast()">
+					<img src="image/dbh.png" alt="">
+					<h1>对比</h1>
+				</div>
+			</li>
+			<li>
+				<div onclick="hot()">
+					<img src="image/rmtj.png" alt="">
+					<h1>热门推荐</h1>
+				</div>
+			</li>
+			<li class="yuyueBtn"><p onclick="affirmSubscribe()">预约</p></li>
+		</ul>
+	</div>
+	<input type="hidden" id="phoneno" value="">
+</div>
+
+
+
+</body>
+<script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/details.js"></script>
+<!-- <script type="text/javascript">
+	var getTimestamp=new Date().getTime();
+	$.getScript("js/details.js?"+getTimestamp);
+</script> -->
+</html>

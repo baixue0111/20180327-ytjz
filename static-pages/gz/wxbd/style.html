@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="0" />
+    <title>我的绑定</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="demo">
+        <div id="head">
+            <p id="btn" onclick="showLogin()"><img src="image/btn.png" alt=""></p>
+        </div>
+        <div id="foot"><img src="image/foot.png" alt=""></div>
+    </div>
+    <div id="loading">
+        <img src="image/loading.gif" alt="">
+    </div>
+    <!--蒙版-->
+    <div id="loginMask"></div>
+    <!--绑定模态框-->
+    <div id="login_w">
+        <!--<div>-->
+            <!--<div class="login_w_title">贵州电信用户绑定</div>-->
+        <!--</div>-->
+        <!--<div id="login_w_successMessage">-->
+            <!--<div style="color:red;font-size:0.2rem;">贵州电信绑定即送100棒豆</div>-->
+            <!--<p style="margin-top: 0.2rem">-->
+                <!--<input type="text" id="login_w_phone" placeholder="请输入手机号" onfocus="clearError()">-->
+            <!--</p>-->
+            <!--<p style="margin-top: 0.2rem">-->
+                <!--<input type="text" id="login_w_yzm" placeholder="请输入验证码" onfocus="clearError()">-->
+                <!--<input type="button" id="login_w_text" onclick="loginValidate(this)" value="获取">-->
+            <!--</p>-->
+            <!--<div class="login_w_success"></div>-->
+            <!--<div>-->
+                <!--<img src="image/sub.png" class="login_w_img" onclick="loginBangDing()"/>-->
+            <!--</div>-->
+            <!--<div class="login_w_close" onclick="loginWClose()">暂不绑定</div>-->
+        <!--</div>-->
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
+
+</body>
+</html>

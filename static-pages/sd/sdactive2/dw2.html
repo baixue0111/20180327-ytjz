@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <title>棕情4G 沃送好礼</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/index2.js"></script>
+</head>
+<body onload="recount()">
+<div>
+    <div >
+         <img src="image/head.jpg">
+    </div>
+    <div style="position: relative">
+        <div class="this"><a id="phoneType" href="apple.html"><img src="image/this.png"></a></div>
+        <div><button  type="button" class="button-click1"  onclick="draw()"></button></div>
+        <div><img src="image/middle.jpg"></div>
+    </div>
+    <div >
+        <div><img src="image/foot2.jpg"></div>
+    </div>
+</div>
+<div id="load" onclick="loginclose();"></div>
+<div id="loginStr" style="display: none">
+    <div id="login" >
+        <div class="header"></div>
+        <div id="successMessage" >
+            <div id="success" class="success"></div>
+        </div>
+        <div id="loginButton" >
+            <button id="login_button" class="button" onclick="loginclose()" ></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

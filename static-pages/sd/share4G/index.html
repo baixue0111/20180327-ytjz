@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="微信送流量">
+	<meta name="description" content="微信送流量">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>极速体验 共享4G</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="script/jquery-3.2.1.min.js"></script>
+	<script src="script/common.js"></script>
+	<script src="script/index.js"></script>
+</head>
+<body>
+	<div class="flow-wrapper">
+		<div class="rulesText" onclick="showActivity()"></div>
+		<div class="con-iptGroup">
+			<input type="text" class="phone" placeholder="请输入您的手机号" onfocus="clearMsg()" />
+			<input type="text" class="friend-phone" placeholder="请输入您辅导的亲友手机号" onfocus="clearMsg()" />
+		</div>
+		<div class="errMsg"></div>
+		<div class="subBtn" onclick="subClick()"></div>
+		<div class="rules2">
+			<img src="img/rules2.png" alt="" onclick="showActivity()">
+			<img src="img/pointer.png" alt="">
+		</div>
+		<p class="warning">如需提报多名亲友号码，请分次提交；辅导成功后，您和您的亲友在2018年1月和2月都会获赠1GB省内流量包；如辅导成功多名亲友，奖励不叠加。</p>
+		<div class="mask"></div>
+		<div id="activity">
+			<p class="closeRules" onclick="hideActivity()"></p>
+			<div class="rulesCon">
+				<span class="rulesDate">活动时间：</span><span>活动截止到2017年12月24日</span>
+			</div>
+			<ul class="activity-list">
+				<li><span class="rulesDate">活动规则：</span>1. 如申报的亲友号码申报日前使用非联通4G网络且自申报日至活动截止日使用联通4G网络，视为辅导人辅导成功。</li>
+				<li>2. 如申报的亲友号码申报日前使用非联通4G网络但申报日至活动截止日未使用联通4G网络，视为辅导失败，不计入辅导数量。</li>
+				<li>3. 用户申报亲友号码后，无法取消，其他人无法再申报此号码。</li>
+				<li>4. 包括但不限于以下几种情形可能导致报名失败：申报用户已使用联通4G网络、状态异常、欠费或已停机等。</li>
+				<li>5. 活动结束后，统计辅导人申报且辅导成功数量核算奖励。对成功辅导亲友使用联通4G网络的用户，2018年1月和2月申报者和亲友都将获得1GB省内流量包。获赠流量包可发送412至10010查询。</li>
+				<li>6. 赠送流量为山东省内流量，当月有效，次月不结转。</li>
+				<li>7. 因停机、产品服务变更、套餐冲突、与已有流量包互斥等原因，可能造成无法获赠流量包。因上述原因无法获赠流量包的，不提供补偿。</li>
+				<li>8. 本活动的解释权归山东联通所有。</li>
+			</ul>
+		</div>
+		<div class="errorAlert">
+			<h1 onclick="hideLogin()"></h1>
+			<div class="msg">
+				<p class="title">已提交！</p>
+				<p class="dec">快去辅导TA使用联通4G网络吧。</p>
+				<div class="sucessMsg">
+					<p class="sucessMsg-title">使用联通4G网络小贴士：</p>
+					<ul class="sucessMsg-ul">
+						<li><span>第一步：</span><span class="widthSpan">使用全网通4G手机；</span></li>
+						<li><span>第二步：</span><span class="widthSpan">点击设置-打开4G开关；</span></li>
+						<li><span>第三步：</span><span class="widthSpan">关闭wifi，打开数据流量。微博、网购、听歌、追剧，尽情享受联通4G！</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

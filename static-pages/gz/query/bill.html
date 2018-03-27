@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<meta name="format-detection" content="telephone=no, email=no"/>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+	    <title>中国电信贵州加油站</title>
+	    <link rel="stylesheet" href="css/bill.css" />
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <script type="text/javascript" src="js/jquery.min.js"></script>
+	    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<div style="width: 100%;height: 100%;overflow-x:hidden;overflow-y:scroll;">
+		<div id="tab_q">
+			<div class="tab1 focus">
+				<!--话费查询标题-->
+				<div class="bill">话费查询</div>
+
+								<!--去掉晒流量 跳转按钮-->
+						 	<!--<div id="choujiang" onclick="tzcj()">-->
+						 		<!--<img src="images/sun.png"/>-->
+						 	<!--</div>-->
+				<!--账户余额-->
+				<div id="Account-balance" class="shoujihao" style="height: 5rem;">
+					<div class="account">账户余额</div>
+					<!--<div id="ipooo">
+						显示手机号
+						<img class="ipone" src="images/电话号码@2x.png"/>
+						<div class="ipone1">17326971222</div>
+						<img class="vip" src="images/图层-7@2x.png"/>
+					</div>
+					<div class="qian">110元</div>-->
+
+				</div>
+				<!--话费剩余-->
+				<div class="huafei">
+					<div class="huafei1 zzz" id="hua">
+						<div class="huafei2">本月实时话费</div>
+						<!--<div class="huefei3">568.00</div>-->
+					</div>
+					<div class="huafei1" id="hua1">
+						<div class="huafei2">历史欠费</div>
+						<!--<div class="huefei3">568.00</div>-->
+					</div>
+				</div>
+				<!--套餐名称-->
+				<div class="ming" id="mingz">
+					<img class="ming1" src="images/taotan.png" alt="" />
+					<!--<span class="ming2">乐享4G201407 199元主-套餐：</span>-->
+				</div>
+				<!--套餐使用情况-->
+				<div id="content">
+					<ul class="cont">
+						<!--套餐赠送费用-->
+						<li class="con" id="tao1">
+							<!--<div class="con1">
+								<img class="con2" src="images/jiaofei.png" alt="" />
+								<span class="con3">套餐赠送费用</span>
+							</div>
+								<div class="con41">已用:<span class="con42">000</span>元</div>
+								<div class="con41">剩余:<span class="con42">000</span>元</div>
+								<div class="con41">总计:<span class="con42">000</span>元</div>
+							</div>-->
+							<!--进度条-->
+							<!--<div class="con5">
+								<div class="container"> 
+								   <div id="bar" style="width:0%;"></div>  
+								</div>  
+								<div id="total"></div> 
+							</div>-->
+						</li>
+						<li class="con" id="tao2">
+							<!--<div class="con1">
+								<img class="con2" src="images/sheng.png" alt="" />
+								<span class="con3">上月结转流量</span>
+							</div>
+							<div class="con4">
+								<div class="con41">已用:<span class="con42">000</span>M</div>
+								<div class="con41">剩余:<span class="con42">000</span>M</div>
+								<div class="con41">总计:<span class="con42">000</span>M</div>
+							</div>-->
+							<!--进度条-->
+							<!--<div class="con5">
+								<div class="container"> 
+								   <div id="bar" style="width:0%;"></div>  
+								</div>  
+								<div id="total"></div> 
+							</div>-->
+						</li>
+						<!--国内语音时长-->
+					</ul>
+				</div>
+				<div class="tishi">
+					套餐流量使用详情请点击下方<span style="color: blue;">"流量"</span>按钮
+				</div>
+			</div>
+			<div class="tab1">
+				<!--流量查询标题-->
+				<div class="bill">流量查询</div>
+				<!--<div id="choujiang" onclick="tzcj()">
+						 		<img style="width: 1.5rem;" src="images/sun.png"/>
+						 	</div>-->
+				<!--账户余额-->
+				<div id="Account-balance" class="shenghuo" style="height: 5.82rem;">
+					<div class="account">剩余流量</div>
+					<div class="ewe" style="font-size: 0.2rem;padding-top: 0.2rem;color: red;">不含定向及闲时流量</div>
+					<!--<div>
+						显示手机号
+						<img class="ipone" src="images/电话号码@2x.png"/>
+						<div class="ipone1">17326971222</div>
+						<img class="vip" src="images/图层-7@2x.png"/>
+					</div>-->
+					<!--<div class="qian">5788.00M</div>-->
+					
+				</div>
+				<!--话费剩余-->
+				<div class="liang" id="liu">
+					<div class="liang1 liu" id="benyue">
+						<div class="liang2">本月流量</div>
+						<!--<div class="liang3">568.00</div>-->
+					</div>
+					<div class="liang1 liu" id="jiezhuan">
+						<div class="liang2">上月结余流量</div>
+						<!--<div class="liang3">568.00</div>-->
+					</div>
+					<div class="liang1" id="shengyu">
+						<div class="liang2">已使用流量</div>
+						<!--<div class="liang3">568.00</div>-->
+					</div>
+				</div>
+				<!--套餐名称-->
+				<div class="cheng" id="chengz">
+					<img class="cheng1" src="images/taotan.png" alt="" />
+					<!--<span class="cheng2">乐享4G201407 199元主-套餐：</span>-->
+				</div>
+				<!--套餐使用情况-->
+				<div id="content" style="width: 100;">
+					<ul class="cont" style="width: 100%;">
+						<!--上月结转流量-->
+						<li class="con" id="tao4"></li>
+						<li class="con" id="tao3">
+							<!--<div class="con1">
+								<img class="con2" src="images/sheng.png" alt="" />
+								<span class="con3">上月结转流量</span>
+							</div>
+							<div class="con4">
+								<div class="con41">已用:<span class="con42">000</span>M</div>
+								<div class="con41">剩余:<span class="con42">000</span>M</div>
+								<div class="con41">总计:<span class="con42">000</span>M</div>
+							</div>-->
+							<!--进度条-->
+							<!--<div class="con5">
+								<div class="container"> 
+								   <div id="bar" style="width:0%;"></div>  
+								</div>  
+								<div id="total"></div> 
+							</div>-->
+						</li>
+					</ul>
+				</div>
+				<div class="tishi">
+					余额使用详情请点击下方<span style="color: blue;">"余额"</span>按钮
+				</div>
+			</div>
+		</div>		
+			<!--底部导航栏-->
+        <div id="footer">
+        	<div class="re ren">
+        		<i style="font-size: 27px;" class="iconfont">&#xe600</i>
+                <p>余额</p>
+	        </div>
+            <div class="re">
+        		<i style="font-size: 26px;" class="iconfont">&#xe6f3</i>
+                <p>流量</p>
+            </div>
+    	</div>
+	    </div>
+	    <div class="details_mask"></div>
+	    <!--loading-->
+	    <div id="loading">
+			<img src="images/jz.gif" alt="">
+		</div>
+		 <!--绑定--> 
+		<div id="loginMask" onclick="hide_mark()"></div>
+		<div id="login">
+			<!--<div id="loginStr">-->
+                <!--<div id="header">-->
+                    <!--<h1 id="h11" class="select" onclick="Tab(1)">贵州电信用户绑定</h1>-->
+                    <!--<h1 id="h12" onclick="Tab(2)">非贵州电信用户绑定</h1>-->
+                <!--</div>-->
+                <!--<div id="successMessage">-->
+                <!---->
+                    <!--<div style="margin-bottom:-1rem;padding-top:0.45rem;"><h1 style="font-size:0.3rem;" id="title">绑定手机即送100M省内流量</h1></div>-->
+                    <!--<div class="add">-->
+                        <!--<ul id="tabcon">-->
+                        <!--<li id="li1" class="show">-->
+                            <!--<div id="Li-con1">-->
+                                <!--<p style="margin-top: 0.2rem;"><input type="text" id="phone" placeholder="请输入手机号" onfocus="clearError()"></p>-->
+                                <!--<p class="yzm_p"><input type="text" id="yzm" placeholder="请输入验证码" onfocus="clearError()"><input type="button" id="text" onclick="validateInfo(this)" value="获取"></p>-->
+                                <!--<p id="errorMessage"></p>-->
+                                <!--<p id="sub_btn"><img src="images/sub.png" alt="" onclick="binding()"></p>-->
+                                <!--<p class="Tips" onclick="closeLogin()">暂不绑定</p>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--<li id="li2">-->
+                            <!--<div id="Li-con2">-->
+                                <!--<p style="margin-top: 0.2rem;"><input type="text" id="phone2" placeholder="请输入手机号" onfocus="clearError2()"></p>-->
+                                <!--<p id="errorMessage2"></p>-->
+                                <!--<p id="sub_btn2"><img src="images/sub.png" onclick="Notdx()"></p>-->
+                                <!--<p class="Tips" onclick="closeLogin()">暂不绑定</p>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                       <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+		</div>
+		<div class="lian"></div>
+	  	<div id="lianjie">
+		  	<div class="cuo" id="cuowu">
+		  		<img class="cuo1" src="images/close.png"/>
+		  	</div>
+		  	<div class="cuo2">
+		  	</div>
+	 	</div>
+		<input type="hidden" value="" id="openIdInput"/>
+		<input type="hidden" value="10000004" id="productIdTianji"/>
+		<script type="text/javascript" src="js/index.js">
+			
+		</script>
+	   	<script type="text/javascript">
+	   		var getTimestamp=new Date().getTime();
+			$.getScript("js/bill.js?"+getTimestamp);
+	   	</script>
+	</body>
+</html>

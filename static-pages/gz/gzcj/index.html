@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="0" />
+		<title>中国电信贵州加油站</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div id="doto">
+			<div class="doto_top">
+				<img src="img/heade_t.png" alt="头部" />
+			</div>
+			<!--抽奖-->
+			<div id="draw">
+				<img class="draw_c" id="rotate" src="img/cont_chou.png"/>
+				<!--点击抽奖-->
+				<img class="draw_cj" onclick="draw()" src="img/cont_cj.png"/>
+				<!--点击分享-->
+				<div class="draw_fe" onclick="fxl()"></div>
+			</div>
+			<!--中奖名单-->
+			<div id="win">
+				<!--<div id="wintt">
+					<ul id="win_zj">
+						 <li>150****3802获得一等奖1000M...</li>
+						<li>150****3802获得一等奖1000M...</li> 
+					</ul>
+					
+				</div>-->
+				<div id="history">
+					<ul id="con1">
+						<li>150****3802获得一等奖1000M...</li>
+						<li>150****3802获得一等奖1000M...</li> 
+					</ul>
+					<ul id="con2">
+						<li>150****3802获得一等奖1000M...</li>
+						<li>150****3802获得一等奖1000M...</li> 
+					</ul>
+				</div>
+			</div>
+			<!--活动介绍-->
+			<div class="foot_js">
+				<img src="img/footn.jpg"/>
+			</div>
+		</div>
+		<div id="loginMask" onclick="hide_mark()"></div>
+		<!--loading-->
+		<!--<div id="loading">
+			<img src="img/jz.gif" alt="">
+		</div>-->
+		<div id="login">
+			<!--<div id="loginStr">
+                <div id="header">
+                    <h1 id="h11" class="select" onclick="Tab(1)">贵州电信用户绑定</h1>
+                    <h1 id="h12" onclick="Tab(2)">非贵州电信用户绑定</h1>
+                </div>
+                <div id="successMessage">
+                    <div style="margin-bottom:-1rem;padding-top:0.45rem;"><h1 style="font-size:0.3rem;" id="title">绑定手机即送100M省内流量</h1></div>
+                    <div class="add">
+                        <ul id="tabcon">
+                        <li id="li1" class="show">
+                            <div id="Li-con1">
+                                <p style="margin-top: 0.2rem;"><input type="text" id="phone" placeholder="请输入手机号" onfocus="clearError()"></p>
+                                <p class="yzm_p"><input type="text" id="yzm" placeholder="请输入验证码" onfocus="clearError()"><input type="button" id="text" onclick="validateInfo(this)" value="获取"></p>
+                                <p id="errorMessage"></p>
+                                <p id="sub_btn"><img src="images/sub.png" alt="" onclick="binding()"></p>
+                                <p class="Tips" onclick="closeLogin()">暂不绑定</p>
+                            </div>
+                        </li>
+                        <li id="li2">
+                            <div id="Li-con2">
+                                <p style="margin-top: 0.2rem;"><input type="text" id="phone2" placeholder="请输入手机号" onfocus="clearError2()"></p>
+                                <p id="errorMessage2"></p>
+                                <p id="sub_btn2"><img src="images/sub.png" onclick="Notdx()"></p>
+                                <p class="Tips" onclick="closeLogin()">暂不绑定</p>
+                            </div>
+                        </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>-->
+		</div>
+		<!--信息提示-->
+		<div class="lo_mess">
+			<!--关闭插-->
+			<div class="lo_guan">
+				<img onclick="gubccl()" src="img/close.png"/>
+			</div>
+			<!--提示内容-->
+			<div class="lo_mes"></div>
+		</div>
+		<!--点击赞运气弹出页面-->
+		<div class="log_fenxiang">
+			<img src="img/fenx.png"/>
+		</div>
+		<input type="hidden" value="" id="openIdInput"/>
+		<input type="hidden" value="" id="getphone"/>
+		<input type="hidden" value="10000004" id="productIdTianji"/>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/awardRotate.js"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

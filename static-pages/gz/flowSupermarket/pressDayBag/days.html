@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>3天包、7天包</title>
+    <link rel="stylesheet" type="text/css" href="css/days.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login_binding.css" />
+</head>
+<body>
+    <div class="days1">
+        <div class="days-three" style="top: 34.8%;">
+            <img style=" width: 90%; margin-left: 5%;" src="images/days/daysFifteen.png" alt="三天包">
+            <div class="days-song" style=" margin-top: 5%;">订购就送<span style="color: yellow;">30</span>棒豆</div>
+            <div class="days-Panic"  onclick="daysOrder('holiday315')">立即订购</div>
+        </div>
+        <div class="days-seven" style="top: 50.2%;">
+            <img src="images/days/daysThirty.png" alt="七天包">
+            <div class="days-song" style="margin-top: 5%;">订购就送<span style="color: yellow;">50</span>棒豆</div>
+            <div class="days-Panic"  onclick="daysOrder('holiday730')">立即订购</div>
+        </div>
+        <ul class="daysRules" style="top:68%;">
+            <li>
+                <div><span class="fontBlod">有效期限：</span>订购成功当日（第一个自然日）立即生效，有效期至第七个自然日24:00（例如12月15号订购了七天流量包，有效期至12月21号24:00），3天包生效后有效期至第3个自然日，两款流量包均支持跨月；</div>
+            </li>
+            <li>
+                <div><span class="fontBlod">使用范围：</span>适用4G、3G、2G上网方式，不含WLAN(WI-FI)上网；</div>
+            </li>
+            <li>
+                <div><span class="fontBlod">办理须知：</span>流量包不退订，到期自动失效、剩余流量不结转，副卡不可分享主卡订购7天流量包内流量，副卡可单独订购流量包，流量优惠需重启上网功能才能生效（建议手机断网时间间隔3分钟以上）；</div>
+            </li>
+            <li>
+                <div><span class="fontBlod">温馨提示：</span>棒豆可在公众号菜单“我的棒豆”中兑换为流量，1棒豆=1M省内流量，未实名认证用户、证件号码下移动用户超过5个用户、个人定制套餐、飞young4G定制套餐、乐享家套餐、十全十美套餐、4G+云卡套餐和3G网络时长类套餐均不能订购此两款流量包。</div>
+            </li>
+        </ul>
+
+    </div>
+    <div class="daysLogin"></div>
+	<div id="loginMask"></div>
+	<div id="repeatOrder">
+		<!--关闭重复订购提示-->
+        <div class="irepeatClose"><img onclick="releatcolse()" src="img/zz.png"/></div>
+        <div id="irepeatSucces">
+            <p class="irepeatding">您今天已经订购过此流量包</p>
+            <p class="irepaeatConfirm">请确定是否再次订购！</p>
+            <div id="irepeat">
+                    <!--确定重复订购-->
+                <img class="irepatBut" onclick="repeatorderh()" src="img/but.png"/>
+                    <!--取消重复订购-->
+                <img class="irepatBut1" onclick="releatcolse()" src="img/but2.png"/>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/days.js"></script>
+</body>
+</html>

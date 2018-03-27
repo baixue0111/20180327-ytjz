@@ -1,0 +1,178 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 100px;
+}
+#box{
+	width: 100%;
+	height: 100%;
+}
+img{
+	border: 0;
+    width: 100%;
+    display: block;
+}
+#explain{
+	width: 100%;
+	height: 7rem;
+	background: url(../images/explain.jpg) no-repeat;
+    background-size: 100% 7rem;
+    position: relative;
+}
+#order_address{
+	width: 100%;
+    height: 6.64rem;
+    background: url(../images/order.jpg) no-repeat;
+    background-size: 100% 6.64rem;
+    position: relative;
+	
+}
+#scanning{
+	height: 4.26rem;
+}
+#order_a1{
+	width: 2.33rem;
+    height: 0.62rem;
+    left: 16%;
+    top: 25%;
+    position: absolute;
+    cursor: pointer;
+}
+#order_a2{
+	width: 2.33rem;
+    height: 0.62rem;
+    left: 45%;
+    top: 52.8%;
+    position: absolute;
+    cursor: pointer;
+}
+#order_a3{
+	width: 2.33rem;
+    height: 0.62rem;
+    left: 16%;
+    top: 86%;
+    position: absolute;
+    cursor: pointer;
+}
+/*遮罩层*/
+#loginMask{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	background:rgba(0,0,0,0.75);
+	 display: none; 
+}
+/*订购*/
+#login{
+	position: fixed;
+    top: 1.8rem;
+    left: 2%;
+    width: 6.03rem;
+    height: 6.28rem;
+    background: url(../images/login.png) 0 0 no-repeat;
+    background-size: 100% auto;
+    z-index: 101;
+    overflow: hidden;
+    display: none;
+}
+.login_top{
+	overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+.login_top img{
+	width: 0.8rem;
+	height: 0.8rem;
+	margin-left: 45%;
+}
+/*验证手机号*/
+.success{
+	    margin-top: 5%;
+    font-size: 0.24rem;
+    width: 68%;
+    color: white;
+    margin-left: 1.2rem;
+}
+#phone{
+	width: 3.72rem;
+    height: 0.70rem;
+    border: 0;
+    border-radius: 0.15rem;
+    padding-left: 0.1rem;
+}
+#validate{
+	width: 2.54rem;
+    height: 0.70rem;
+    border: 0;
+    border-radius: 0.15rem;
+    padding-left: 0.1rem;
+}
+.success_bottom{
+	margin-top: 4%;
+}
+#yzm{
+	background: #ffd56c;
+    border: 0;
+    border-radius: .15rem;
+    color: #fff;
+    padding: .07rem .23rem;
+    padding: 0.2rem 0.3rem;
+    margin-left: .05rem;
+}
+#yzm[type=button], button { cursor: pointer; -webkit-appearance: none; } 
+#errorMsg{
+	color: rgba(13, 14, 14, 0.63);
+    font-weight: bold;
+    margin-top: 6%;
+    text-align: center;
+}
+.confirmation{
+	position: absolute;
+    bottom: .87rem;
+    left: 2.24rem;
+    text-align: center;
+}
+.conf{
+	width: 1.8rem;
+    height: 0.8rem;
+    background-color: #e40000;
+    border-radius: 0.5rem;
+    font-size: 0.27rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+.qigou{
+	text-indent: 2em;
+    margin-top: 0.1rem;
+    font-size: 0.23rem;
+    margin-right: 0.3rem;
+}
+
+/*倒计时*/
+.daojishi1{
+        position: absolute;
+    width: 100%;
+    top: 58%;
+    font-size: 0.23rem;
+    text-align: center;
+    white-space: 32px;
+    word-spacing: -3px;
+}
+/*.spans{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #7b6161;
+    background-color: white;
+    display: inline-block;
+    border-radius: 3px;
+}*/

@@ -1,0 +1,139 @@
+html{
+	font-size: 100px;
+}
+
+.affirm_order_container{
+	padding-bottom: 1rem;
+}
+
+nav{
+	line-height: 0.88rem;
+    font-size: 0.30rem;
+    overflow: hidden;
+    border-bottom: 1px solid #F1F1F1;
+    -webkit-box-shadow: 0 0 0.2rem #F3F3F3;
+    -moz-box-shadow: 0 0 0.2rem #F3F3F3;
+    box-shadow: 0 0 0.2rem #F3F3F3;
+    font-size: 0.30rem;
+}
+
+nav span{
+	display:inline-block;
+	margin:0.24rem 0.40rem;
+}
+
+nav span:nth-child(1) img{
+	width:0.40rem;
+	height:0.41rem;
+}
+nav span:nth-child(1){
+	float: left;
+ 	padding-top: 0.09rem;
+
+}
+
+nav span:nth-child(2){
+	float: left;
+	margin-left: 25%;
+}
+
+.add_address{
+    overflow: hidden;
+    padding: 0.4rem;
+    margin-bottom: 0.25rem;
+}
+
+.add_address li{
+	border-bottom: 1px solid #F1F1F1;
+	padding: 0.26rem 0;
+}
+
+.add_address p{
+	margin:0.15rem 0;
+	line-height: 0.3rem;
+}
+
+.add_address p:nth-child(2){
+	overflow: hidden;
+	font-size: 0.28rem;
+	line-height: 0.6rem;
+}
+
+.orderDetail_name{
+	font-size: 0.3rem;
+}
+
+.orderDetail_phone{
+	font-size: 0.3rem;
+	margin-left: 0.2rem;
+}
+
+.btn_list{
+	overflow: hidden;
+	border-top: 1px solid #F1F1F1;
+	padding-top: 0.2rem;
+}
+
+.btn_list p:nth-child(1){
+	float: left;
+	font-size: 0.28rem;
+	line-height: 0.6rem; 
+}
+
+.btn_list p:nth-child(1) label{
+	display: inline-block;
+	margin-top: -0.1rem;
+	margin-left: 0.16rem;
+}
+
+.btn_list p:nth-child(2){
+	float: right;
+}
+
+.btn_list p:nth-child(2) span{
+	border:2px solid #32a1de;
+	background: #fff;
+	padding:0.05rem 0.2rem;
+	border-radius: 0.1rem;
+	font-size: 0.28rem;
+	margin: 0 0.1rem;
+}
+
+.add_btn{	
+	text-align: center;
+	font-size: 0.3rem;
+	color: #fff;
+}
+
+.add_btn p{
+	background: #32a1de;
+	padding:0.3rem 0; 
+	width: 80%;
+	border-radius: 0.1rem;
+	display: inline-block;
+	line-height:0.5rem;
+}
+
+/* 加载 */
+.details_mask{
+	position: fixed;
+	width: 100%;
+	height: 100%;	 	
+	top: 0;
+	left: 0;
+	z-index: 101;
+	background:rgba(0,0,0,0.75);
+	display: none;
+}
+#loading{
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 10001;
+	width: 100%;
+	display: none;
+}
+#loading img{
+	margin-top: 60%;
+}

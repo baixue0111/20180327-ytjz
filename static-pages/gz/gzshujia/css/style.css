@@ -1,0 +1,105 @@
+*{padding: 0;margin: 0;}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body {color:#ffffff;font-family:"microsoft yahei",Arial, Helvetica, sans-serif;background-color:#f6f6f6;-webkit-text-size-adjust: none;word-wrap: break-word;font-size:14px;}
+h1,h2,h3,h4,h5,h6{ font-size:0.875em; font-weight:normal;}
+a{text-decoration: none;color: #ffffff;}
+img{border: 0; width:100%;display:block;}
+
+@media screen and (min-width:400px){body{font-size:20px}}
+@media screen and (min-width:480px){body{font-size:24px}}
+@media screen and (min-width:540px){body{font-size:27px}}
+@media screen and (min-width:640px){body{font-size:32px}}
+body{z-index: 0}
+.button-click1{
+    height: 10%;
+    width: 30%;
+    background: url("../img/click.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    left: 32%;
+    top: 38%;
+    border-radius:15px ;
+    border:none ;
+    cursor: pointer;
+}
+
+/*login.css*/
+#load{background-color: #000;position: fixed;left: 0;top: 0;height: 100%;width: 100%;opacity: 0.75;z-index: 50;display: none}
+#login{
+    width:320px;
+    height: auto;
+    position:fixed;
+    left: 50%;top: 35%;
+    margin: -94px 0 0 -158px;
+    background:url("../img/login.jpg") no-repeat;
+    background-size: 320px auto;
+    border: none;
+    z-index:60;
+    vertical-align : middle;
+
+}
+#login div{
+    text-align: center;
+    font-size: 13px;
+    margin: 20px 0;
+}
+#login div input{
+    height: 30px;
+}
+#login .header{
+    height: 90px;
+    position:relative;
+}
+#login .span{position:absolute;right: 0px;top:-20px;font-size: 18px;cursor: pointer}
+#login .input1{
+    width: 250px;
+    background:url("../img/phone.png") no-repeat 220px ;
+    background-color: white;
+}
+#login .input2{
+    width: 115px;
+    position: relative;
+    left: 8px;
+}
+#login .input3{
+    width: 130px;
+    height: 30px;
+    position: relative;
+    background-color: #a0bcbc;
+    left: 13px;
+    border: none;
+}
+#login .button{
+    height: 35px;
+    width: 250px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+    background:url("../img/ok01.png") no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    border: none;
+}
+
+#errorMessage{
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    letter-spacing: 5px;
+    color: red;
+    font-size: 20px;
+    text-shadow: 1px -1px 1px rgba(255, 0, 0, 0.8),2px -2px 1px rgba(0, 255, 0, 0.5),3px -3px 1px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    position: absolute;
+    margin: 2px 0px 0 0px;
+   }
+.success{
+    color: black;
+    text-indent: 2em;
+    text-align:justify;
+    text-align-last:justify;/* ie9*/
+    -moz-text-align-last:justify;/*ff*/
+    -webkit-text-align-last:justify;/*chrome 20+*/
+    font-size: 18px;
+    margin: 0 15px;
+}

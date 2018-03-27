@@ -1,0 +1,145 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{font-size: 100px;}
+img { border:0; display: block;width: 100%;}
+/*内容*/
+#content{
+	width: 100%;
+    height: 6.7rem;
+    background: url(../images/buy2.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+.countDown{
+	    width: 100%;
+    font-size: 0.2rem;
+    position: absolute;
+    text-align: center;
+    top: 9%;
+    color: white;
+}
+.dataer{
+	    width: 4rem;
+    height: 0.36rem;
+    font-size: 0.2rem;
+    color: white;
+    text-align: center;
+    background-color: #6dabde;
+    line-height: 0.36rem;
+    position: absolute;
+    top: 17%;
+    left: 5%;	
+}
+.timeer{
+	width: 4rem;
+    height: 0.36rem;
+    font-size: 0.2rem;
+    color: white;
+    text-align: center;
+    background-color: #6dabde;
+    line-height: 0.36rem;
+    position: absolute;
+    top: 25%;
+    left: 27%;
+}
+#snapUp{
+	width: 36%;
+    height: 0.77rem;
+    /*background: red;*/
+    position: absolute;
+    top: 87%;
+    left: 32%;
+    border-radius: 26px;
+}
+/*规则说明*/
+#footer{
+	width: 100%;
+	height: 6.5rem;
+	background: url(../images/buy3.jpg);
+	background-size: 100% 100%;
+}
+.rule{
+	font-size: 0.25rem;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.explain{
+	font-size: 0.2rem;
+    width: 82%;
+    margin-left: 9%;
+    float: left;
+}
+
+
+/*模态窗*/
+#login{
+	position: fixed;
+    width: 90%;
+    left: 5%;
+    height: 5.8rem;
+    top: 22%;
+    z-index: 1000;
+    display: none;
+}
+.close_p{
+	width: 100%;
+}
+.close{
+	width: 7%;
+    position: absolute;
+    right: 0px;
+}
+#login_login{
+	width: 100%;
+    background: url(../images/login@login.png);
+    position: absolute;
+    z-index: 999;
+    height: 5.2rem;
+    top: 10%;
+    background-size: 100% auto;
+}
+.login_succe{
+	width: 90%;
+    height: 2.8rem;
+    /*background: red;*/
+    position: absolute;
+    top: 44%;
+    left: 5%;
+}
+
+
+
+/*确认订购*/
+.confirmOrder{
+	width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    /* height: 0.5rem; */
+    line-height: 0.5rem;
+    float: left;
+    font-size: 0.25rem;
+}
+.login_con{
+	width: 100%;
+	float: left;
+}
+.login_yes{
+	    float: left;
+    width: 50%;
+    margin-top: 22%;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #83e2d6;
+}
+.login_no{
+	float: left;
+    width: 50%;
+    margin-top: 22%;
+    text-align: center;
+    color: #afa7a7;
+    font-size: 0.3rem;
+}

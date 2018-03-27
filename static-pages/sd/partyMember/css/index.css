@@ -1,0 +1,112 @@
+html,body{font-size: 100px;}
+.container{
+    background: url(../img/bg.jpg) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 14rem;
+}
+.con{
+    line-height: 0.35rem;
+}
+.contentBox{
+    position: absolute;
+    width: 85%;
+    height: 23%;
+    top: 48%;
+    left: 50%;
+    margin-left: -41%;
+    margin-top: -11.5%;
+}
+.con p{
+    overflow: hidden;
+    font-size: .23rem;
+    color: #f4e4bc;
+    text-align: center;
+    margin: .1rem auto;
+}
+.btn{
+    background: url('../img/btn.png') 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    width: 5.39rem;
+    height: .64rem;
+    margin: 0 auto;
+}
+
+.z-phone{
+    margin-top: .1rem;
+}
+.con p input{
+    float: left;
+    width: 5.33rem;
+    height: .52rem;
+    font-size: .21rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    padding-left: .03rem;
+    text-align: center;
+}
+footer{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -43%;
+    width: 86%;
+}
+footer p{
+    font-size: .24rem;
+    color: #fff;
+    line-height: .3rem;
+    letter-spacing: .02rem;
+}
+
+/******************** 蒙版层 **********************/
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    display: none;
+    z-index: 11;
+}
+.message-login{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    width: 5.8rem;
+    margin-left: -2.9rem;
+    z-index: 12;
+    display: none;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    background: #fff;
+    color: #000;
+    font-size: .25rem;
+    text-align: center;
+    padding: .3rem 0;
+}
+.close{
+    text-align: right;
+    overflow: hidden;
+    position: absolute;
+    right: 3%;
+    top: 14%;
+}
+.close img{
+    width: .5rem;
+    height: .5rem;
+    float: right;
+}
+.message{
+    line-height: .3rem;
+    padding: 0 .7rem;
+    text-align: center;
+    margin-top: .5rem;
+}

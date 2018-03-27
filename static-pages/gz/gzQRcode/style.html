@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="0" />
+    <title>流量特惠购</title>
+    <link rel="stylesheet" href="css/weChatShare.css">
+    <link rel="stylesheet" href="css/login_binding.css" />
+</head>
+<body>
+    <div>
+        <div id="share_header">
+            <img src="images/fensd.jpg" alt="">
+        </div>
+        <div id="share_conten">
+            <div id="package_three" onclick="order('schoolOne')"></div>
+            <div id="package_seven" onclick="order('chuyou7')"></div>
+        </div>
+        <div>
+            <img src="images/fenx2.jpg" alt="">
+        </div>
+    </div>
+    
+    <div id="login2"></div>
+    <div id="loading">
+        <img src="images/loading.gif" alt="">
+    </div>
+    <!--未关注提示关注-->
+    <div id="notConcern">
+    	<!--<div id="follow_close" onclick="follow_close()"></div>
+		<div id="follow_foote"><img src="img/wg.jpg"/></div>
+		<div class="follow_content">您目前未关注“中国电信贵州加油站”，请长按上方二维码关注后继续</div>-->
+    </div>
+    <!--遮罩层-->
+    <div id="loginMask"></div>
+    <!--重复订购-->
+    <div id="repeatOrder">
+			<!--关闭重复订购提示-->
+		<div class="repeatClose"><img onclick="releatcolse()" src="images/zz.png"/></div>
+		<div id="repeatSucces">
+			<p class="repeatding">您今天已经订购过此流量包</p>
+			<p class="repaeatConfirm">请确定是否再次订购！</p>
+			<!--<div id="repaeatsu"></div>-->
+			<div id="repeat">
+					<!--确定重复订购-->
+				<img class="repatBut" onclick="repeatorder()" src="images/but.png"/>
+					<!--取消重复订购-->
+				<img class="repatBut1" onclick="releatcolse()" src="images/but2.png"/>
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        /***************** rem、兼容********************/
+        var html = document.getElementsByTagName('html')[0];
+        var W = document.documentElement.clientWidth;
+        html.style.fontSize = W*0.15625+'px';
+        // alert(W)
+        window.onresize = function(){
+            var html = document.getElementsByTagName('html')[0];
+            var W = document.documentElement.clientWidth;
+            html.style.fontSize = W*0.15625+'px';
+        }
+    </script>
+    <script type="text/javascript" src="js/style.js"></script>
+</body>
+</html>

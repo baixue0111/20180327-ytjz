@@ -1,0 +1,212 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+table,
+th,
+td,
+a,
+img,
+span,
+strong,
+var,
+em,
+input,
+textarea,
+select,
+option {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 100px;
+}
+
+#box {
+    background: url('../images/box.jpg') 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 20.6rem;
+    position: relative;
+}
+
+.flow {
+    width: 4.79rem;
+    height: .68rem;
+    background: url(../images/flow.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 23%;
+    left: 12%;
+}
+
+.flowTime {
+    width: 4.8rem;
+    height: .59rem;
+    background: url(../images/flowTime.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 26.5%;
+    left: 12%;
+}
+
+.telecom {
+    width: 4.62rem;
+    height: 1.51rem;
+    background: url(../images/dianxin.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 37%;
+    left: 12%;
+}
+
+.immediately {
+    width: 3.28rem;
+    height: .73rem;
+    background: url(../images/confirmOrder.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 48%;
+    left: 25%;
+}
+
+.footer {
+    width: 90%;
+    position: absolute;
+    bottom: 4%;
+    left: 5%;
+    color: white;
+}
+
+.footer li {
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+}
+
+.footer span {
+    font-weight: bold;
+    font-size: 0.26rem;
+}
+
+
+/*模态框*/
+
+#loginMask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, .7);
+    display: none;
+}
+
+.close {
+    width: .55rem;
+    height: .54rem;
+    background: url(../images/close.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-left: 45%;
+}
+
+#login {
+    position: fixed;
+    top: 17%;
+    left: 11%;
+    width: 5.0rem;
+    height: auto;
+    z-index: 10001;
+    display: none;
+    /* background: red; */
+}
+
+.loginImg {
+    width: 5.0rem;
+    height: 5.0rem;
+    background: url(../images/model.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0.5rem;
+}
+
+.loginContent {
+    height: 2.4rem;
+    width: 4.2rem;
+    margin-left: 0.4rem;
+    float: left;
+    font-size: 0.24rem;
+    margin-top: 1.8rem;
+}
+
+.phone {
+    width: 99%;
+    height: 0.5rem;
+    float: left;
+    border: 0.04rem solid #080808;
+}
+
+.verification {
+    width: 60%;
+    height: 0.5rem;
+    float: left;
+    margin-top: 0.2rem;
+    border: 0.04rem solid #080808;
+}
+
+.verification[type=button],
+.verification[type=submit],
+.verification[type=file],
+.verification {
+    -webkit-appearance: none;
+}
+
+.obtain {
+    width: 33%;
+    margin-left: 3%;
+    height: 0.55rem;
+    line-height: 0.55rem;
+    float: left;
+    background: #F7D284;
+    border: none;
+    margin-top: 0.2rem;
+    color: #F84356;
+}
+
+.loginBtn {
+    width: 3.28rem;
+    height: .73rem;
+    line-height: .73rem;
+    background: url(../images/immediately.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-top: 0.2rem;
+    margin-left: 11%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: .35rem;
+}
+
+.loginP {
+    font-size: 0.2rem;
+    text-align: center;
+    float: left;
+    width: 100%;
+}

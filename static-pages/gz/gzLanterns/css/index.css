@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 100px;
+}
+img{
+	border: 0;
+    width: 100%;
+    display: block;
+}
+#box{
+	width: 100%;
+	height: 100%;
+}
+/*倒计时*/
+.daojishi1{
+    position: absolute;
+    width: 100%;
+    top: 7%;
+    color: white;
+    font-size: 0.23rem;
+    text-align: center;
+    white-space: 32px;
+    word-spacing: -3px;
+}
+/*抢购*/
+.purchase_top{
+	position: absolute;
+	text-align: center;
+	top: 32%;
+}
+.purchase_top,.purchase_bottom img{
+	width: 70%;
+	margin-left: 15%;
+}
+.purchase_bottom{
+	position: absolute;
+    text-align: center;
+    top: 60%;
+}
+/*遮罩层*/
+#loginMask{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	background:rgba(0,0,0,0.75);
+	 display: none; 
+}
+/*订购弹出框*/
+#login{
+	position: fixed;
+	top: 2.8rem;
+	left: 8%;
+	width: 5.4rem;
+	height: 5.28rem;
+	background: url(../images/login.png) 0 0 no-repeat;
+	background-size: 100% 90%;
+	z-index: 101;
+	overflow: hidden;
+	display: none;
+}
+.headline{
+	width: 100%;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #7a29a2;
+}
+.closedown img{ 
+        width: 8%;
+    position: absolute;
+    right: 0.4rem;
+    top: 0.3rem;
+}
+.login_top{
+	overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+.login_top img{
+	width: 0.8rem;
+	height: 0.8rem;
+	margin-left: 45%;
+}
+/*验证手机号*/
+.success_top{
+	margin-top: 0.2rem;
+}
+#phone{
+	width: 3.72rem;
+    height: 0.70rem;
+    border: 0;
+    border-radius: 0.15rem;
+    padding-left: 0.1rem;
+}
+#validate{
+	width: 2.54rem;
+	height: 0.70rem;
+	border: 0;
+	border-radius: 0.15rem;
+	padding-left: 0.1rem;
+}
+.success_bottom{
+	 margin-top: 0.3rem;
+}
+#yzm{
+	background: #ffd56c;
+	border: 0;
+	border-radius: .15rem;
+	color: #fff;
+	padding: .07rem .23rem;
+	padding: 0.2rem 0.3rem;
+}
+#yzm[type=button], button { cursor: pointer; -webkit-appearance: none; } 
+#errorMsg{
+	color: rgba(13, 14, 14, 0.63);
+	font-weight: bold;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	text-align: center;
+}
+.purch{
+	width: 60%;
+	margin-left: 20%;
+}
+.success{
+	margin-top: 1%;
+	font-size: 0.24rem;
+	width: 100%;
+	text-align: center;
+}
+/*订购成功弹出框*/
+#successfully{
+	position: fixed;
+    top: 2.8rem;
+    left: 8%;
+    width: 5.4rem;
+    height: 5.28rem;
+    background: url(../images/login.png) 0 0 no-repeat;
+    background-size: 100% 90%;
+    z-index: 101;
+    overflow: hidden;
+    display: none;
+}
+.successfully_top{
+	width: 100%;
+    margin-top: 0.3rem;
+}
+.successfully_t img{
+	width: 50%;
+    margin-left: 25%;
+}
+#successfu{
+	font-size: 0.3rem;
+    width: 80%;
+    margin-left: 10%;
+}
+.purch_tt{
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+}

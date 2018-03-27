@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="css/css.css">
+    <title>"金榜题名" 手机节好礼大派送</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/awardRotate.js"></script>
+</head>
+<body>
+<div>
+    <div><img src="image/head.jpg"></div>
+    <div class="relative">
+        <div ><img src="image/rocate.jpg"></div>
+        <div class="run_rocate"><img id="rotate" src="image/running.png"/> </div>
+        <div class="pointer" onclick="draw()"><img  src="image/hand.png"/></div>
+    </div>
+    <div><img src="image/prize_01.jpg"></div>
+    <div class="prizeDetaile">
+        <div><p>奖品名称：<span id="prizeName"></span><span id="aba"></span></p></div>
+        <div><p>领奖时间：<span id="prizeTime"></span></p></div>
+        <div><p>领奖地点：<span id="address"></span></p></div>
+        <div><p>领奖地址：<span id="prizeAddress"></span></p></div>
+    </div>
+    <div><img src="image/foot.jpg"></div>
+</div>
+<div id="load" onclick="loginclose();"></div>
+<div id="loginStr" style="display: none">
+    <div id="login" >
+        <div class="header"></div>
+        <div id="successMessage" >
+            <div id="success" class="success"></div>
+        </div>
+        <div id="confirm" >
+            <button  class="confirm" onclick="loginclose()" ></button>
+        </div>
+        <div id="receice" style="display: none">
+            <button  class="receice" onclick="receice()" ></button>
+            <button  class="abandon" onclick="abandon()" ></button>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

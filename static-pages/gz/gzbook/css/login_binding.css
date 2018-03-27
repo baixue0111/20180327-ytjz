@@ -1,0 +1,165 @@
+/**
+ * Created by hsgeng on 2017/7/4.
+ * 微信绑定页面
+ */
+
+/*重置样式*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 12px; text-align: left;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+html{
+	font-size: 100px;
+}
+/***************** 模态框********************/
+
+#loginMask{
+	position: fixed;
+	width: 100%;
+	height: 100%;	 	
+	top: 0;
+	left: 0;
+	z-index: 101;
+	background:rgba(53, 52, 52, 0.75);
+	display: none;
+}
+#loading{
+	    position: fixed;
+    z-index: 999;
+    text-align: center;
+    top: 25%;
+    left: 40%;
+    display: none;
+}
+#loading img{
+	width: 60%;
+}
+
+#loading1{
+	position: fixed;
+    z-index: 999;
+    text-align: center;
+    top: 40%;
+    left: 35%;
+    /*width: 100%;*/
+       width: 100%;
+    height: 100%;
+     display: none; 
+}
+#loading1 img{
+	width: 32%;
+    text-align: center;
+    float: left;
+    margin-left: 32%;
+}
+.load{
+	    text-align: center;
+    float: left;
+    width: 2rem;
+    height: 1rem;
+    background: #352e2e;
+}
+.load p{
+	    float: left;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+/*绑定登录*/
+#denglu{
+	position: fixed;
+	top: 10%;
+	left: 14%;
+	width: 5.4rem;
+	/* height: 6rem; */
+	border-radius: 0.2rem;
+	background: white;
+	/* background: url(../img/login.png) 0 0 no-repeat; */
+	/*background-size: 100% 90%;*/
+	z-index: 101;
+	text-align: center;
+	overflow: hidden;
+	display: none;
+}
+#deng_successMessage{
+	     width: 80%;
+    margin-left: 10%;
+    margin-top: 0.2rem;
+    /*height: 3.5rem;*/
+}
+.login_title{
+       color: #292925;
+       font-size: 0.4rem;
+       margin-top: 0.4rem;
+       font-weight: bold;
+}
+#deng_phone{
+	width: 4.13rem;
+	line-height: 0.56rem;
+	padding-left: 0.05rem;
+	margin-top: 0.2rem;
+	border-radius: 0.08rem;
+}
+#deng_yzm{
+	float: left;
+	margin-top: 0.3rem;
+	width: 2.8rem;
+	line-height: 0.56rem;
+	padding-left: 0.05rem;
+	border-radius: 0.08rem;
+	display: inline-block;
+}
+#deng_text{
+	background-color: #f3ba77;
+	width: 1.33rem;
+	border: none;
+	float: left;
+	height: 0.6rem;
+	margin-top: 0.3rem;
+	text-align: center;
+	line-height: 0.6rem;
+	/* display: inline-block; */
+	border-radius: 0.2rem;
+}
+#deng_text[type=button], #deng_text[type=submit], #deng_text[type=file], #deng_text{ -webkit-appearance: none; } 
+.login_zs{	
+width: 100%;	
+float: left;	
+font-size: 0.3rem;
+}
+.login_img{
+    width: 44%;
+    margin-left: 30%;
+    margin-top: 0.2rem;
+    float: left;
+}
+
+.login_zan{
+	width: 100%;
+	font-size: 0.4rem;
+	float: left;
+	text-align: center;
+	margin-top: 0.2rem;
+}
+.login_success{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: red;
+    margin-top: 0.1rem;
+    font-size: 0.2rem;
+}
+.login_close{
+	margin-right: 6%;
+    margin-top: -14%;
+    float: right;
+    width: 9%;
+}
+
+.succ{
+	font-size: 0.35rem;
+    /* margin-left: 10%; */
+    text-indent: 2em;
+    text-align: left;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<title>确认预约</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+</head>
+<body class="bodyAffirm">
+<div class="demoPadding NObackground">
+	<div>
+		<img src="image/return.png" alt="" class="returnImg" onclick="returnHistory()">
+		<img src="image/myscribe.png" alt="" class="myScribe" onclick="mySubcribe()">
+	</div>
+	<div>
+		<h1 class="commonH1">您将要预约：</h1>
+		<div class="yydetails">
+			<img src="image/db2.jpg" alt="">
+			<div class="yydetails_right">
+				<!-- <span class="phoneName" style="padding-left:0;">【百利丰 百利丰W9 3G手机，智能手机 联通4G】</span> -->
+				<select id="xzdw" class="select-type" onclick="focusError()">
+					<option value="">请选择机型</option>
+				</select>
+				<div class="color-container">
+					<p>合约包/购机款：<em class="hyfree"></em></p>
+					<div class="color-btn">颜色：</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div>
+		<h1 class="commonH1">套餐档位：</h1>
+		<div class="yydetails">
+			<select id="xzdw" onclick="focusError()">
+				<option value="">请选择套餐档位</option>
+			</select>
+			<p class="tcdescribe"></p>
+		</div>
+	</div> -->
+	<div>
+		<h1 class="commonH1">联系人信息：</h1>
+		<div class="yydetails">
+			<p class="lxrSize">
+				<span>联系人：</span>
+				<input class="lxrRight yyName" placeholder="联系人姓名" onfocus="focusError()"></input>
+			</p>
+			<p class="lxrSize">
+				<span>联系人电话：</span>
+				<span class="lxrRight" id="lxPhone"></span>
+			</p>
+		</div>
+	</div>
+	<!-- <div>
+		<h1 class="commonH1">办理信息：</h1>
+		<div class="yydetails">
+			 <p class="inline laydate-icon xzdate" id="test1" style="border-top:0;border-left:0;border-right:0;" onclick="focusError()">请选择预约办理日期</p>
+			<select class="xzcity" onclick="focusError()">
+				<option value="">请选择城市</option>
+			</select>
+			<select class="xzcounty" onclick="focusError()">
+				<option value="">请选择区县</option>
+			</select>
+			<select class="xzbusiness" onclick="focusError()">
+				<option value="">请选择营业厅</option>
+			</select> 
+			<p class="yytSize">
+				<span>营业厅地址：</span>
+				<span class="yytRight" id="address"></span>
+			</p>
+			<p class="yytSize">
+				<span>营业厅电话：</span>
+				<span class="yytRight" id="tel"><a href="tel:"></a></span>
+			</p>
+		</div>
+	</div> -->
+	<div class="affirmBtn">
+		<p onclick="affirmYy()">确认预约</p>
+	</div>
+	<div class="mask"></div>
+	<div class="successMsg">
+		<img src="image/success.png" alt="">
+		<div class="successText">
+			<p>恭喜您预约成功！</p>
+			<p>服务人员将在1个工作日内与您联系；28日后预约无法配送需延期至次月。</p>
+		</div>
+		<div class="qrBtn" onclick="mySubcribe()">确定</div>
+	</div>
+	<div class="errorMsg">请完善个人信息</div>
+</div>
+
+	
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	var getTimestamp=new Date().getTime();
+	$.getScript("js/affirmSubscribe.js?"+getTimestamp);
+
+// 	!function(){
+// 		laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+// 		laydate({elem: '#demo'});//绑定元素
+// 	}();
+
+// //自定义日期格式
+
+// 	laydate({
+// 	    elem: '#test1',
+// 	    format: 'YYYY年MM月DD日',
+// 	    festival: true, //显示节日
+// 	    choose: function(datas){ //选择日期完毕的回调
+// 	        //alert('得到：'+datas);
+// 	    }
+// 	});
+</script>
+</body>
+</html>

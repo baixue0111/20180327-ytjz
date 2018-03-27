@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<title>好友帮忙</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="http://www.gongjuji.net/Content/files/jquery.md5.js"></script>
+</head>
+<body>
+
+<div id="friendBox">
+	<div class="friendTop">
+		<div id="friendImg">
+			<img src="img/wsqs_03.png" alt="">
+			<img src="img/ninde_07.png" alt="">
+			<img src="img/goGame.png" alt="" onclick="friendGame();">
+		</div>
+	</div>
+	<div class="ewm redPac">
+		<img src="img/ewm.png" alt="">
+	</div>
+	<div class="friendFoot">
+		<div id="imgFj">
+			<img src="img/bottom_07.png" alt="">
+			<img src="img/phoneRules_03.png" alt="">
+			<ul class="order">
+				<li>1.扫码关注“中国电信贵州加油站”</li>
+				<li>2.在公众号后台输入“绑定”，进行手机号码绑定</li>
+				<li>3.返回此页面进入游戏</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="mask"></div>
+	<div id="startShow">
+		
+	</div>
+	<div id="loading">
+		<img src="img/jz.gif" alt="">
+	</div>
+</div>
+
+</body>
+<script type="text/javascript">
+	var getTimestamp=new Date().getTime();
+	$.getScript("js/friendHelp.js?"+getTimestamp);
+</script>
+</html>

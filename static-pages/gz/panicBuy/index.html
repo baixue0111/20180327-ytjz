@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="0" />
+		<title>中国电信贵州加油站</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login_binding.css"/>
+	</head>
+	<body>
+		<div>
+			<div>
+				<img src="images/buy1.png"/>
+			</div>
+			<div id="content">
+				<div class="countDown"></div>
+				<div class="dataer">2017年7月10至 2017年8月31日</div>
+				<div class="timeer">每逢双号11:00-14:00</div>
+				<div id="snapUp" onclick="snapUp()"></div>
+			</div>
+			<div id="footer">
+				<h1 class="rule">规则说明</h1>
+				<div class="explain">
+					活动对象：绑定了“中国电信贵州加油站”的中国电信贵州公司手机实名用户；<br />
+					活动时间：即日起至2017年8月31日每逢双号11：00－14：00；<br />
+					活动奖品：1G3天省内流量包；<br />
+					抢购规则：<br />
+						1.抢购流量包成功后，将消耗50棒豆，流量送到绑定号码上，未抢购成功不扣除棒豆；<br />
+						2.每次供抢购的流量包限50个，抢完即止；<br />
+						3.每次抢购活动每名用户有1次抢购机会，抢购流量包遵循先到先得的原则，每个手机号码每月限抢3个流量包；<br />
+						4.抢购流量包的手机号需符合电信相关业务规则才能成功受理流量包（已停机、未实名认证、证件号码下的移动用户超过5个、有未完成业务等的均不能受理成功）；<br />
+						5.出现任何违规行为(如利用漏洞,机器作弊等)将取消用户的活动资格，必要时追究法律责任。<br />
+				</div>
+			</div>
+		</div>
+		<div id="loginMask"></div>
+		<div id="denglu"></div>
+		<div id="loading">
+			<img src="images/loading.gif"/>
+		</div>
+		<div id="login">
+			<p class="close_p"><img class="close" onclick="loginclose()" src="images/close@2x.png"/></p>
+			<div id="login_login">
+				<div class="login_succe">
+					
+				</div>
+			</div>
+		</div>
+		<div id="loading1">
+			<div class="load">
+				<img src="images/loading.gif">
+				<p>正在抢购中...</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+			/***************** rem、兼容********************/
+				var code,productId,openID_value,getphone;
+				var html = document.getElementsByTagName('html')[0];
+				var W = document.documentElement.clientWidth;
+				html.style.fontSize = W*0.15625+'px';
+				// alert(W)
+				window.onresize = function(){
+					var html = document.getElementsByTagName('html')[0];
+					var W = document.documentElement.clientWidth;
+					html.style.fontSize = W*0.15625+'px';
+				}
+		</script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

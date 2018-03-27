@@ -1,0 +1,501 @@
+#informtion{
+	background: #f7eee5;
+}
+/*头部*/
+#inform_header{
+	width: 100%;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+.inform_biao{
+	font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+.inform_closole{
+    position: fixed;
+    right: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    position: fixed;
+    color: #9a8c8c;
+    cursor: pointer;
+}
+.inform_closole img{
+	float: left;
+}
+/*tab 切换*/
+.inform_tab{
+    width: 100%;
+    height: 42px;
+    background: #e8d9d9;
+}
+#ulheader{
+	float: left;
+    margin-top: 9px;
+    margin-left: 9px;
+    color: #663a0d;
+}
+#ulheader li{
+	white-space: nowrap;
+    font-size: 14px;
+    float: left;
+    padding: 5px 15px 8px;
+}
+.closole{
+	float: left;
+}
+.disas{
+	background: #f7eee5;
+}
+.xinxi{
+	display: none;
+	width: 96%;
+    margin-left: 2%;
+
+}
+.xiux{
+	display: block;
+}
+.inform_top p{
+	float: left;
+    margin-left: 30px;
+    font-weight: bold;
+    color: white;
+    height: 56px;
+    font-size: 22px;
+    line-height: 56px;
+}
+.inform_top img{
+	float: left;
+    margin-left: 18px;
+    margin-top: 5px;
+}
+/*用户基础信息*/
+.user_informtion{
+	width: 98%;
+    margin: 0 auto;
+    height: 46px;
+    overflow: hidden;
+    border-bottom: 4px solid #a9d18e;
+}
+.user_informtion img{
+	margin-top: 8px;
+    float: left;
+    margin-left: 29px;
+}
+.user_informtion h1{
+	font-size: 24px;
+    color: #538135;
+    margin-top: 13px;
+}
+#user_table{
+	width: 98%;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+#user_table th{
+	text-align: right;
+	width: 176px;
+	font-size: 14px;
+}
+#user_table td{
+	width: 606px;
+	text-indent: 1em;
+}
+#prod_num_list{
+	color: blue;
+	cursor: pointer;
+}
+/*用户行为信息*/
+.behavior_informtion{
+	width: 98%;
+    margin: 0 auto;
+    height: 46px;
+    overflow: hidden;
+    border-bottom: 4px solid #00b0f0;
+}
+.behavior_informtion img{
+	margin-top: 8px;
+    float: left;
+    margin-left: 29px;
+}
+.behavior_informtion h1{
+	font-size: 24px;
+    color: #00b0f0;
+    margin-top: 13px;
+}
+#behavior_table{
+	width: 98%;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+#behavior_table th{
+	text-align: right;
+	width: 296px;
+	font-size: 14px;
+}
+#behavior_table td{
+	width: 606px;
+	text-indent: 1em;
+}
+/*销售品信息*/
+.Sale_informtion{
+	width: 98%;
+    margin: 0 auto;
+    height: 46px;
+    overflow: hidden;
+    border-bottom: 4px solid #00b050;
+}
+.Sale_informtion img{
+	margin-top: 8px;
+    float: left;
+    margin-left: 29px;
+}
+.Sale_informtion h1{
+	font-size: 24px;
+    color: #7030a0;
+    margin-top: 13px;
+}
+#Sale_table{
+	width: 98%;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+#Sale_table th{
+	text-align: right;
+	width: 200px;
+	font-size: 14px;
+}
+#Sale_table td{
+	width: 606px;
+	text-indent: 1em;
+}
+#sales_name{
+	color: blue;
+	cursor: pointer;
+}
+#contract_name{
+	color: blue;
+	cursor: pointer;
+}
+/*用户特征及推荐方案*/
+.programme{
+	width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom: 1px solid #c55a11;
+}
+.programme img{
+	margin-top: 8px;
+    float: left;
+    margin-left: 29px;
+}
+.programme h1{
+	font-size: 18px;
+    font-weight: bold;
+    margin-top: 14px;
+}
+.describe_content{
+	width: 100%;
+    min-height: 100px;
+    overflow: auto;
+}
+
+/*销售术语*/
+.describe_name{
+	width: 97%;
+	 margin: 0 auto;
+}
+#content{
+	width: 97%;
+    margin: 0 auto;
+    /*text-indent: 2em;*/
+}
+/*销售短信*/
+
+#duanxin{
+	width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 22px;
+}
+.duan_but1{
+	    width: 100px;
+    text-align: center;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #0be41c;
+}
+#sms_content{
+	width: 96%;
+    margin-left: 2%;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-indent: 2em;
+    border: 1px solid #0070c0;
+    background-color: #f2f2f2;
+}
+/*上报及评估*/
+
+#shangbao{
+	    width: 100%;
+    height: 60px;
+    margin-top: 18px;
+    /* line-height: 66px; */
+    text-align: center;
+}
+/*备注及上报*/
+#des{
+    border-radius: 10px;
+    width: 90%;
+    /* height: 97%; */
+    margin-left: 5%;
+    margin-top: 10px;
+    text-indent: 2em;
+    border: 1px solid #0070c0;
+    background-color: #f2f2f2;
+}
+.but1{
+    width: 100px;
+    text-align: center;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #0777c6;
+    
+}
+.but2{
+	    width: 100px;
+    text-align: center;
+    color: white;
+    height: 40px;
+    border: none;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #ff0707;
+}
+.but3{
+	    width: 100px;
+    text-align: center;
+    color: white;
+    height: 40px;
+    border: none;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffc506;
+}
+#assessment_des{
+	width: 94%;
+    min-height: 100px;
+    margin-bottom: 20px;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+
+/*遮罩层*/
+#loginMask{
+	position: fixed;
+	width: 100%;
+	height: 100%;	 	
+	top: 0;
+	left: 0;
+	z-index: 101;
+	background:rgba(0,0,0,0.75);
+	display: none;
+}
+#newspapers{
+	width: 218px;
+	height: 146px;
+	border-radius: 10px;
+	cursor: move;
+	left: 40%;
+	top: 42%;
+	overflow: hidden;
+	z-index: 111000;
+	clear: both;
+	background-color: #FFF;
+	position: fixed;
+	display: none;
+}
+.newsmeagess{
+	color: #d00f3a;
+    width: 90%;
+    margin-top: 10%;
+    text-align: center;
+    margin-left: 5%;
+}
+.news_determine{
+	width: 64px;
+    height: 23px;
+    color: white;
+    position: absolute;
+    border: none;
+    left: 34%;
+    top: 82%;
+    border-radius: 5px;
+    background-color: #2196F3;
+}
+
+
+/*合约内容显示*/
+#contract{
+	 width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    float: left;
+    display: none;
+}
+.contract_top{
+	width: 100%;
+	height: 50px;
+	border-radius: 10px;
+	line-height: 50px;
+	overflow: hidden;
+	background-color: #f2f2f2;
+}
+.contract_top img{
+	float: left;
+    margin-top: 7px;
+    margin-left: 28px;
+}
+.contract_top h1{
+	    float: left;
+	    color: #00b050;
+}
+.contract_close{
+	float: right;
+    color: red;
+    font-size: 29px;
+    margin-right: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#contract_con{
+	width: 96%;
+    margin: 0 auto;
+    min-height: 100px;
+    margin-top: 11px;
+    overflow: auto;
+    margin-left: 2%;
+}
+.contr_ul{
+	/* width: 100%; */
+	margin-left: 7px;
+	font-weight: bold;
+	height: 30px;
+	font-size: 15px;
+	text-align: center;
+	/* background-color: #bdd6ee; */
+}
+.contr_ul li{
+	float: left;
+	width: 16%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #356ce8;
+	list-style: none;
+}
+.contr_ul1{
+	/* width: 100%; */
+	margin-left: 7px;
+	font-size: 14px;
+	height: 30px;
+	text-align: center;
+}
+.contr_ul1 li{
+	float: left;
+	width: 16%;
+	height: 30px;
+	overflow: hidden;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #356ce8;
+	list-style: none;
+	cursor: pointer;
+}
+.chengy{
+	width: 98%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+
+/*套餐成员信息 表格*/
+.member{
+	width: 100%;
+    cursor: pointer;
+}
+
+.member td{
+	width: 5.3%;
+    text-align: center;
+}
+
+.member span{
+	width: 100%;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+}
+.member tr{
+	width: 100%;
+    height: 28px;
+    border-bottom:1px solid #CCC ;
+}
+.memberInform{
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #def0fc;
+	border: none;
+}
+
+/*修改主联系人*/
+#modify{
+	width: 100%;
+    margin-top: 20px;
+}
+#modifyshow{
+	width: 53px;
+    height: 27px;
+    background: #def0fc;
+    cursor: pointer;
+}
+
+
+/*loading*/
+#loadingMask{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.Loading{
+	position: fixed;
+    top: 38%;
+    left: 35%;
+    height: 114px;
+    width: 300px;
+    background-color: rgba(80, 70, 70, 0.28);
+    text-align: center;
+}
+.Loading img{
+	width: 20%;
+}

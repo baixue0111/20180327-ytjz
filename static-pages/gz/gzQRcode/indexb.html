@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="0" />
+		<title>中国电信贵州加油站</title>
+		<link rel="stylesheet" type="text/css" href="css/login_binding.css"/>
+		<link rel="stylesheet" type="text/css" href="css/codebd.css"/>
+	</head>
+	<body>
+		<div>
+			<div id="header">
+				<img src="img/bd1.jpg"/>
+			</div>
+			<div id="contentbd">
+				<div class="reward">
+					推荐用户绑定并关注"中国电信贵州加油站"后，<br />
+					推荐人将获得200棒豆奖励
+				</div>
+				<p class="tis">棒豆可为自己兑换流量，也可以给他人兑换</p>
+				<div class="generate">
+					<img src="img/codebd.png" onclick="generat()" alt="生成二维码" />
+				</div>
+			</div>
+			<!--微信提示-->
+			<div id="footer_bd">	
+				<div class="ziti">
+					1. 推荐人需先点击生成个人专属推荐二维码，二维码用于引导用户扫描进入微信公众号，被推荐用户绑定且关注“中国电信贵州加油站”后，将获得100棒豆奖励；<br />
+					2．推荐人生成二维码后可将该页面分享至朋友或朋友圈，方便用户绑定、关注，同时也可截屏至手机中，方便推荐用户扫描；<br />
+					3.推荐人每推荐一名用户绑定并关注本公众号成功后，可获得200棒豆奖励，棒豆10分钟之后到账，可在公众号菜单“我的棒豆”中查看；<br />
+					4.本活动可以推荐已关注且未绑定本公众号的用户参与，已绑定本公众号的用户不能被推荐，每名用户只能被推荐一次；<br />
+					5.1棒豆=1M省内流量，可在本公众号菜单“我的棒豆”中随时兑换成流量，流量可兑换到推荐人手机上，也可兑换给其他中国电信贵州公司手机用户；<br />
+					6.凡有作弊等违规操作，一经查实，将会清除已有棒豆。<br />
+				</div>
+			</div>
+		</div>
+		<!--弹出层-->
+		<div id="loginMask"></div>
+		<!--loadig-->
+		<div id="loading">
+			<img src="images/loading.gif"/>
+		</div>
+		<!--微信绑定-->
+		<div id="login_binding"></div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+			/***************** rem、兼容********************/
+				var code,productId,openID_value,getphone;
+				var html = document.getElementsByTagName('html')[0];
+				var W = document.documentElement.clientWidth;
+				html.style.fontSize = W*0.1333333333333333+'px';
+				// alert(W)
+				window.onresize = function(){
+					var html = document.getElementsByTagName('html')[0];
+					var W = document.documentElement.clientWidth;
+					html.style.fontSize = W*0.1333333333333333+'px';
+				}
+		</script>
+		<script type="text/javascript" src="js/indexb.js"></script>
+	</body>
+</html>

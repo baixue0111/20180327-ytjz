@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="0" />
+    <title>中国电信贵州加油站</title>
+    <link rel="stylesheet" type="text/css" href="css/login_binding.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+    <div>
+        <!--头部-->
+        <div id="hender">
+            <div id="draw">
+                <img src="images/zp.png" id="rotate" />
+            </div>
+            <div id="drawHis">
+                <img src="images/cj.png" onclick="draw()" />
+            </div>
+        </div>
+        <div id="contt">
+            每人只有一次抽奖机会，欠费、停机用户及非实名认证用户都将无法领取奖励，请珍惜您的抽奖机会哦！
+        </div>
+        <!--中奖名单-->
+        <div id="content">
+            <!--中奖名单-->
+            <div class="histo">
+                <span style="width: 25%;">日期</span><span style="width: 30%;">中奖用户</span><span style="width: 44%;">奖品</span>
+            </div>
+            <div id="history">
+                <ul id="con1" style="height: 2.4rem;">
+                </ul>
+                <!-- <ul id="con2" style="height: 2.4rem;">
+
+                </ul> -->
+            </div>
+            <div class="guize">
+                由于实名认证新规则，要求证件地址中必须含有“省”、“市”、“自治区”三个关键字的至少其中一个，否则会判断为未实名认证，而无法获得本活动赠送奖品。
+            </div>
+        </div>
+        <!--活动规则-->
+        <div id="footer">
+            <h2>抽奖活动说明</h2>
+            <div>
+                1、活动时间：2018年2月6日-2018年2月28日；
+                <br> 2、活动对象：绑定“中国电信贵州加油站”微信公众号的贵州电信手机实名认证用户；
+                <br> 3、活动期间每人只有一次抽奖机会；
+                <br> 4、双宽带资费说明：第二条“爱心宽带”（速率100M，资费：30元/月），可选装4K天翼高清（资费：10元/月）；
+                <br>5、抽中第二条“爱心宽带”的用户办理时，须先改为十全十美套餐，若不愿意改为十全十美套餐，视为自愿放弃“爱心宽带”奖励；
+                <br> 6、抽中第二条“爱心宽带”的用户，贵州电信工作人员会在3个工作日内（节假日顺延）电话联系用户办理；
+                <br> 7、免费3天包、7天包为省内流量，抽中免费流量包用户，系统自动为您受理，受理成功后会有短信提示，赠送流量主副卡共享，包内流量不结转。
+            </div>
+            <h2 style="margin-top: 0.6rem;">奖品说明：</h2>
+            <div>
+                1、第二条“爱心宽带”：第二条宽带（爱心宽带）是贵州电信针对电信家庭用户特别推出的优惠宽带，只要您是电信的十全十美用户，即有机会抽出第二条特惠宽带，做为礼物送给您的父母，表达您的孝心与爱心。第二条特惠宽带每月只需30元，速率100M，非常的优惠。
+                <br> 2、一等奖“0元1G全国后向流量包”：含1G国内流量，可在全国范围内使用（港澳台除外），仅当月有效，资费0元；该流量包领取成功当日立即生效；次月自动退订，不可自动续订；包内流量不结转、主副卡不共享；
+                <br> 3、二等奖“0元1G省内7天包”：含1G省内流量，限贵州省内使用，资费0元；适用于3G用户、4G用户加装（个人定制套餐、飞young4G定制套餐、时长类套餐除外）。申请当日立即生效，流量有效期为受理成功当日（为第一个自然日）起至第七个自然日的23:59，可跨月。该流量包可用于4G、3G、2G 上网方式，不含WLAN（Wi-Fi）上网。包内流量主副卡不共享、不结转。
+                <br> 4、三等奖“0元1G省内3天包”：含1G省内流量，限贵州省内使用，资费0元；适用于3G用户、4G用户加装（个人定制套餐、飞young4G定制套餐、时长类套餐除外）。申请当日立即生效，流量有效期为受理成功当日（为第一个自然日）起至第三个自然日的23:59，可跨月。该流量包可用于4G、3G、2G 上网方式，不含WLAN（Wi-Fi）上网。包内流量主副卡不共享、不结转。
+
+            </div>
+        </div>
+    </div>
+    <!--弹出层-->
+    <div id="loginMask"></div>
+    <!--微信绑定-->
+    <div id="login_binding"></div>
+    <div id="fenxiang">
+        <img src="images/fenxiang.png" onclick="fxgb()" />
+    </div>
+    <!--抽奖提示-->
+    <div id="login">
+        <div id="colse" onclick="colse()">
+            <img src="images/close.png" />
+        </div>
+        <div id="successMessage">
+        </div>
+    </div>
+    <div id="yjgq">
+        <div id="yigq_colse" onclick="yigq_colse()">
+            <img src="images/close.png" />
+        </div>
+        <div id="yigq_success">
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/awardRotate.js"></script>
+    <script type="text/javascript">
+        /***************** rem、兼容********************/
+        var code, productId, openID_value, getphone;
+        var html = document.getElementsByTagName('html')[0];
+        var W = document.documentElement.clientWidth;
+        html.style.fontSize = W * 0.1333333333333333 + 'px';
+        // alert(W)
+        window.onresize = function() {
+            var html = document.getElementsByTagName('html')[0];
+            var W = document.documentElement.clientWidth;
+            html.style.fontSize = W * 0.1333333333333333 + 'px';
+        }
+    </script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

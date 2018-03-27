@@ -1,0 +1,265 @@
+*{padding: 0;margin: 0;}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body {color:#ffffff;font-family:"microsoft yahei",Arial, Helvetica, sans-serif;background-color:#f6f6f6;-webkit-text-size-adjust: none;word-wrap: break-word;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+a{text-decoration: none;color: #ffffff;}
+img{border: 0; width:100%;display:block;}
+ul li{list-style:none;}
+@media screen and (min-width:400px){body{font-size:13px}}
+@media screen and (min-width:480px){body{font-size:14px}}
+@media screen and (min-width:540px){body{font-size:16px}}
+@media screen and (min-width:640px){body{font-size:18px}}
+body{z-index: 0}
+.btn-click{
+    height: 15%;
+    width: 40%;
+    background: url("../img/wydt.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    left: 46%;
+    top: 74%;
+    margin: 0 -15% 0 -15%;
+    border:none ;
+    cursor: pointer;
+}
+#ck{
+    overflow: hidden;
+}
+#ck img{
+    height: 12%;
+    width: 58%;
+    position: absolute;
+    left: 47%;
+    top: -1%;
+    margin: 0 -15% 0 -15%;
+    cursor: pointer;
+}
+.history{
+    width: 100%;
+    height: 200px;
+    background: url("../img/foot_history.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.hjmd{
+    text-align: center;
+    color: #434343;
+}
+.history .mess{
+    height: 60%;
+    text-align: center;
+    color: #434343;
+    letter-spacing: 0.2em;
+    position: relative;
+    top: 20px;
+    overflow: hidden;
+}
+
+.history ul li {
+    list-style-type: none;
+    height: 30px;
+    line-height: 30px;
+    margin: 2%;
+}
+.history ul li:hover{color: #ff0000;cursor: pointer}
+.history_message{width:100%;border:1.5px solid rgba(180, 180, 180, 0.31);margin: 0 auto;}
+
+/*login.css*/
+#load{background-color: #000;position: fixed;left: 0;top: 0;height: 100%;width: 100%;opacity: 0.75;z-index: 50;display: none}
+#login{
+    width:300px;
+    height: auto;
+    position:fixed;
+    left: 50%;top: 35%;
+    margin: -94px -150px 0 -150px;
+    background:url("../img/login.jpg") no-repeat;
+    background-size: 320px 100%;
+    border: none;
+    z-index:60;
+    vertical-align : middle;
+    padding-bottom:20px;
+}
+#login div{
+    text-align: center;
+    font-size: 13px;
+    margin: 15px 0;
+}
+#login div input{
+    height: 30px;
+}
+#login .header{
+    height: 50px;
+    position:relative;
+}
+#login .span{position:absolute;right: 5px;top:-10px;font-size: 18px;cursor: pointer}
+#login .input1{
+    width: 250px;
+    background:url("../img/phone.png") no-repeat 220px ;
+    background-color: white;
+    color: #bdbdbd;
+}
+#login .input2{
+    width: 115px;
+    position: relative;
+    left: 8px;
+    color: #bdbdbd;
+}
+#login .input3{
+    width: 130px;
+    height: 30px;
+    position: relative;
+    background-color: #EE9E63;
+    left: 13px;
+    border: none;
+    color: #fff;
+}
+#login .button{
+    height: 45px;
+    width: 120px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    background:url("../img/click.png") no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    border: none;
+}
+#dwsz{
+    position: relative;
+}
+#sj{
+    width: 17%;
+    height: 24px;
+    position: absolute;
+    top: 84%;
+    left: 27%;
+    margin: -3px -15% 0 -15%;
+    cursor: pointer;
+}
+#sjck{
+    width: 56%;
+    position: absolute;
+    top: 83%;
+    left: 0%;
+    margin: -1% 15% 0% 27%;
+    display: inline-block;
+}
+.ewm{
+    overflow: hidden;
+    margin-bottom: 25px;
+    padding-bottom:27px;
+}
+.ewm .wz{
+    float: left;
+    font-size: 14px;
+    width: 66%;
+    color: #934F11;
+    padding: 6px 4px 0px 25px;
+    line-height: 24px;
+}
+.ewm .ewmimg{
+    width: 30%;
+    float: left;
+}
+#errorMessage{
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px -1px 1px rgba(10, 10, 10, 0.98),2px -2px 1px rgba(0, 0, 0, 0.5),3px -3px 1px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    position: absolute;
+    margin: 2px 0px 0 0px;
+}
+#answerQuestion{
+    width:300px;
+    font-size: 14px;
+    height: auto;
+    position:fixed;
+    left: 50%;top: 25%;
+    margin: -60px -150px 0 -150px;
+    background:url("../img/login.jpg") no-repeat;
+    background-size: 303px 100%;
+    border: none;
+    z-index:60;
+    vertical-align : middle;
+
+}
+#answerQuestion h3{
+    line-height: 1.5em;
+    color: #713f13;
+}
+#answerQuestion div{
+    text-align: left;
+    margin: 13px 0;
+}
+#answerQuestion .header{
+    height: 70px;
+    position:relative;
+}
+#answerQuestion .span{position:absolute;right: 5px;top:-10px;font-size: 18px;cursor: pointer}
+#answerQuestion  .answerQuestion{
+    width: 260px;
+    text-align: left;
+    margin:5px 27px;
+    position:relative;
+}
+#answerQuestion  .answerQuestion div span label{
+    margin: 4px;
+    color: #713f13;
+}
+#answerQuestion  .answerQuestion div span{
+    margin:2px 0px;
+}
+
+#answerQuestion .as_button{
+    height: 45px;
+    width: 120px;
+    text-align: center;
+    background:url("../img/next.png") no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    margin-top: 20px;
+    margin-left:60px;
+}
+#answerQuestion .as_submit{
+    height: 45px;
+    width: 120px;
+    text-align: center;
+    background:url("../img/submit.png") no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    margin-top: 20px;
+    margin-left:60px;
+}
+
+#answerQuestion .as_error{position:absolute;right: 5px;bottom:  40px;color: #00a100;font-weight: bold}
+#answerQuestion .answerQuestion div .choose label{
+    color: #ff0002;
+    /* font-size: 16px;*/
+    font-weight: bold;
+}
+.success{
+    text-indent: 2em;
+    text-align:justify;
+    color: #50371d;
+    font-weight: 100;
+    text-align-last:justify;/* ie9*/
+    -moz-text-align-last:justify;/*ff*/
+    -webkit-text-align-last:justify;/*chrome 20+*/
+    font-size: 16px;
+    padding: 0 20px;
+    margin-bottom: 6px;
+}
+.error{
+    text-align:center;
+    color: #00a100;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.fanhui{
+    color:#df3421;
+}

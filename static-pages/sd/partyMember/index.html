@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<title>党员进万家 全民升4G</title>
+</head>
+<body>
+<section class="container">
+	<section class="contentBox">
+		<div class="con">
+			<p><input type="text" id="y_phone" placeholder="请输入员工手机号"></p>
+			<p>(* 仅限青岛联通员工手机号码)</p>
+			<p><input type="text" id="m_phone" placeholder="请输入目标用户号码"></p>
+			<p class="z-phone"><input type="text" id="z_phone" placeholder="请输入转赠手机号码"></p>
+			<p>(* 仅限青岛联通手机号码)</p>
+			<div class="btn" onclick="apply()"></div>
+		</div>
+	</section>
+	<footer>
+		<p>如需辅导多名用户，请分次提交手机号码，辅导成功后，您和您辅导的用户在当月、次月和次次月都会获得山东联通赠送的1GB省内流量包；流量还可转赠他人，填写您和被辅导人的手机号码后，在转赠号码窗口填写授赠人号码即可。如提交的用户不符合活动需求，不计入辅导结果哦。</p>
+	</footer>
+	<div class="mask"></div>
+	<div class="message-login">
+		<div class="close" onclick="hideMsg()">
+			<img src="img/close.png">
+		</div>
+		<p class="message"></p>
+	</div>
+</section>
+</body>
+</html>

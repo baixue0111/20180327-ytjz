@@ -1,0 +1,30 @@
+.fl {float:left;}
+.fr {float:left;margin-left:50px}
+.words-text .red {color:#ea4949;}
+.red {color:#ea4949;}
+.container {width:1156px; margin:0 auto; position:relative; padding-top:20px; padding-bottom:5px;}
+.container-c {width:1200px; margin:0 auto; position:relative;}
+.container-c a {display:block; width:297px; height:133px; float:left; margin-right:1px;}
+.containers {width:1200px; margin:0 auto;}
+
+.clearfix::after { clear:both; content:"."; display:block; height:0; visibility:hidden;}
+
+.clearfix {}
+
+.header-cart {margin-right:22px; position:relative; z-index:1;}
+.header-logo  { width:322px;}
+
+.head-form form { height:45px;}
+
+.search-text {border-color:#ea4949; border-style:solid; border-width:2px 0 2px 2px; color:#666; float:left; font-size:14px;  height:24px; line-height:24px; margin-bottom:4px; outline:none; padding:4px;  width:454px;}
+.words-text a {color:#666; font-size:12px; float: left;  margin-right:15px; white-space: nowrap;}
+.words-text a:hover { color:#ea4949;}
+.header-cart {margin-right:22px; position:relative; z-index:1;}
+.header-logo  { width:322px;}
+
+.button { background:#ea4949; width:82px; height:36px; border:none; color:#fff; cursor: pointer; float: left; font-size: 16px; line-height: 1; font-weight:normal}
+.button:hover{ background:#ea3232}
+.head-amount   { background:url("../../images/luckybuy/cart.png") no-repeat; width:22px;  height:29px;  position:absolute;  top:-10px;left:-10px; font-size:11px; color:#fff; display:inline-block; text-align:center; line-height:24px; }
+.head-mountain { background:url("../../images/luckybuy/san.png") no-repeat; width:312px; height:104px; position:absolute; right:0; bottom:-35px;}
+
+img { border:0; }

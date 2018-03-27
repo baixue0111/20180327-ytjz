@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<title>首页</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="js/jquery.min.js"></script>
+	<style>
+		/*首页*/
+		.demo-top-img{
+			width: 100%;
+		}
+		.demo-top-img img{
+			width: 100%;
+			height: 4.65rem;
+			vertical-align: top;
+		}
+		.demo-center{
+			background: url("image/bg_03.jpg");
+			background-size: 100% 100%;
+			background-size:cover;
+			height: 100%;
+			/*width: 93%;*/
+			padding: .13rem .26rem;
+		}
+		.demo-center-ul{
+			/*width: 100%;*/
+			margin: 0 auto;
+		}
+		.demo-center-ul li{
+		    border-right: .05rem solid #db86ff;
+		    border-bottom: .05rem solid #db86ff;
+			margin: .23rem 0;
+		}
+		.demo-center-white{
+			background: #fff;
+			overflow: hidden;
+			padding: .1rem .17rem;
+		}
+		.demo-list-left{
+			float: left;
+			width: 22%;
+		}
+		.demo-list-left div{
+			float: left;
+			margin: 10% auto;
+		}
+		.demo-list-left div img{
+			width: 100%;
+			height: 100%;
+			vertical-align: center;
+		}
+		.demo-list-right{
+			width: 72%;
+			float: right;
+			border-left: 1px dashed #ff3d3d;
+			padding: .10rem .10rem;
+			line-height: .35rem;
+			/*margin-top: 3%;*/
+		}
+		.demo-list-right h4{
+			font-size: .2rem;
+		}
+		.demo-list-free{
+			font-size: .19rem;
+		}
+		.demo-list-free-line{
+			font-size: .18rem;
+			text-decoration: line-through;
+			color: #4c4c4c;
+		}
+		.demo-right-bottom{
+			position: relative;
+		}
+		.demo-right-bottom div{
+			background: #ffed25;
+			border-radius: .10rem;
+			overflow: hidden;
+		}
+		.demo-right-bottom div span:nth-child(1){
+			background: #ff3d3d;
+			color: #fff;
+			padding: .06rem .1rem;
+			float: left;
+			width: 47%;
+			text-align: center;
+		}
+		.demo-sjx{
+			width: 0;
+		    height: 0;
+		    float: left;
+		    margin-left: -.01rem;
+		    border-top: .25rem solid transparent;
+		    border-left: .25rem solid #ff3d3d;
+		    border-bottom: .24rem solid transparent;
+		}
+		.demo-right-bottom div span:nth-child(3){
+			float: left;
+			margin: 1% 5%;
+		}
+		.demo-bottom-rules{
+			font-size: .24rem;
+			line-height: .35rem;
+		}
+	</style>
+</head>
+<body>
+<div class="demoPadding">
+	<!-- <div>
+		<img src="image/return.png" alt="" class="returnImg" onclick="returnHistory()">
+		<img src="image/myscribe.png" alt="" class="myScribe" onclick="mySubcribe()">
+	</div> -->
+	<div class="demo-top">
+		<div class="demo-top-img">
+			<img src="image/top_01.jpg" alt="">
+		</div>
+	</div>
+	<div class="demo-center">
+		<ul class="demo-center-ul">
+			<!-- <li class="demo-center-list">
+				<div class="demo-center-white">
+					<div class="demo-list-left">
+						<div>
+							<img src="image/db2.jpg" alt="">
+						</div>
+					</div>
+					<div class="demo-list-right">
+						<h4>华为G9青春版 骁龙芯片！索尼1300 万摄像头！</h4>
+						<div class="demo-list-free">
+							<span class="demo-list-free-line">京东价：<span>1499</span></span>
+							<span class="demo-list-free-tc">套餐档：<span>76,136,155,554,334,224</span></span>
+						</div>
+						<div class="demo-right-bottom">
+							<div>
+								<span>合约包/购机款：</span>
+								<p class="demo-sjx"></p>
+								<span class="demo-right-free">199~808元</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li> -->
+		</ul>
+		<div class="demo-bottom-rules">
+			<h4>活动说明：</h4>
+			<ul>
+				<li>1.本两折购优惠活动 仅限2015年12月31日前入网的指定客户可办理；</li>
+				<li>2.预约成功后，服务人员将在1个工作日内与您联系上门办理业务；</li>
+				<li>3.每月28日后预约的用户，顺延至次月进行配送；</li>
+			</ul>
+		</div>
+	</div>
+	<div class="foot">
+		<ul class="bottom_ul">
+			<li>
+				<div>
+					<img src="image/hot.png" alt="">
+					<h1 class="colorH1">首页</h1>
+				</div>
+				
+			</li>
+			<li>
+				<div onclick="typeContrast()">
+					<img src="image/dbh.png" alt="">
+					<h1>对比</h1>
+				</div>
+			</li>
+			<li class="yuyueBtn"><p onclick="affirmSubscribe()">预约</p></li>
+		</ul>
+	</div>
+</div>
+	
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/hot.js"></script>
+<script type="text/javascript">
+	// var getTimestamp=new Date().getTime();
+	// $.getScript("js/hot.js?"+getTimestamp);
+</script>
+</body>
+</html>

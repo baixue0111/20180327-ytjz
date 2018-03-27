@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/common.js"></script>
+	<title>贵州省内流量安心包</title>
+</head>
+<body>
+	<div class="container">
+		<p class="dateFlow" style="display: none;">赠送流量活动时间：2017年12月8日-2017年12月13日</p>
+		<div class="order" onclick="showAlert()"></div>
+		<p class="orderText" style="display: none;">
+			<img src="img/wenzi.png" style="width: 2.84rem; height: .51rem;">
+		</p>
+		<ul class="rules">
+			<li>
+				<div><span class="fontBlod">有效期限：</span>订购当日<span class="fontColor">（第一个自然日）</span>立即生效，包内流量当日有效，不结转到次日。</div>
+			</li>
+			<li>
+				<div><span class="fontBlod">使用范围：</span>限省内使用，套餐流量每日每500M只需2元<span class="fontColor">（不满500M按500M计），</span>适用4G、3G、2G上网方式，不含WLAN(WI-FI)上网。</div>
+			</li>
+			<li>
+				<div><span class="fontBlod">业务规则：</span>省内流量安心包自动续订。流量不能共享，副卡可单独订购省内流量安心包。订购成功后需要重启上网功能才能生效<span class="fontColor">（建议手机断网时间间隔3分钟以上），详情咨询10000号。</span></div>
+			</li>
+			<li>
+				<div><span class="fontBlod">退订方式：</span>发送qx891到10001789即可退订，退订次月生效。</div>
+			</li>
+		</ul>
+		<p class="dayTips" style="display: none;">免费流量赠送规则：免费流量只赠送一次，再次订购将不再赠送流量，赠送流量为省内流量，当月赠送当月生效，次月自动失效，剩余流量不结转。</p>
+	</div>
+	<div class="mask" onclick="hideAlert()"></div>
+	<div class="modal">
+		
+	</div>
+	<div class="loading">
+		<img src="img/jz.gif" alt="">
+	</div>
+	
+	<div id="loginMask" onclick="closeLogin()"></div>
+	<div id="login">
+	</div>
+<script src="js/index.js"></script>
+</body>
+</html>

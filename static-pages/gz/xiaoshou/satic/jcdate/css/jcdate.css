@@ -1,0 +1,28 @@
+.jcdate_content_div{}
+.jcdate_ymd{width:173px;background: white;float:left;height:20px;padding:2px 0 2px 0;border-bottom: 1px solid #eeeeee}
+.jcdate_content_tab{width:173px;border-collapse:collapse;border-spacing:0;background:#fafafa;}
+.jcdate_content_tab td{cursor:pointer;width:24px;height:18px;ling-height:25px;text-align:center;font-family: SimSun;}
+.jcdate_ym_block{float:left;text-align:center;width:145px;border-bottom:1px solid #dddddd;}
+.jcdate_last{width:20px;float:left;height:20px}
+.jcdate_ym{width:125px;float:left;height:20px;text-align: center;}
+.jcdate_next{width:20px;float:left;height:20px}
+.jcdate_main{float:left;width:173px}
+.jcdate_last_btn{height:20px;width:20px;border:0;cursor:pointer;background:url(../img/jcdate_last_btn.gif) no-repeat scroll 50% 0 transparent;}
+.jcdate_next_btn{height:20px;width:20px;border:0;cursor:pointer;background:url(../img/jcdate_next_btn.gif) no-repeat scroll 50% 0 transparent;}
+.jcdate_close_btn{height:20px;width:20px;border:0;cursor:pointer;background:url(../img/jcdate_close_btn.png) no-repeat scroll 50% 0 transparent;}
+.jcdate_time{width:20px;ling-height:25px;text-align:center;border:1px solid #aaaaaa;height:18px;line-height:18px}
+.jcdate_time_div{width:85px;float:left;height:20px}
+.jcdate_btn{float:left;width:30px;height:20px;border:1px solid #248ef4;text-align:center;line-height:20px;cursor: pointer;background: #ffffff}
+.jcdate_btn:hover{background: #248ef4;color:white}
+#jcdate_year{width:40px;ling-height:25px;text-align:center;border:0px solid #aaaaaa;}
+#jcdate_month{width:20px;ling-height:25px;text-align:center;border:0px solid #aaaaaa;}
+#jcdate_day{width:20px;ling-height:25px;text-align:center;border:0px solid #aaaaaa;background: #eeeeee}
+.jcdatetd{background:#ffffff;color:#000000;}
+.jcdatetdover{background:#FFCC99;}
+.jcdatechoose{background:#248ef4;color:white;}
+.jcdate_th td{border-bottom:1px solid #dddddd;color:#666666}
+.jcdate_input{border:1px solid #dddddd;height:20px;line-height:20px;cursor:pointer;background:#ffffff url(../img/jcdate_icon.gif)  no-repeat scroll 100% 0 }
+.jcdate_bottom{padding:4px 0 4px 2px;float:center;width:173px;background: #eeeeee;float:left}
+.jcdate_time_block{float:left;width:120px;height:20px;}
+.jcdate_close{float:left;width:20px;height:20px;}
+

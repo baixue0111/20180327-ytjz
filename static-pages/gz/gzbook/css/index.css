@@ -1,0 +1,110 @@
+/**
+ * Created by hsgeng on 2017/7/18.
+ */
+
+/*重置样式*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 12px; text-align: left;}
+img{border: 0;width:100%;display:block;}
+ul li{	list-style-type: none;}
+a{text-decoration:none;outline:none;color: white;}
+input,select,textarea{outline:0;}
+html{
+	font-size: 100px;
+}
+/*首页*/
+.header{width: 100%; height: 7.43rem; background: url(../img/firstI-mages/shou1.jpg) no-repeat; background-size:100% 100%;position: relative;}
+.activityTime{color: #c2f6ff;font-size: 0.3rem;position: absolute;top: 28%;width: 100%;text-align: center;}
+.content{width: 100%; height: 4.6rem; background: url(../img/firstI-mages/shou2.jpg) no-repeat; background-size:100% 100%;position: relative;}
+.sample{width: 1.2rem;height: 10%;position: absolute;right: 7%;top: 7%;}
+.generate{width: 2.6rem; height: 16%;position: absolute; left: 33%;top: 27%;}
+.friends{ width: 1.8rem; height: 8%;position: absolute; right: 14%;top: 65%;}
+.charm{  width: 2.6rem;height: 16%;position: absolute; left: 33%; top: 81%;}
+/*魅力排行榜*/
+.glamourList{width: 100%; height: 5.0rem; background: url(../img/firstI-mages/shou3.jpg) no-repeat; background-size:100% 100%;position: relative;}
+.glamourList h1{color: white;font-size: 0.3rem;position: absolute;top: 17%;width: 100%;text-align: center;}
+.histo{color: white;position: absolute;width: 80%;left: 10%;top: 35%;}
+.histo span{width: 33.3%; float: left;  text-align: center;}
+.times{
+	color: #d24242;
+    font-size: 0.3rem;
+    position: absolute;
+    top: 26%;
+    width: 100%;
+    text-align: center;
+}
+#history{
+	position: absolute;
+	width: 80%;
+	left: 10%;
+	color: white;
+	height: 2.1rem;
+	top: 43%;
+	overflow: hidden;
+}
+#con1{min-height: 2.1rem;}
+#con2{min-height: 2.1rem;}
+#con1 li{width: 100%;line-height: 0.4rem;}
+#con1 li span{      height: 0.4rem;  width: 33.3%;float: left; text-align: center;}
+#con2 li{width: 100%;line-height: 0.4rem;}
+#con2 li span{      height: 0.4rem;  width: 33.3%;float: left; text-align: center;}
+
+
+.footer{width: 100%; height: 2rem; background: url(../img/firstI-mages/shou4.jpg) no-repeat; background-size:100% 100%;position: relative;}
+.footer p{
+	width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 59%;
+    font-size: 0.3rem;
+}
+.coupon{
+	position: absolute;
+    width: 1.5rem;
+    height: 20%;
+    left: 22%;
+    top: 27%;
+}
+.footers{ margin-left: 0.3rem;}
+
+/*模态框*/
+#login{
+	width: 86%;
+    background: url(../img/login.png);
+    position: fixed;
+    z-index: 999;
+    height: 6.2rem;
+    top: 17%;
+    left: 7%;
+    display: none;
+    background-size: 100% 100%;
+}
+.close{
+	position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    right: 0;
+}
+.succes{ position: absolute;width: 80%;margin-left: 10%;height: 3rem;top: 35%;}
+.succesp{width: 100%; margin-top: 0.5rem;text-align: center;color: #5b9af7; font-size: 0.3rem;}
+.judge{margin-top:10% ;}
+.loginYes{width: 30%; float: left;}
+.loginNo{width: 30%; float: right;}
+
+/*活动详情*/
+#box{width: 90%;margin-left: 5%; font-size: 0.3rem;}
+#box h2{width: 100%;color: #6c7bde;text-align: center;margin-top: 0.5rem;}
+.smallTopic{font-size: 0.3rem;font-weight: bold;font-size: 0.35rem;}
+
+/*点赞好友*/
+.point{width: 100%;margin-top: 0.4rem;float: left;}
+.point span{width: 33.3%;float: left; text-align: center;}
+.array{width: 100%;margin-top:0.2rem; float: left;}
+.array li{ float: left;width: 100%;border-bottom: 1px solid #ccc;margin-top: 0.3rem;}
+.array span{width: 33.3%;float: left; text-align: center;font-size: 0.3rem;height: 0.5rem;}
+
+
+
+/*分享*/
+.suimg{width: 44%;margin-left: 28%;}

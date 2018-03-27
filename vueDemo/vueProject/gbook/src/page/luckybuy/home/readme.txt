@@ -1,0 +1,9 @@
+首页：home.vue;
+获奖公告：luckPrizeAffiche.vue;
+首页广告：topBanner.vue;
+准备开奖：readyLottery.vue;
+最新揭晓：newestAnnounce.vue;
+热门推荐：hotRecommendation.vue;
+正在云购：shoppingMsg.vue;
+新品上架：newArrivals.vue;
+晒单分享：luckBaskSharing.vue;

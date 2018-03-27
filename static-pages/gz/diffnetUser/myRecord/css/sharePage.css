@@ -1,0 +1,66 @@
+html{
+	font-size: 100px;
+}
+section{
+	background: url('../img/sharebg.jpg') 0 0 no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	padding-top: 8.8rem;
+}
+.btn-groups{
+	text-align: center;
+	background: url('../img/redbg.jpg') 0 0 no-repeat;
+	background-size: 100% 100%;
+	width: 88%;
+	height: 0.81rem;
+	padding: .63rem 0;
+	margin: 0 auto;
+}
+
+.btn-groups p{
+	font-size: .24rem;
+	color: #fff;
+	text-align: left;
+	width: 74%;
+	display: inline-block;
+}
+.btn-groups p:nth-child(2) {
+	margin-top: .14rem;
+}
+.rules{
+	position: relative;
+	bottom: 0;
+	left: 0;
+	padding: 0 .65rem;
+	margin-top: 2.2rem;
+	margin-bottom: 1.25rem;
+}
+.rules li{
+	font-size: .24rem;
+	margin: .08rem 0;
+	line-height: .36rem;
+}
+#code{
+	font-size: .24rem;
+}
+.maskShare{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index: 1000;
+	background: rgba(0, 0, 0, .7);
+}
+.shareImg{
+	position: fixed;
+	top: 20%;
+	z-index: 10001;
+	text-align: center;
+	width: 100%;
+}
+.shareImg img{
+	width: 4.67rem;
+	height: 2.6rem;
+}

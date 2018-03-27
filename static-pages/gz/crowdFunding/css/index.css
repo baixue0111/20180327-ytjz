@@ -1,0 +1,168 @@
+*{margin: 0;padding: 0;}
+img{display: block;width: 100%;}
+html{font-size: 100px;}
+li{list-style-type: none;}
+/*参加活动*/
+#content{
+    width: 100%;
+    height: 6.3rem;
+    background: url(../images/content.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.activeDate{
+    width: 100%;
+    text-align: center;
+    color: red;
+    float: left;
+    margin-top: 2%;
+    font-size: 0.2rem;
+}
+#participants{
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 8%;
+    font-size: 0.24rem;
+}
+.frequency{
+    font-size: 0.3rem;
+    font-weight: bold;
+}
+.participateIn{
+    width: 35%;
+    height: 0.7rem;
+    position: absolute;
+    top: 33%;
+    left: 10%;
+    border-radius: 0.3rem;
+}
+.invitation{
+    width: 35%;
+    height: 0.7rem;
+    position: absolute;
+    top: 33%;
+    left: 51%;
+    border-radius: 0.3rem;
+
+
+}
+/*中奖名单*/
+#list{
+    width: 100%;
+    height: 3.5rem;
+    background: #f5ca56;
+}
+#list_h{
+    width: 90%;
+    margin-left: 4%;
+    height: 2.5rem;
+    float: left;
+    background: #f6d983;
+    border-radius: 0.3rem;
+    padding: -2.9rem;
+    border: 0.1rem solid #f9df99;
+    margin-top: 7%;
+}
+#history{
+    width: 90%;
+    position: absolute;
+    height: 2rem;
+    overflow: hidden;
+}
+#biaotisad span{
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0.3rem;
+    font-weight: bold;
+}
+.com{
+    width: 100%;
+    line-height: 0.4rem;
+}
+.com span{
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+/*活动说明*/
+#footer{
+    width: 100%;
+    background: url(../images/footer1.jpg);
+    height: 6.2rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.explain{
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 23%;
+    float: left;
+    font-size:0.23rem;
+}
+
+
+/*模态框*/
+#login{
+    width: 90%;
+    height: 8rem;
+    margin-left: 5%;
+    position: fixed;
+    background: url(../images/login.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    top: 0;
+    display: none;
+}
+.login_close{
+    width: 7%;
+    position: absolute;
+    height: 0.4rem;
+    right: 8%;
+    top: 56%;
+}
+#loginSuccess{
+    width: 80%;
+    height: 2.6rem;
+    position: absolute;
+    top: 68%;
+    left: 10%;
+}
+.loginPrompt{
+    width: 100%;
+    height: 1.5rem;
+    text-align: center;
+}
+.loginQue{
+    width: 100%;
+    margin-top: 2%;
+    clear: both;
+    overflow: hidden;
+}
+.determin{
+    width: 30%;
+    float: left;
+    margin-left: 10%;
+}
+.cancel{
+    width: 30%;
+    float: right;
+    margin-right: 10%;
+}
+.login_determine{
+    width:30%;
+    margin-left: 35%;
+}
+
+/*分享提示*/
+
+.shareti{
+    width: 100%;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+}

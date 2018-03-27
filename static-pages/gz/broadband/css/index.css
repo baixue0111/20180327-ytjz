@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    border: 0;
+    width: 100%;
+    display: block;
+}
+
+html {
+    font-size: 100px;
+}
+
+#box {
+    width: 100%;
+    min-height: 18.0rem;
+    background: url("../images/disan.jpg") 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#details {
+    position: absolute;
+    width: 25%;
+    height: 0.3rem;
+    top: 37%;
+    left: 44%;
+}

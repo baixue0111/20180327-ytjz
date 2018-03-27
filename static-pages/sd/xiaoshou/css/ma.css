@@ -1,0 +1,100 @@
+/*当前工单*/
+.workDetails{
+	width: 100%;
+    min-height: 330px;
+    cursor: pointer;
+}
+.workDetails span{
+	width: 100%;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+}
+#workorder{
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #def0fc;
+	border: none;
+	width: 100%;
+	float: left;
+	
+}
+#workorder div{
+	width: 6.5%;
+    float: left;
+    text-align: center;
+}
+.shensdas div{
+	width: 6.5%;
+    float: left;
+    text-align: center;
+}
+.shensdas{
+	width: 100%;
+	float: left;
+}
+/*每行的hover属性*/
+.shensdas:hover{color:#1b36f5;}
+
+.adminssd{
+	    background: #fff;
+    position: fixed;
+    border-left: solid 7px #eff3f5;
+    right: 0;
+    bottom: 0;
+    top:0;
+    left: 0;
+
+    padding-right: 0px;
+    padding-bottom: 0px;
+    overflow: auto;
+    border-top: 1px solid #b5cfd9;
+    padding-right: 15px;
+}
+
+
+
+/*检索*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.m_jian{
+	width: 1000px;
+	margin-top:5px;
+	float: left;
+}
+.m_jian span{
+	background: #2f8acb;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	width: 100px;
+	color: white;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 13px;
+}
+.m_jian input{
+	    width: 130px;
+		line-height: 26px;
+	height: 26px;
+	float: left;
+}
+.m_jian b{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.m_jian select{
+    width: 134px;
+	height: 30px;
+	border: 1px solid #a0a0ea;
+	cursor: pointer;
+	float: left;
+}

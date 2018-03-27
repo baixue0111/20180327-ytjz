@@ -1,0 +1,232 @@
+html,body{font-size: 100px; overflow: auto;}
+.container{
+    background: url("../img/bgImg.jpg") 0 0 no-repeat;
+    background-size: 100% 100% ;
+    width: 100%;
+    padding:100% 0;
+    position: relative;
+}
+/* w */
+.container .tc-list{
+    position: relative;
+    top:2.8rem;
+}
+/* w */
+.sqsm-des{
+    background: url("../img/3.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 3.81rem;
+    height: .46rem;
+    margin: 0 auto;
+    margin-bottom: .2rem;
+}
+.olduser-des{
+    background: url("../img/4.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 4.41rem;
+    height: .46rem;
+    margin: 0 auto;
+    margin-bottom: .2rem;
+}
+.sqsm-text{
+    margin: 0 auto;
+    font-size: .22rem;
+    line-height: .3rem;
+    text-align: left;
+    width: 3.85rem;
+}
+.tips{
+    margin: .3rem auto;
+    font-size: .2rem;
+    color: #f35f78;
+    width: 3.85rem;
+    text-align: center;
+}
+
+.commonBtn{
+    background: url("../img/5.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 2.56rem;
+    height: .71rem;
+    margin: 0 auto;
+}
+
+.newFont{
+    font-size: .2rem;   /*修改*/
+    width: 94%;
+    margin: .1rem auto;
+    line-height: .3rem;
+    letter-spacing: .04rem;
+    display: none;
+}
+/* 以下是十全十美的详情内容样式 */
+.goodRules,.oldDeatil{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: none;
+    padding-top: .2rem;
+}
+.oldDeatil{
+    overflow-y: auto;
+}
+.closeBtn:after{
+    display: block;
+    content: "";
+    clear: both;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.closeBtn span{
+    display: inline-block;
+    padding: .25rem;
+    float: right;
+    color: #a934f4; 
+    font-size: .26rem; 
+    font-weight: bold;
+    cursor: pointer;
+}
+.closeBtn span img{
+    width: .24rem;
+    height: .24rem;
+}
+.good-title{
+    text-align: center;
+    font-size: .3rem;
+    color: #a934f4;
+     font-weight: 600;
+}
+.goodRules-item{
+    padding: .25rem;
+    margin-top: .2rem;
+}
+.goodRules-item li{
+    font-size: .24rem;
+    line-height: .35rem;
+    margin: .15rem auto;
+    font-weight: bold;
+    letter-spacing: .02rem;
+}
+
+/* 模糊图层 */
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    display: none;
+}
+.login{
+    background: url("../img/alertbg_03.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 1.54rem;
+    left: .58rem;
+    width: 83%;
+    z-index: 101;
+    padding-bottom: .5rem;
+    display: none;
+}
+.closeAlert{
+    text-align: center;
+    line-height: 0;
+}
+.closeAlert span{
+    display: inline-block;
+    background: #fff;
+    font-size: .26rem;
+    padding: .2rem;
+    border-radius: 50%;
+    box-shadow: 0 .05rem .07rem rgba(0, 0, 0, .07);
+}
+.closeAlert img{
+    width: .23rem;
+    height: .23rem;
+    margin: 0;
+}
+.loginMsg{
+    margin-top: 1.4rem; 
+}
+.loginSuccess{
+    font-size: .25rem;
+    padding-left: .4rem;
+    width: 85%;
+    line-height: .35rem;
+    margin-top: .5rem; 
+    padding-bottom: .3rem;
+}
+.loginMsg .input-group{
+    line-height: 0;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: .15rem;
+    padding-left: .4rem;
+}
+.loginMsg input{
+    float: left;
+    width: 4rem;
+    height: .5rem;
+    padding-left: .3rem;    
+    border-radius: .2rem;
+    margin-top: .2rem; 
+    font-size: .22rem; 
+}
+.loginMsg input::-webkit-input-placeholder{
+    color: #000;
+}
+.errMsg{
+    text-align: center;
+    font-size: .22rem;
+    color: #CB1623;
+    line-height: .3rem;
+    padding: 0 .25rem;
+}
+.button{
+    margin-top: .2rem;
+}
+.affirmBtn{
+    background: url("../img/yanzheng.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    padding: 0 .97rem;
+    /*background: #ff3e5d;*/
+    /*font-size: .26rem;*/
+    color: #fff; 
+    border-radius: .3rem; 
+    height: .65rem;
+    line-height: .65rem;  
+    box-shadow: 0 .05rem .05rem rgb(242, 215, 232);
+    width: .62rem;
+}
+.successMsg{
+    text-align: center;
+    color: #FA677D;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    font-size: .28rem;
+}
+.lastp{
+    font-size: .24rem;
+}
+.redshow{
+    color: #E93654;
+}
+.foot{
+    position: absolute;
+    bottom: .3rem;
+    width: 97%;
+    left: 2%;
+}
+.foot ul li{
+    font-size: .24rem;
+    margin: .05rem auto;
+    line-height: .35rem;
+}

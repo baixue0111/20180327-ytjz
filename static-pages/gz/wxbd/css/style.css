@@ -1,0 +1,148 @@
+@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 12px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;}
+a:link,a:visited,a:hover,a:active{text-decoration:none;}
+/*==========================Reset_End===========================*/
+
+html{
+    font-size: 100px;
+}
+
+#demo{
+    width: 100%;
+    text-align: center;
+}
+
+#head{
+    width:100%;
+    height: 8.13rem;
+    background: url(../image/header.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position:relative;
+}
+
+#btn{
+    position: absolute;
+    overflow: hidden;
+    bottom: 19%;
+    left: 38%;
+}
+
+
+#btn img{
+    width:1.68rem;
+    height:0.52rem;
+}
+
+/*loading*/
+#loading{
+	position: fixed;
+    top: 36%;
+    left: 0;
+    text-align: center;
+    z-index: 999;
+    width: 100%;
+    display: none;
+}
+#loading img{
+	width: 20%;
+}
+
+
+/***************** 蒙版********************/
+
+#loginMask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    background:rgba(0,0,0,0.75);
+    display: none;
+}
+
+#login_w{
+    width:87%;
+    position: fixed;
+    top: 1.5rem;
+    left: 0.4rem;
+    z-index: 102;
+    text-align:center;
+    background: #fff;
+    /*display:none;*/
+    -moz-border-radius: 0.10rem; /* Firefox */
+    -webkit-border-radius: 0.10rem; /* Safari 和 Chrome */
+    border-radius: 0.10rem; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+/***********贵州绑定******************/
+#login_w_successMessage{
+    margin-top: 0.3rem;
+}
+#login_w_phone{
+    width: 4.13rem;
+    line-height: 0.56rem;
+    padding-left: 0.05rem;
+    border-radius: 0.08rem;
+}
+.login_w_title{
+    font-size: 0.4rem;
+    color: #0870de;
+}
+#login_w_yzm{
+    width: 4.13rem;
+    line-height: 0.56rem;
+    padding-left: 0.05rem;
+    border-radius: 0.08rem;
+}
+#login_w_text{
+    width: 0.68rem;
+    line-height: 0.34rem;
+    display: inline-block;
+    background: #f6f0bb;
+    margin-left: 0.05rem;
+    color: #74736e;
+    border: 0;
+    text-align: center;
+    position: absolute;
+    top: 2.3rem;
+    right: 20%;
+    font-size: 0.15rem;
+}
+.login_w_img{
+    width: 33%;
+    margin-top: 0.2rem;
+}
+.login_w_success{
+    width:100%;
+    text-align: center;
+}
+/*input兼容*/
+#login_w_text[type=button], #login_w_text[type=submit], #login_w_text[type=file], #login_w_text { -webkit-appearance: none; }
+
+.bangdingle{
+    width: 100%;
+    text-align: center;
+    height: 1rem;
+    /* line-height: 1rem; */
+    margin-top: 1rem;
+}
+/***************** 底部 ********************/
+
+#foot{
+    width:100%;
+    overflow: hidden;
+}
+
+#foot img{
+    width:100%;
+    float:left;
+}

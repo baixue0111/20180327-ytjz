@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<title>晒流量 送流量</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<img src="img/img1_02.jpg" class="row-top">
+			<img src="img/click_03.png" class="click-cy" onclick="btnclick();">
+			<img src="img/click-tell_07.png" class="click-tell" onclick="showShare();">
+		</div>
+		<div class="myflow">
+			<img src="img/myFlow-bg_03.png" alt="">
+			<h6>我的排名：<span class="myNum"></span>   <span  class="thismouth"></span>已使用流量：<span class="myFlow"></span> </h4>
+		</div>
+		<div class="content">
+			<div class="bg-yellow">
+				<div class="click-sun">
+					<div>
+						<img src="img/click-sun_07.png"  onclick="showShare();">
+					</div>
+				</div>
+
+				<div class="one-top">
+					<div>
+						<hr> <span class="topMon"> 月流量使用TOP10 </span> <hr>
+					</div>
+				</div>
+				<div class="tableParent">
+					<h2>注：使用流量相等时，排名以参加活动时间先后排序！</h2>
+					<table>
+						<tbody>
+							<tr>
+								<td>排名</td>
+								<td>号码</td>
+								<td>月使用流量(M)</td>
+							</tr>
+							<!-- <tr>
+								<td>1</td>
+								<td>139****456</td>
+								<td>6</td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+				<div class="one-top">
+					<div>
+						<hr> <span class="thisMon"> 月流量使用TOP10 </span> <hr>
+					</div>
+				</div>
+				<div class="tableParent2">
+					<h2>注：此排行榜显示流量使用量非当天数据，仅供参考！ </h2>
+					<table>
+						<tbody>
+							<tr>
+								<td>排名</td>
+								<td>号码</td>
+								<td>月使用流量(M)</td>
+							</tr>
+							<!-- <tr>
+								<td>1</td>
+								<td>139****456</td>
+								<td class="answerColor">6</td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+				<div class="one-top">
+					<div>
+						<hr> <span> 活动规则 </span> <hr>
+					</div>
+				</div>
+				<ul class="rules">
+					<li>1、活动时间：2017年3月6日-2017年4月30日；</li>
+					<li> 2、流量使用产生时间： <br>第一期：2017年3月1日至2017年3月31日；<br>第二期：2017年4月1日至2017年4月30日；</li>
+					<li>3、开奖时间：<br>第一期：2017年4月6日；<br>第二期：2017年5月6日；<br>非工作日除外；</li>
+					<li>4、参与对象：关注并绑定“中国电信贵州加油站”微信公众号的中国电信贵州公司手机用户（员工优惠账户除外）；</li>
+					<li>5、参加本次活动晒出的是上个自然月已使用的流量（仅订购但未使用的不计入本次活动），已使用的流量为用户上个自然月已使用的总流量，包含但不限于省内流量、全国流量、闲时流量；</li>
+					<li>6、本次活动在一个自然月结束时为一期，参加活动的用户在该月结束时，若上月已使用的流量为排行榜前10名，将获得1000M省内流量奖励；</li>
+					<li>7、获奖结果将通过1065921710发送短信通知。</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="mask"></div>
+	<div class="modal">
+		<!-- <div class="alert-top"><img src="img/alert-top_03.png" alt=""></div>
+		<div class="con">
+			<h2></h2>
+			<p></p>
+			<div class="affirmbtn">
+				<img src="img/alert-affirm_07.png" alt="" onclick="hideAlert();">
+			</div>
+			<div class="sunbtn">
+				<img src="img/click-sun_07.png" alt="" class="hidesun">
+			</div> 
+		</div>-->
+	</div>
+	<div class="loading">
+		<img src="img/jz.gif" alt="">
+	</div>
+	<div class="share">
+		<img src="img/share1_03.png" alt="" class="share_img1">
+		<img src="img/sharebtn_07.png" alt="" class="share_img2" onclick="hideShare();">
+	</div>
+	<div id="loginMask" onclick="closeLogin()"></div>
+	<div id="login">
+	</div>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

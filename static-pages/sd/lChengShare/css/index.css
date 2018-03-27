@@ -1,0 +1,265 @@
+html {
+    font-size: 100px;
+}
+
+.flow-wrapper {
+    background: url('../img/bg.jpg') 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 16.1rem;
+    position: relative;
+}
+
+.rulesText {
+    background: url(../img/rules.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: .69rem;
+    height: 0.79rem;
+    position: absolute;
+    right: 4%;
+    top: 19.7%;
+}
+
+.con-iptGroup {
+    overflow: hidden;
+    position: absolute;
+    width: 5.6rem;
+    bottom: 28.5%;
+    left: 50%;
+    margin-left: -2.8rem;
+}
+
+.con-iptGroup input {
+    float: left;
+    width: 5.17rem;
+    height: .42rem;
+    padding-left: .2rem;
+    background: #FEBA00;
+    border-radius: .5rem;
+    margin-bottom: .23rem;
+    outline: none;
+    font-size: .24rem;
+    color: #000;
+    border: .05rem solid #000;
+}
+
+.con-iptGroup input:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.con-iptGroup input:last-child {
+    margin-bottom: 0;
+}
+
+.con-iptGroup input::placeholder {
+    font-size: .24rem;
+    color: #000;
+}
+
+.errMsg {
+    font-size: .2rem;
+    color: #000;
+    text-align: center;
+    line-height: .3rem;
+    width: 5.85rem;
+    position: absolute;
+    bottom: 26%;
+    left: 50%;
+    margin-left: -2.91rem;
+}
+
+.subBtn {
+    background: url(../img/btn.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 3.07rem;
+    height: 0.71rem;
+    position: absolute;
+    bottom: 21%;
+    left: 40%;
+    margin-left: -.94rem;
+}
+
+.rules2 {
+    position: absolute;
+    bottom: 13.7%;
+    left: 50%;
+    margin-left: -.6rem;
+    width: 2.17rem;
+    overflow: hidden;
+}
+
+.rules2 img:nth-child(1) {
+    float: left;
+    width: 1.1rem;
+    height: .36rem;
+}
+
+.rules2 img:nth-child(2) {
+    float: left;
+    width: .39rem;
+    height: .26rem;
+    margin: .05rem 0 0 .05rem;
+}
+
+.warning {
+    font-size: .24rem;
+    text-align: left;
+    line-height: .35rem;
+    letter-spacing: 0.04rem;
+    position: absolute;
+    bottom: 2%;
+    width: 90%;
+    left: 5%;
+    color: #45473C;
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, .7);
+    display: none;
+}
+
+#activity {
+    background: url('../img/rulesbg.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 5rem;
+    min-height: .9rem;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    border-radius: .3rem;
+    z-index: 11;
+    display: none;
+    margin-left: -2.5rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.closeRules {
+    background: url('../img/close.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: .22rem;
+    height: .22rem;
+    display: inline-block;
+    float: right;
+    margin: .6rem .3rem 0 0;
+}
+
+.rulesCon {
+    margin-top: 1.03rem;
+    font-size: .3rem;
+    font-weight: bold;
+    padding-bottom: .2rem;
+    border-bottom: .01rem dashed #4c4c4c;
+    text-align: center;
+    padding-left: .24rem;
+}
+
+.rulesDate {
+    color: #de9800;
+}
+
+.activity-list {
+    padding: .3rem .24rem;
+    font-size: .24rem;
+    line-height: .3rem;
+    height: 6rem;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.activity-list li {
+    margin: .03rem auto;
+    line-height: .345rem;
+}
+
+.affirm {
+    font-size: .28rem;
+    color: #E0545D;
+    border-top: .02rem solid #ddd;
+    text-align: center;
+    height: .7rem;
+    line-height: .7rem;
+}
+
+.errorAlert {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    background-color: #f1e9c8;
+    margin-left: -2.73rem;
+    margin-top: 1.8rem;
+    width: 5.46rem;
+    display: none;
+    z-index: 12;
+    border-radius: .3rem;
+    padding-bottom: .5rem;
+}
+
+.errorAlert h1 {
+    background: url("../img/close.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: .31rem;
+    height: .31rem;
+    float: right;
+    margin: .3rem .3rem 0 0;
+    display: inline-block;
+}
+
+.msg {
+    text-align: center;
+    font-size: .22rem;
+    margin-top: .7rem;
+}
+
+.title {
+    font-size: .3rem;
+    color: #ff4a4a;
+    margin-bottom: .1rem;
+}
+
+.dec {
+    font-size: .23rem;
+    color: #3c3c3c;
+    margin: .2rem 0;
+}
+
+.sucessMsg {
+    padding: .2rem 0;
+    border-top: .02rem solid rgba(0, 0, 0, 0.3);
+}
+
+.errormsg {
+    padding: .3rem;
+    line-height: .35rem;
+}
+
+.sucessMsg-title {
+    color: #ab8700;
+    margin-bottom: .2rem;
+}
+
+.sucessMsg-ul {
+    text-align: left;
+    padding: .03rem .8rem;
+    overflow: hidden;
+}
+
+.sucessMsg-ul li {
+    overflow: hidden;
+    margin: .2rem 0;
+}
+
+.sucessMsg-ul li span {
+    float: left;
+    letter-spacing: .02rem;
+}
+
+.widthSpan {
+    width: 2.7rem;
+}

@@ -1,0 +1,541 @@
+body,
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100px;
+}
+
+img {
+    border: 0;
+    width: 100%;
+    display: block;
+}
+
+
+/*tab*/
+
+#w_tab {
+    display: flex;
+    width: 100%;
+    height: 0.85rem;
+    font-size: 0.26rem;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+}
+
+#w_tab li {
+    flex: 1;
+    text-align: center;
+    line-height: 0.83rem;
+    background-color: white;
+}
+
+#w_tab .w_active {
+    color: white;
+    background: url(../wzw_img/w_tab.png) no-repeat;
+    background-size: 100% 100%;
+    height: 1rem;
+}
+
+#w_tabContent {
+    margin-top: 0.83rem;
+}
+
+#w_tabContent .w_content {
+    width: 100%;
+    display: none;
+}
+
+#w_tabContent .w_hidden {
+    display: block;
+}
+
+#share_content {
+    width: 100%;
+    height: 4.8rem;
+    position: relative;
+    background: url(../images/fenx11.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.rules-does {
+    width: 100%;
+    background: url(../images/fenx22.jpg) no-repeat;
+    height: 8rem;
+    background-size: 100% 100%;
+}
+
+.rules-des {
+    margin-top: 22%;
+    float: left;
+    font-size: 0.2rem;
+    padding-left: .33rem;
+    width: 90%;
+}
+
+#package_three {
+    position: absolute;
+    width: 30%;
+    height: 0.6rem;
+    /* background: red; */
+    left: 34%;
+    border-radius: 15px;
+    top: 30%;
+}
+
+#package_seven {
+    position: absolute;
+    width: 40%;
+    height: 0.6rem;
+    /*background: red;*/
+    left: 30%;
+    border-radius: 15px;
+    top: 82%;
+}
+
+
+/*遮罩层*/
+
+
+/*#loginMask{
+	position: fixed;
+	width: 100%;
+	height: 100%;	 	
+	top: 0;
+	left: 0;
+	z-index: 103;
+	background:rgba(0,0,0,0.75);
+	display: none;
+}*/
+
+
+/*出游七天包*/
+
+#login1 {
+    position: fixed;
+    top: 16%;
+    left: 3%;
+    width: 6rem;
+    height: 6rem;
+    background: url(../images/login1.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    z-index: 10000;
+    overflow: hidden;
+    display: none;
+}
+
+.login1_close {
+    width: 0.5rem;
+    height: 0.5rem;
+    right: 0;
+    position: absolute;
+    /* background-color: red; */
+    top: 0;
+}
+
+#login1_succes {
+    width: 80%;
+    height: 2.3rem;
+    margin-top: 2.5rem;
+    margin-left: 10%;
+    /* background-color: red; */
+}
+
+.login1_top {
+    width: 100%;
+    float: left;
+    height: 0.8rem;
+    line-height: 0.2rem;
+    text-align: center;
+    /* background: red; */
+}
+
+.login1_bottom {
+    width: 100%;
+    text-align: center;
+    /* margin-top: 0.2rem; */
+    float: left;
+    margin-top: 0.2rem;
+    height: 0.8rem;
+    line-height: 0.2rem;
+}
+
+#login1_phone {
+    width: 3.72rem;
+    height: 0.70rem;
+    bor;
+    border: 1px solid #fac914;
+    border-radius: 0.15rem;
+    padding-left: 0.1rem;
+}
+
+#login1_validate {
+    width: 2.54rem;
+    height: 0.70rem;
+    border: 1px solid #fac914;
+    border-radius: 0.15rem;
+    padding-left: 0.1rem;
+}
+
+#login1_yzm {
+    background: #fac914;
+    border: 0;
+    border-radius: 0.15rem;
+    color: #fff;
+    padding: .07rem .23rem;
+    padding: 0.2rem 0.3rem;
+}
+
+#login1_yzm[type=button],
+button {
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+#login1_errorMsg {
+    width: 100%;
+    text-align: center;
+    font-size: 0.2rem;
+    color: red;
+    /* background: green; */
+    /* margin-top: 0.1rem; */
+    height: 0.5rem;
+    line-height: 0.5rem;
+    float: left;
+}
+
+#login1Button {
+    width: 100%;
+    text-align: center;
+    height: 0.7rem;
+    line-height: 0.2rem;
+    /* background: red; */
+    margin-top: 0.rem;
+}
+
+#login1_but {
+    width: 50%;
+    height: 0.8rem;
+    border: none;
+    line-height: 0.8rem;
+    /*background-color: #e5a81c;*/
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color: white;
+    background: url(../images/login1_be.png);
+    background-size: 100% 100%;
+}
+
+.success3 {
+    color: red;
+}
+
+.success4 {
+    line-height: 0.38rem;
+    font-size: 0.25rem;
+    color: #464646;
+    text-indent: 2em;
+}
+
+
+/*重复订购*/
+
+#repeatOrder {
+    width: 90%;
+    height: 40%;
+    position: fixed;
+    top: 22%;
+    left: 5%;
+    z-index: 102;
+    display: none;
+    /* text-align: center; */
+    background: url(../images/login22.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-border-radius: 0.10rem;
+    -webkit-border-radius: 0.10rem;
+    border-radius: 0.10rem;
+}
+
+.repeatClose {
+    width: 100%;
+    text-align: center;
+}
+
+.repeatClose img {
+    width: 13%;
+    margin-left: 43%;
+    margin-top: 4%;
+}
+
+#repeatSucces {}
+
+.repeatding {
+    width: 100%;
+    margin-top: 7%;
+    color: red;
+    text-align: center;
+}
+
+.repaeatConfirm {
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+#repeat {
+    width: 100%;
+    text-align: center;
+    margin-top: 13%;
+}
+
+.repatBut {
+    width: 33%;
+    margin-left: 10%;
+    float: left;
+}
+
+.repatBut1 {
+    width: 33%;
+    float: left;
+    margin-left: 13%;
+}
+
+
+/*无线流量包*/
+
+#content1 {
+    width: 100%;
+    height: 9.34rem;
+    position: relative;
+    background: url(../images/content.jpg);
+    background-size: 100% 100%;
+}
+
+#footer1 {
+    width: 100%;
+    /*height: 9.34rem;*/
+    position: relative;
+    background: url(../images/footer.jpg);
+    background-size: 100% 100%;
+}
+
+.contenter1 {
+    width: 70%;
+    top: 4%;
+    position: absolute;
+    height: 28%;
+    /*background: red;*/
+    left: 15%;
+    text-align: center;
+}
+
+.content_title1 {
+    color: #fedd81;
+    font-size: 0.26rem;
+}
+
+.content_middle1 {
+    font-size: 0.24rem;
+}
+
+.content_bottom1 {
+    color: #FFFFFF;
+    font-size: 0.24rem;
+}
+
+.conter_footer1 {
+    width: 70%;
+    top: 59%;
+    position: absolute;
+    height: 28%;
+    /* background: red; */
+    left: 15%;
+    text-align: center;
+}
+
+.conter_one1 {
+    width: 23%;
+    top: 33%;
+    position: absolute;
+    height: 7%;
+    /*background: red;*/
+    left: 38%;
+    /*text-align: center;*/
+}
+
+.conter_two1 {
+    width: 23%;
+    top: 86%;
+    position: absolute;
+    height: 7%;
+    /*background: red;*/
+    left: 38%;
+}
+
+#footer1 h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.4rem;
+    display: inline-block;
+}
+
+#footer1 div {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0.3rem;
+    font-size: 0.24rem;
+    display: inline-block;
+    /*float: left;*/
+    margin-bottom: 0.5rem;
+}
+
+#login2 {
+    position: fixed;
+    top: 16%;
+    /* left: 3%; */
+    width: 100%;
+    height: 6rem;
+    background: url(../images/login.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    z-index: 10000;
+    overflow: hidden;
+    display: none;
+}
+
+.login1_close2 {
+    width: 0.6rem;
+    height: 0.7rem;
+    right: 12%;
+    position: absolute;
+    /* background-color: red; */
+    top: 0;
+}
+
+#login1_succes2 {
+    width: 80%;
+    height: 2.3rem;
+    margin-top: 2.5rem;
+    margin-left: 10%;
+    /* background-color: red; */
+}
+
+.login1_top2 {
+    width: 100%;
+    float: left;
+    height: 0.8rem;
+    line-height: 0.2rem;
+    text-align: center;
+    /* background: red; */
+}
+
+.login1_bottom2 {
+    width: 100%;
+    text-align: center;
+    /* margin-top: 0.2rem; */
+    float: left;
+    margin-top: 0.2rem;
+    height: 0.8rem;
+    line-height: 0.2rem;
+}
+
+#login1_phone2 {
+    width: 3.72rem;
+    height: 0.70rem;
+    border: 1px solid #453596;
+    border-radius: 0.15rem;
+    padding-left: 0.1rem;
+}
+
+#login1_validate2 {
+    width: 2.54rem;
+    height: 0.70rem;
+    border: 1px solid #453596;
+    border-radius: 0.15rem;
+    padding-left: 0.1rem;
+}
+
+#login1_yzm2 {
+    background: #453596;
+    border: 0;
+    border-radius: 0.15rem;
+    color: #fff;
+    padding: .07rem .23rem;
+    padding: 0.2rem 0.3rem;
+}
+
+#login1_yzm2[type=button],
+button {
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+#login1_errorMsg2 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.2rem;
+    color: red;
+    /* background: green; */
+    /* margin-top: 0.1rem; */
+    height: 0.5rem;
+    line-height: 0.5rem;
+    float: left;
+}
+
+#login1Button2 {
+    width: 100%;
+    text-align: center;
+    height: 0.7rem;
+    line-height: 0.2rem;
+    /* background: red; */
+    margin-top: 0.rem;
+}
+
+#login1_but2 {
+    width: 36%;
+    height: 0.8rem;
+    border: none;
+    line-height: 0.8rem;
+    /* background-color: #e5a81c; */
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color: white;
+    background: #453596;
+    background-size: 100% 100%;
+}
+
+.success3 {
+    color: red;
+}
+
+.success4 {
+    line-height: 0.38rem;
+    font-size: 0.25rem;
+    color: #464646;
+    text-indent: 2em;
+}
+
+.asuccess {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 0.24rem;
+}

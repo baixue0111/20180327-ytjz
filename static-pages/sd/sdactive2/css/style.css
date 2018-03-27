@@ -1,0 +1,102 @@
+*{padding: 0;margin: 0;}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;overflow-x: hidden;}
+body {color:#ffffff;font-family:"microsoft yahei",Arial, Helvetica, sans-serif;background-color:#f6f6f6;-webkit-text-size-adjust: none;word-wrap: break-word;font-size:14px;}
+h1,h2,h3,h4,h5,h6{ font-size:0.875em; font-weight:normal;}
+a{text-decoration: none;color: #ffffff;}
+img{border: 0; width:100%;display:block;}
+
+@media screen and (min-width:400px){body{font-size:20px}}
+@media screen and (min-width:480px){body{font-size:24px}}
+@media screen and (min-width:540px){body{font-size:27px}}
+@media screen and (min-width:640px){body{font-size:32px}}
+body{z-index: 0}
+.button-click1{
+    height: 26%;
+    width: 50%;
+    background: url("../image/click.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    left: 25%;
+    top: 60%;
+    border-radius:15px ;
+    border:none ;
+    cursor: pointer;
+    overflow: hidden;
+}
+.this{
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    left: 15%;
+    top: 31%;
+    border:none ;
+    cursor: pointer;
+}
+.relative{
+    position: relative;
+
+}
+.tab_other{
+    width: 100%;
+    position: absolute;
+    bottom:5%;
+    left: 50%;
+    margin: 0 -35% 0 -35%;
+    overflow: hidden;
+}
+
+.tab_other a{display: inline-block;width: 25%;}
+
+.tab_other a img{width: 80%;}
+
+
+/*login.css*/
+#load{background-color: #000;position: fixed;left: 0;top: 0;height: 100%;width: 100%;opacity: 0.75;z-index: 50;display: none}
+#login{
+    width:320px;
+    height: auto;
+    position:fixed;
+    left: 50%;top: 35%;
+    margin: -94px 0 0 -158px;
+    background:url("../image/login.png") no-repeat;
+    background-size: 320px auto;
+    border: none;
+    z-index:60;
+    vertical-align : middle;
+
+}
+#login .header{
+    height:50px;
+}
+#loginButton{
+    text-align: center;
+}
+#login .button{
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    background: url("../image/ok.png") no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+#errorMessage{
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    width: 320px;
+    position: absolute;
+    margin: 2px 0px 0 0px;
+}
+.success{
+    text-indent: 2em;
+    text-align:justify;
+    color: #ffffff;
+    text-align-last:justify;/* ie9*/
+    -moz-text-align-last:justify;/*ff*/
+    -webkit-text-align-last:justify;/*chrome 20+*/
+    font-size: 18px;
+    margin: 0 15px;
+}
+.success a{color: #241fff;font-size: 20px}
+

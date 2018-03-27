@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>历史工单</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<metahttp-equivmetahttp-equiv="x-ua-compatible"content="IE=7"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/datePicker.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/historical.css" />
+		<script type="text/JavaScript" src="js/json2.js"></script>
+	</head>
+	<body style="overflow-x: auto;">
+    	<div class="ctt list2">
+			<div class="in_jiansuo1">
+				<div class="h_jian">
+					<span>客户号码:</span>
+					<input type="" name="" value="" id="h_phone">
+					<span>ARPU:</span>
+					<input type="" name="" value="" id="h_startArpu" style="width:60px;"><b>-</b><input type="" name="" value="" style="width:60px;" id="h_endArpu">
+					<span>融合类型:</span>
+					<input type="" name="" value="" id="h_rhType">
+					<span>联通终端类型：</span>
+					<!--<div>-->
+					<select name="selectAge" id="h_ltType">
+						<option value="">请选择</option>
+						<option value="联通4G终端">联通4G终端</option>
+						<option value="联通3G终端">联通3G终端</option>
+						<option value="联通2G终端">联通2G终端</option>
+						<option value="无法区分终端">无法区分终端</option>
+					</select>
+				</div>
+				<div class="h_jian">
+					<span>网络类型：</span>
+					<select name="selectAge" id="h_netType">
+						<option value="">请选择</option>
+						<option value="使用4G网络">使用4G网络</option>
+						<option value="使用3G网络">使用3G网络</option>
+						<option value="使用2G网络">使用2G网络</option>
+						<option value="无法区分网络">无法区分网络</option>
+					</select>
+					<span>执行状态：</span>
+					<select name="selectAge" id="selectAge2">
+						<option value="-1">请选择</option>
+						<option value="0">未执行</option>
+						<option value="1">执行成功</option>
+						<option value="2">执行失败</option>
+						<option value="3">延迟执行</option>
+					</select>
+					<span>归属状态</span>
+					<select name="selectAge" id="selectAge3">
+						<option value="-1">请选择</option>
+						<option value="0">初始工单</option>
+						<option value="1">转出</option>
+						<option value="2">转入</option>
+					</select>
+					<span>任务名称</span>
+					<select name="selectAge" id="selectAgeee">
+						<!--<option value="">请选择</option>-->
+					</select>
+					<button class="but1" onClick="lishil()">检索</button>
+				</div>
+			</div>
+			<ul class="historyWork">
+				<li id="history">
+					<div><span>操作</span></div>					
+					<div><span>客户号码</span></div>
+					<div><span>套餐费元</span></div>
+					<div><span>ARPU</span></div>
+					<div><span>总流量</span></div>
+					<div><span>融合类型</span></div>
+					<div><span>定制类型</span></div>
+					<div><span>联通终端类型</span></div>
+					<div><span>网络类型</span></div>
+					<div><span>终端型号</span></div>
+					<div><span>终端最新价格</span></div>
+					<div><span>执行人</span></div>
+					<div><span>执行状态</span></div>
+					<div><span>归属状态</span></div>
+					<div><span>竣工情况</span></div>
+				</li>
+			</ul>
+			<div class="yanse">
+		    	&ensp;&ensp;通过“归属状态” 列字体颜色区分归属状态：（初始工单--<span style="color: #63ce93;">绿色</span>，转出--<span style="color: #ccc;">灰色</span>，转入--<span style="color: #2f8acb;">蓝色</span>）<br />
+		    	&ensp;&ensp;通过“客户号码” 列字体颜色区分用户状态：（正常--<span style="color: #63ce93;">绿色</span>，单停--<span style="color: #ffff71;">黄色</span>，双停--<span style="color: #ffcf3e;">橙色</span>，拆机--<span style="color: #ff5959;">红色</span>）<br />
+	    		&ensp;&ensp;通过“竣工状态” 列字体颜色区分评估结果：（优秀--<span style="color: #2f8acb;">蓝色</span>，一般--<span>黑色</span>，较差--<span style="color: #ff5959;">红色</span>，未评估--<span style="color: #ccc;">灰色</span>）<br />	
+		    </div>
+			<!--动态 获取数据分页-->
+	        <div class="pag">
+	        	<div style="margin-top: 6px;">
+		        	<button id="shou" onclick="shouye()">首页</button>
+		        	<button id="shang" onclick="shang()">上一页</button>
+		        	<button id="xia" onclick="xia()">下一页</button>
+		        	<button id="weiye" onclick="weiye()">尾页</button>
+		            <input type="text" name="yame" id="yema" value="" />
+		            <button class="butto" onclick="tiao()">跳转</button>
+		            <div class="pagez">共<span class="pagezz">/</span>页</div>
+	        	</div>
+	        </div>
+		</div>
+		<div id="loadingMask">
+			<div class="Loading">
+				<img src="img/loading.gif" alt="">
+				<h2>正在加载中...</h2>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+		<script type="text/javascript" src="js/jquery.date_input.pack.js"></script>
+        <script type="text/javascript">
+			$(document).ready(function() {
+				var nice = $("body").niceScroll();  // The document page (body)
+				$("#ascrail2000 div").css("backgroundColor","#89a3ad");
+				$("#ascrail2000 div").css("border","none");
+			    $("body").niceScroll({cursorborder:"",cursorcolor:"#89a3ad",boxzoom:true}); // First scrollable DIV
+		    
+		  });
+			</script>
+		<script type="text/javascript" src="js/historical.js"></script>
+	</body>
+</html>

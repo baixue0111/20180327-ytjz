@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<title>随机码 领流量</title>
+</head>
+<body>
+	<div class="container">
+		<div class="top">
+			<img src="img/top1_02.jpg" alt="">
+			<p>第一期活动时间：即日起至2017年4月30日 </p>
+		</div>
+		<div class="modalbg">
+			<div class="phone"><p>当前绑定号码：<span id="Bindphone"></span></p></div>
+			<div class="inputGroup">
+				<div class="input1">
+					<img src="img/sjm.png" alt="">
+					<input type="text" placeholder="请填写随机码" id="code" onfocus="clearCon()">
+				</div>
+				<div class="input2">
+					<img src="img/phone.png" alt="">
+					<input type="text" placeholder="请填写领取号码" id="get-phone" onfocus="clearCon()">
+				</div>
+				<div class="errorMsg"></div>
+				<div class="tips">注：您可自己领取，也可送给其他贵州电信用户 </div>
+				<div class="get"><img src="img/get.png" onclick="get()"></div>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="footTop"><p>领取说明</p></div>
+			<div class="state">
+				<ul>
+					<li>1、指定用户才可通过短信收到随机码；</li>
+					<li>2、用户关注并绑定“中国电信贵州加油站”后，才能凭随机码进入领取页面；</li>
+					<li>3、随机码未过期才能成功领取流量，随机码有效期由具体的活动规定；</li>
+					<li>4、用户收到的一个随机码在有效期内只能领取1次；</li>
+					<li>5、随机码需与现在绑定的手机号对应，才能成功领取；</li>
+					<li>6、用户随机验证成功后，可自己领取免费流量，也可直接赠送给其他贵州电信用户；</li>
+					<li>7、赠送流量为省内流量，适用4G、3G、2G上网方式，不含WLAN(WI-FI)上网；</li>
+					<li>8、赠送流量当月有效，剩余流量不结转，赠送流量需重启上网功能才能生效（建议手机断网3分钟以上）。</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="mask"></div>
+	<div class="successModal">
+		<div class="successTop"><img src="img/close.png" onclick="closeAlert()"></div>
+		<div class="successCon">
+			<!-- <img src="img/gx.png" alt=""> -->
+			<p></p>
+		</div>
+	</div>
+
+	<div class="loading">
+		<img src="img/jz.gif" alt="">
+	</div>
+	<div id="loginMask" onclick="closeLogin()"></div>
+	<div id="login">
+	</div>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

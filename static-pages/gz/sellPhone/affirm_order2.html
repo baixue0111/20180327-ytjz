@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<title>确认订单</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/affirm_order2.css">
+	<script type="text/javascript" charset="UTF-8" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+</head>
+<body>
+	<div class="affirm_order_container">
+		<nav>
+			<span><img src="image/return.png" alt="" onclick="return_history()"></span>
+			<span>确认订单</span>
+		</nav>
+		<div class="add_address" onclick="manage_address()">
+			<div class="address_img"><p><img src="image/address.png" alt="" class="img_margin"></p>
+				<div class="sh">
+					<p>
+						<span class="sh_name">收货人：<em id="get_name"></em></span>
+						<span class="sh_phone"></span>
+					</p>
+					<p><span>收货地址：</span><em class="break_all"></em></p>
+					<p><span onclick="manage_address()">管理收货地址</span></p>
+				</div>
+			</div>
+			<p class="next"><img src="image/next.png" alt="" class="img_margin"></p>
+		</div>
+		<div class="stay_payment">
+			<ul class="stay_payment_con">
+				<li>
+					<div class="order_phone">
+						<div class="phone_img"><img src="image/phone.jpg" alt=""></div>
+						<div class="phone_details">
+							<p class="name_fontSize"></p>
+							<p class="name_color">颜色：金色     版本：全网通4G（2g ram+16Grom） </p>
+							<p class="money_count"><span class="name_money"></span><span class="name_count">X1</span></p>
+						</div>
+					</div>
+					<p class="phone_gift"><span class="song">【赠品】  充电宝或手机支架随机发出 </span><span>X1</span></p>
+				</li>
+			</ul>
+		</div>
+		<div class="deal_money">
+			<span>应付金额</span>
+			<span class="yf_je">688.00</span>
+		</div>
+		<div class="pay_mode">
+			<span class="dot"></span>
+			<span>微信支付</span>
+		</div>
+		<div class="pay_mode">
+			<span class="dot"></span>
+			<span>货到付款</span>
+		</div>
+		<div class="settle">
+			<div id="tips">
+				<p>本次活动由 云腾九州科技(北京）有限公司 代收费，如对支付有疑问，可拨打电信统一客服电话<a href="tel:10000">10000</a>或活动专线 <a href="tel:085185250087">085185250087</a>咨询；</p>
+				<p onclick="return_th()" style="color: #32A1DE;text-decoration: underline;margin-top: 4%;">退换货说明请点击此处查看；</p>
+			</div>
+			<p class="settle_btn" onclick="settle()">结算</p>
+		</div>
+	</div>
+	<div id="mask"></div>
+	<div id="loading">
+		<img src="image/jz.gif" alt="">
+	</div>
+	<div class="successAlert">
+		<p>尊敬的用户，感谢您参加本次活动，您选择货到付款方式，工作人员将在一个工作日内与您联系确认信息，请保持电话畅通！</p>
+		<p class="affirmBtn"><span onclick="affirm()">确定</span></p>
+	</div>
+
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	var getTimestamp=new Date().getTime();
+	$.getScript("js/affirm_order2.js?"+getTimestamp);
+</script>
+
+</body>
+</html>

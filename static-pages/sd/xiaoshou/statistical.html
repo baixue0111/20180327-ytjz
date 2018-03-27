@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数据统计</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<metahttp-equivmetahttp-equiv="x-ua-compatible"content="IE=7"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/reset.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/datePicker.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/statistical.css"/>
+			<!--兼容ie下不能识别的标签-->
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="lib/html5shiv.min.js"></script>
+			<script type="text/javascript" src="lib/respond.min.js"></script>
+		<![endif]-->
+		<script type="text/JavaScript" src="js/json2.js"></script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				font-size: 13px;
+			}
+			
+		</style>
+	</head>
+	<body style="overflow-x: auto;">
+    	<div class="ctt">
+			<div class="tongjiachaxun">
+				<p class="in_jian7"><span class="in_jian1">开始时间</span><input type="text" id="datePicker3" class="date_picker" placeholder="点击选择日期"/></p>
+			   	<p class="in_jian7"><span class="in_jian1">结束时间</span><input type="text" id="datePicker4" class="date_picker" placeholder="点击选择日期"/></p>
+				<!--任务类型-->
+				<p class="in_jian7">
+				   	<span class="in_jian1">任务类型</span> 
+				   	<select name="selectAge" id="selec"> 
+				        <!--<option value="-1">请选择</option>-->   	
+				        <!--<option value="0">未执行</option>   
+				        <option value="1">执行成功</option>   
+				        <option value="2">执行失败</option>   
+				        <option value="3">延迟执行</option>              -->
+				    </select> 
+			   	</p>
+			   	<p class="in_jian8">
+				   	<span class="in_jia">是否剔除转派工单</span> 
+				   	<select name="selectAge" id="selecee">  	
+				        <option value="1">全部工单</option>   
+				        <option value="2">剔除转入</option>   
+				        <option value="3">剔除转出</option>   
+				        <option value="4">剔除转入及转出</option>           
+				    </select> 
+			   	</p>
+			   	<p class="in_jian7">
+			   		<buttom class="but8" onclick="tongjile()">查询</buttom>
+			   	</p>
+		   	</div>
+		   	<!--<div class="zzz">-->
+			   	<table class="statisticalWork">
+					<!--<div id="sd"></div>-->
+				</table>
+		   	<!--</div>-->
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+		<script type="text/javascript" src="js/jquery.date_input.pack.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+				$('#datePicker3').date_input();
+				$('#datePicker4').date_input();
+			});
+//		  	数据统计添加滚动条
+		  	$(document).ready(function() {
+				var nice = $("body").niceScroll();  // The document page (body)
+				$("#ascrail2000 div").css("backgroundColor","#89a3ad");
+				$("#ascrail2000 div").css("border","none");
+			    $("body").niceScroll({cursorborder:"",cursorcolor:"#89a3ad",boxzoom:true}); // First scrollable DIV
+		    
+		  	});
+			</script>
+		<script type="text/javascript" src="js/statistical.js"></script>
+	</body>
+</html>

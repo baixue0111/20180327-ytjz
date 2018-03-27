@@ -1,0 +1,1 @@
+function b() {alert("你好，我是白白！")}

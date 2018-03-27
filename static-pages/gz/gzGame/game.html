@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<title>猜诗词</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+	<div id="container">
+		<img src="img/top_01.jpg" alt="" class="top">
+		<div class="game_btn">
+			<img src="img/go_02.jpg" alt="">
+			<img src="img/go-game.png" alt="" onclick="startGame();">
+			<div id="textIndex">
+				<p>您当前拥有 <span id="text-count">0</span> 次机会</p>
+				<p>2017.1.20-2017.2.14每日2次免费游戏机会</p>
+			</div>
+		</div>
+		<div id="ranking">
+			<img src="img/go2_03.jpg" alt="">
+			<img src="img/pai_04.png" alt="">
+		</div>
+		<div id="rankingBg">
+			<div class="ranking_bg">
+				<div class="ranking_bk">
+					<div id="tableF">
+						<table>
+							<tbody>
+								<tr>
+									<td>排名</td>
+									<td>用户</td>
+									<td>答对数量</td>
+								</tr>
+								<!--<tr>
+									 <td>1</td>
+									<td>139****456</td>
+									<td class="answerColor">6</td>
+								</tr> -->
+							</tbody>
+						</table>
+					</div>
+					<p id="tips">注：游戏答对数量相同时，排名以参加游戏时间先后排序。<br> 开榜时间分别为2017年1月27日-2017年2月2日（春节）；2017年2月10日-2017年2月14日（元宵）</p>
+					<p id="myRanking">我的排名： <span id="ownRank"></span></p>
+				</div>
+			</div>
+		</div>
+		<div id="rules">
+			<img src="img/pai-bottom1_02.jpg" alt="">
+			<img src="img/activegz_03.png" alt="">
+		</div>
+		<div id="foot">
+			<div class="rules_bg">
+				<div class="rules_bk">
+					<ul class="activity">
+						<li>一次诗词排序游戏共5关，每关游戏时间为100秒；</li>
+						<li>玩游戏结束后获得一个流量红包奖励；<br>
+							闯过第1关共获10M；<br>
+							闯过第2关共获30M； <br>
+							闯过第3关共获50M； <br>
+							闯过第4关共获80M； <br>
+							闯过第5关共获100M； <br>
+						</li>
+						<li>游戏过程中需自己（或好友帮助）闯过上一关才能进入下一题，遇到不会的或答错的，可邀请好友帮忙，好友需在5分钟内操作完毕，否则以答错处理，且原玩家不能离开该游戏界面，否则默认为游戏结束；</li>
+						<li>玩游戏赢得的流量红包可转送给好友（贵州电信用户），且流量红包必须在72小时内领取，过期作废；</li>
+						<li>活动期间普通用户每天2次玩游戏机会；</li>
+						<li>活动期间每购买一个春节7天包、元宵节3天包、情人节520包分别获得2次游戏机会；</li>
+						<li>在流量超市每购买一个普通包获得3次玩游戏机会；</li>
+						<li>2017年1月27日-2017年2月2日（春节），2017年2月10日-2017年2月14日（元宵）期间闯关最多的用户将获得乐视手机奖励，第二、三、四、五名分别获得5G省内流量奖励；</li>
+						<li>获得奖品的用户，将在活动结束后5个工作日内联系并寄出（节假日除外）；</li>
+						<li>闯关数相同的用户，排名以更新当天参加游戏时间先后排序；</li>
+						<li>本次活动解释权归中国电信贵州分公司所有；</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 弹框 -->
+		<div id="mask"></div>
+		<div id="startShow">
+			
+		</div>
+		<div id="loading">
+			<img src="img/jz.gif" alt="">
+		</div>
+		<div id="login">
+		</div>
+
+	</div>
+</body>
+<script type="text/javascript">
+	var getTimestamp=new Date().getTime();
+	$.getScript("js/game.js?"+getTimestamp);
+</script>
+</html>

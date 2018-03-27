@@ -1,0 +1,485 @@
+@charset "utf-8";
+
+/*=========================Reset_start==========================*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+table,
+th,
+td,
+a,
+img,
+span,
+strong,
+var,
+em,
+input,
+textarea,
+select,
+option {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaheiUI", "Micrisoft YaHei", SimHei, "\5B88\4F53", simsun, sans-serif;
+    font-size: 12px;
+    text-align: left;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    width: 100%;
+}
+
+input,
+select,
+textarea {
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+strong,
+var,
+em {
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+
+/*==========================Reset_End===========================*/
+
+html {
+    font-size: 100px;
+}
+
+.days1 {
+    background: url(../images/days/days1.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 20.0rem;
+    position: relative;
+}
+
+.days {
+    background: url(../images/days/days.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 26rem;
+    position: relative;
+}
+
+.days-three {
+    width: 5.7rem;
+    position: absolute;
+    top: 29%;
+    left: 6%;
+}
+
+.days-song {
+    background: url(../images/days/daysSong.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    height: 0.72rem;
+    width: 3.4rem;
+    text-align: center;
+    line-height: 0.72rem;
+    color: #e3e3f9;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+    font-size: 0.24rem;
+}
+
+.days-Panic {
+    background: url(../images/days/dayBut.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    height: 0.72rem;
+    width: 3.4rem;
+    text-align: center;
+    line-height: 0.72rem;
+    color: #e3e3f9;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+    font-size: 0.4rem;
+}
+
+.days-seven {
+    width: 5.7rem;
+    position: absolute;
+    top: 43.2%;
+    left: 6%;
+}
+
+.days-seven img {
+    width: 96%;
+    margin-left: 2%;
+}
+
+.days-Choice {
+    width: 2.7rem;
+    position: absolute;
+    top: 59.2%;
+    right: 9%;
+    text-align: center;
+}
+
+.days-Choice p {
+    font-size: 0.24rem;
+    color: #ffffff;
+}
+
+.days-Choice img {
+    width: 20%;
+    margin-left: 40%;
+}
+
+.days-Choice1 {
+    width: 2.7rem;
+    position: absolute;
+    top: 63%;
+    right: 9%;
+    text-align: center;
+}
+
+.days-Choice1 p {
+    font-size: 0.24rem;
+    color: #ffffff;
+}
+
+.daysplus {
+    width: 20%;
+    margin-left: 40%;
+}
+
+.daysImg {
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 25%;
+}
+
+.daysRules {
+    position: absolute;
+    top: 72%;
+    font-size: 0.2rem;
+    left: 0;
+    padding-left: .6rem;
+    width: 79%;
+    color: #f5e9e9;
+}
+
+.daysMask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: none;
+}
+
+.daysLogin {
+    background: url(../images/days/daysLogin.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 5rem;
+    height: 6rem;
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    margin-left: -2.5rem;
+    display: none;
+    z-index: 102;
+}
+
+.days-close img {
+    width: 10%;
+    margin-left: 43%;
+}
+
+.days-scucces {
+    width: 4.1rem;
+    text-align: center;
+    margin: 2.8rem auto;
+}
+
+.days-scucces div {
+    float: left;
+}
+
+.days-scucces div input {
+    float: left;
+    border-radius: 0.3rem;
+    height: .49rem;
+    padding-left: .03rem;
+    font-size: .22rem;
+    border: 0.03rem solid #0c0303;
+    text-align: center;
+}
+
+.days-scucces div:nth-child(2) {
+    margin-top: .22rem;
+    margin-bottom: .05rem;
+    width: 100%;
+    text-align: center;
+}
+
+#days-button {
+    background: #ffe9ad;
+    font-size: .22rem;
+    color: #ec5322;
+    width: 1rem;
+    line-height: .55rem;
+    height: .55rem;
+    margin-left: .1rem;
+    border: 0.03rem solid #0c0303;
+}
+
+.days-errMsg {
+    width: 4rem;
+    text-align: center;
+    font-size: .23rem;
+    margin: .05rem auto 0 auto;
+}
+
+.days-but {
+    background: url(../images/days/daysButton.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 2.8rem;
+    height: .49rem;
+    line-height: .49rem;
+    left: 18%;
+    /* margin-left: 1.4rem; */
+    margin-top: .12rem;
+    font-size: 0.3rem;
+    color: white;
+    position: relative;
+}
+
+#days-phone {
+    width: 3.9rem;
+}
+
+.days-scu {
+    color: white;
+    font-size: 0.2rem;
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+/*重复订购*/
+
+#repeatOrder {
+    width: 90%;
+    height: 40%;
+    position: fixed;
+    top: 22%;
+    left: 5%;
+    z-index: 102;
+    display: none;
+    /* text-align: center; */
+    background: url(../img/loge.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-border-radius: 0.10rem;
+    -webkit-border-radius: 0.10rem;
+    border-radius: 0.10rem;
+}
+
+.repeatClose {
+    width: 100%;
+    text-align: center;
+}
+
+.repeatClose img {
+    width: 13%;
+    margin-left: 43%;
+    margin-top: 4%;
+}
+
+.repeatding {
+    width: 100%;
+    margin-top: 7%;
+    color: red;
+    text-align: center;
+}
+
+.repaeatConfirm {
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+#repeat {
+    width: 100%;
+    text-align: center;
+    margin-top: 13%;
+}
+
+.repatBut {
+    width: 33%;
+    margin-left: 10%;
+    float: left;
+}
+
+.repatBut1 {
+    width: 33%;
+    float: left;
+    margin-left: 13%;
+}
+
+
+/*绑定登录*/
+
+#denglu {
+    position: fixed;
+    top: 10%;
+    left: 8%;
+    width: 5.4rem;
+    /* height: 6rem; */
+    border-radius: 0.2rem;
+    background: white;
+    /* background: url(../img/login.png) 0 0 no-repeat; */
+    /*background-size: 100% 90%;*/
+    z-index: 101;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+}
+
+#deng_successMessage {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0.2rem;
+    /*height: 3.5rem;*/
+}
+
+.login_title {
+    color: #292925;
+    font-size: 0.4rem;
+    margin-top: 0.4rem;
+    font-weight: bold;
+}
+
+#deng_phone {
+    width: 4.13rem;
+    line-height: 0.56rem;
+    padding-left: 0.05rem;
+    margin-top: 0.2rem;
+    border-radius: 0.08rem;
+}
+
+#deng_yzm {
+    float: left;
+    margin-top: 0.3rem;
+    width: 2.8rem;
+    line-height: 0.56rem;
+    padding-left: 0.05rem;
+    border-radius: 0.08rem;
+    display: inline-block;
+}
+
+#deng_text {
+    background-color: #f3ba77;
+    width: 1.33rem;
+    border: none;
+    float: left;
+    height: 0.6rem;
+    margin-top: 0.3rem;
+    text-align: center;
+    line-height: 0.6rem;
+    /* display: inline-block; */
+    border-radius: 0.2rem;
+}
+
+#deng_text[type=button],
+#deng_text[type=submit],
+#deng_text[type=file],
+#deng_text {
+    -webkit-appearance: none;
+}
+
+.login_zs {
+    width: 100%;
+    float: left;
+    font-size: 0.3rem;
+}
+
+.login_img {
+    width: 44%;
+    margin-left: 30%;
+    margin-top: 0.2rem;
+    float: left;
+}
+
+.login_zan {
+    width: 100%;
+    font-size: 0.4rem;
+    float: left;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.login_success {
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: red;
+    margin-top: 0.1rem;
+    font-size: 0.2rem;
+}
+
+.login_close {
+    margin-right: 6%;
+    margin-top: -14%;
+    float: right;
+    width: 9%;
+}
+
+.succ {
+    font-size: 0.35rem;
+    /* margin-left: 10%; */
+    text-indent: 2em;
+    text-align: left;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,87 @@
+/*historyWork*/
+.historyWork{
+	width: 100%;
+    min-height: 330px;
+    cursor: pointer;
+}
+.historyWork span{
+	    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    font-size: 13px;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+}
+#history{
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #def0fc;
+	border: none;
+	width: 100%;
+	float: left;
+}
+#history div{
+	width: 6.5%;
+    float: left;
+    text-align: center;
+}
+.historyWork div{
+	width: 6.5%;
+    float: left;
+    text-align: center;
+}
+.shensdas{
+	width: 100%;
+	float: left;
+}
+/*每行的hover属性*/
+.shensdas:hover{color:#1b36f5;}
+
+
+
+
+
+
+/*检索*/
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.h_jian{
+	width: 1100px;
+	margin-top:5px;
+	float: left;
+}
+.h_jian span{
+	background: #2f8acb;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	width: 100px;
+	color: white;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 13px;
+}
+.h_jian input{
+	width: 130px;
+	line-height: 26px;
+	height: 26px;
+	float: left;
+}
+.h_jian b{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.h_jian select{
+	width: 134px;
+	height: 30px;
+	border: 1px solid #a0a0ea;
+	cursor: pointer;
+	float: left;
+}

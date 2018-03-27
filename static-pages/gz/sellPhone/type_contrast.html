@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<title>机型对比</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/type_contrast.css">
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div>
+		<div class="container">
+			<nav>
+				<span><img src="image/return.png" alt="" onclick="goback()"></span>
+				<span>机型对比</span>
+				<div class="jx" onclick="myorder_qh()">
+					<img src="image/myorder.png" alt="">
+					<h2>我的订单</h2>
+				</div>
+			</nav>
+			<div>
+				<div class="con1">
+					<div class="con1_left">
+						<img src="" alt="">
+						<h2 class="phone_versionl"></h2>
+						<p class="yj_money"><span>原价：</span><del id="original_fee"></del><em class="phone_fee"></em></p>
+					</div>
+					<div class="con1_center"><img src="image/vs.png" alt=""></div>
+					<div class="con1_right">
+						<img src="" alt="">
+						<h2 class="phone_versionr"></h2>
+						<p class="change"><span onclick="change()">切换</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="con2">
+				<h2>参数对比详情</h2>
+				<table>
+					<tr class="background_color">
+						<td>手机类型</td>
+						<td class="phone_type_left"></td>
+						<td class="phone_type_right"></td>
+					</tr>
+					<tr>
+						<td>屏幕尺寸</td>
+						<td class="screen_left"></td>
+						<td class="screen_right"></td>
+					</tr>
+					<tr class="background_color">
+						<td>屏幕占比</td>
+						<td class="screen_proL"></td>
+						<td class="screen_proR"></td>
+					</tr>
+					<tr>
+						<td>屏幕分辨率</td>
+						<td class="resolution_left"></td>
+						<td class="resolution_right"></td>
+					</tr>
+					<tr class="background_color">
+						<td>CPU</td>
+						<td class="cpu_left"></td>
+						<td class="cpu_right"></td>
+					</tr>
+					<tr>
+						<td>内存</td>
+						<td class="ram_left"></td>
+						<td class="ram_right"></td>
+					</tr>
+					<tr class="background_color">
+						<td>存储</td>
+						<td class="rom_left"></td>
+						<td class="rom_right"></td>
+					</tr>
+					<tr>
+						<td>前置像素</td>
+						<td class="front_left"></td>
+						<td class="front_right"></td>
+					</tr>
+					<tr class="background_color">
+						<td>后置像素</td>
+						<td class="rear_left"></td>
+						<td class="rear_right"></td>
+					</tr>
+					<tr>
+						<td>电池容量</td>
+						<td class="battery_left"></td>
+						<td class="battery_right"></td>
+					</tr>
+					<tr class="background_color">
+						<td>网络类型</td>
+						<td class="network_left"></td>
+						<td class="network_right"></td>
+					</tr>
+					<tr>
+						<td>指纹识别</td>
+						<td class="fingerprint_left"></td>
+						<td class="fingerprint_right"></td>
+					</tr>
+					<tr class="background_color">
+						<td>服务特色</td>
+						<td class="service_left"></td>
+						<td class="service_right"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="mark"></div>
+		<div class="change_jx">
+			<h2>请选择您的机型</h2>
+			<p class="close" onclick="close_phone()">X</p>
+			<div id="select_list">
+				<p id="facturerList">
+					<select name="" id="facturer">
+						<option value="" id="cs">厂商</option>
+					</select>
+				</p>
+				<p id="VersionList">
+					<select name="" id="Version">
+						<option value="" id="xh">型号</option>
+					</select>
+				</p>
+			</div>
+			<p id="err_message"></p>
+			<div class="change_btn"><p onclick="modelInfoByMV()">确定</p></div>
+		</div>
+	</div>
+	
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	var getTimestamp=new Date().getTime();
+	$.getScript("js/type_contrast.js?"+getTimestamp);
+</script>
+</body>
+</html>

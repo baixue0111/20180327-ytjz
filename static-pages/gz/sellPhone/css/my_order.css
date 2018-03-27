@@ -1,0 +1,200 @@
+html{
+	font-size: 100px;
+}
+
+nav{
+	line-height: 0.88rem;
+    font-size: 0.30rem;
+    overflow: hidden;
+    border-bottom: 1px solid #F1F1F1;
+    -webkit-box-shadow: 0 0 0.2rem #F3F3F3;
+    -moz-box-shadow: 0 0 0.2rem #F3F3F3;
+    box-shadow: 0 0 0.2rem #F3F3F3;
+    margin-bottom: 0.20rem;
+    font-size: 0.30rem;
+}
+
+nav span{
+	display:inline-block;
+	margin:0.24rem 0.40rem;
+}
+
+nav span:nth-child(1) img{
+	width:0.40rem;
+	height:0.41rem;
+}
+nav span:nth-child(1){
+	float: left;
+ 	padding-top: 0.09rem;
+
+}
+
+nav span:nth-child(2){
+	float: left;
+	margin-left: 25%;
+}
+
+.stay_payment{
+	border-bottom: 1px solid #F1F1F1;
+    border-top: 1px solid #F1F1F1;
+    -webkit-box-shadow: 0 0 0.2rem #F3F3F3;
+    -moz-box-shadow: 0 0 0.2rem #F3F3F3;
+    box-shadow: 0 0 0.2rem #F3F3F3;
+    padding: 0.5rem 0.4rem;
+}
+.stay_payment_con li{
+	margin:10% 0; 
+}
+.stay_payment_con li:nth-child(1){
+	margin-top:0; 
+}
+
+
+
+header{
+	border-bottom: 1px solid #E8E8E8;
+	padding-bottom: 0.35rem;
+	overflow:hidden;	
+}
+
+header .order_name{
+	float: left;
+	font-size: 0.3rem;
+}
+
+.order_name span:nth-child(1){
+	font-weight: bold;
+}
+
+.order_name span:nth-child(2){
+	margin-left: 0.20rem;
+}
+
+header h2{
+	float: right;
+	font-size: 0.30rem;
+	color: #D1019A;
+	font-weight: normal;
+}
+
+.order_phone{
+	overflow: hidden;
+}
+
+.phone_img{
+	float: left;
+	width: 0.9rem;
+	height: 0.7rem;
+	margin: 0.2rem 0.1rem 0.2rem 0;
+}
+
+.phone_img img{
+	width: 0.9rem;
+	height: 0.7rem;
+	float: left;
+}
+.phone_details{
+	width:85%;
+	float: left;
+	margin-top:0.13rem;
+}
+.phone_details p:nth-child(2){
+	color: #C8C8C8;
+}
+.name_fontSize{
+	font-size: 0.28rem;
+	font-weight: bold;
+}
+
+.name_color{
+	color: #C8C8C8;
+	font-size: 0.22rem;
+}
+
+.money_count{
+	overflow: hidden;
+}
+
+.name_money{
+	float: left;
+	color: #d1019a;
+	font-size:0.28rem;
+	font-weight: bold;
+}
+
+.name_count{
+	float: right;
+	color: #C8C8C8;
+}
+
+.phone_gift{
+	overflow: hidden;
+	font-size: 0.22rem;
+}
+
+.phone_gift span{
+	color: #C8C8C8;
+}
+
+.phone_gift span:nth-child(1){
+	float: left;
+}
+
+.phone_gift span:nth-child(2){
+	float: right;
+}
+
+.phone_total{
+	overflow: hidden;
+	color: #C8C8C8;
+	margin-top:0.30rem;
+}
+.phone_total span{
+	float: right;
+}
+
+.phone_total span:nth-child(2){
+	margin-right: 0.1rem;
+}
+
+.phone_btn{
+	overflow: hidden;
+    border-top: 1px solid #F1F1F1;
+ 	margin-top: 0.2rem;
+ 	padding-top: 0.35rem;
+}
+
+.btn{
+	float: right;
+	text-align: center;
+	padding:0.2rem 0.45rem;
+	background: #32a1de;
+	color: #fff;
+	border-radius: 0.05rem;
+	font-size: 0.3rem;
+}
+
+/* 加载 */
+#mask{
+	position: fixed;
+	width: 100%;
+	height: 100%;	 	
+	top: 0;
+	left: 0;
+	z-index: 101;
+	background:rgba(0,0,0,0.75);
+	display: none;
+}
+
+#loading{
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 10001;
+	width: 100%;
+	display: none;
+}
+#loading img{
+	margin-top: 60%;
+}

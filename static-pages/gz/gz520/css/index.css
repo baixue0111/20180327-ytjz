@@ -1,0 +1,147 @@
+*{padding: 0;margin: 0;}
+img{border: 0; width:100%;display:block;}
+html{font-size: 100px;}
+#content{
+    position: relative;
+}
+#orderImmediately{
+	position: absolute;
+    width: 35%;
+    height: 12%;
+    top: 25%;
+    left: 32%;
+}
+
+/*订购页面*/
+#login{
+	    position: fixed;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 7rem;
+    background: url(../images/order.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    z-index: 1003;
+    display: none;
+}
+#logink{
+	    width: 100%;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.input1{
+	    width: 60%;
+    height: 0.5rem;
+    margin-top: 0.1rem;
+    border-radius: 0.1rem;
+}
+.input2{
+	width: 43%;
+    height: 0.5rem;
+    margin-top: 0.1rem;
+    border-radius: 0.1rem;
+}
+.input3{
+	width: 17%;
+    border: none;
+    height: 0.5rem;
+    margin-top: 0.1rem;
+    border-radius: rem;
+    background-color: #f6ecba;
+    border-radius: 0.15rem;
+}
+/*input框的兼容*/
+.input3[type=button], .input3[type=submit], .input3[type=file], .input3{ -webkit-appearance: none; } 
+
+#messages{
+	width: 100%;
+    text-align: center;
+    color: red;
+    margin-top: 0.1rem;
+    font-size: 0.3rem;
+}
+#queding{
+	
+}
+.qued{
+	    width: 41%;
+    height: 1rem;
+    background: url(../images/orderButton.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    margin-left: 29%;
+    color: white;
+    line-height: 1rem;
+    font-weight: bold;
+}
+#login_gn{
+	width: 12%;
+    height: 0.7rem;
+    position: absolute;
+    top: 85%;
+    left: 44%;
+}
+#successful{
+	    width: 90%;
+    margin-left: 5%;
+    margin-top: 1rem;
+    font-size: 0.32rem;
+} 
+
+
+
+
+/*重复订购*/
+#repeatOrder{
+    width: 90%;
+    height: 6rem;
+    position: fixed;
+    top: 22%;
+    left: 5%;
+    z-index: 102;
+     display: none; 
+    /* text-align: center; */
+    background: url(../images/orderComplete.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-border-radius: 0.10rem;
+    -webkit-border-radius: 0.10rem;
+    border-radius: 0.10rem;
+}
+
+
+.irepeatClose{	
+	width: 100%;	
+	text-align: center;
+}
+.irepeatClose img{
+	width: 13%;
+	margin-left: 43%;
+}
+.irepeatding{
+	width: 100%;
+	margin-top: 23%;
+	color: red;
+	text-align: center;
+}
+.irepaeatConfirm{	
+	width: 100%;	
+	text-align: center;	
+	color: red;
+}
+#irepeat{
+	width: 100%;
+	text-align: center;
+	margin-top: 13%;
+}
+.irepatBut{
+	    width: 33%;
+    margin-left: 10%;
+    float: left;
+}
+.irepatBut1{
+	width: 33%;
+    float: left;
+    margin-left: 13%;
+}

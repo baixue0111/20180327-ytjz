@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<title>正在答题</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="http://www.gongjuji.net/Content/files/jquery.md5.js"></script>
+</head>
+<body>
+	<div id="startDemo">
+		<div class="startTop">
+			<ul class="startText">
+				
+			</ul>
+		</div>
+		<div id="startlist">
+			<ul id="textList">
+				<!-- <li onclick="inputClick(this);" id="1">年</li>
+				<li onclick="inputClick(this);" id="2">年</li>
+				<li onclick="inputClick(this);" id="3">年</li>
+				<li onclick="inputClick(this);" id="4">年</li>
+				<li onclick="inputClick(this);" id="5">年</li>
+				<li onclick="inputClick(this);" id="6">年</li>
+				
+				<li onclick="inputClick(this);" id="7">月</li>
+				<li onclick="inputClick(this);" id="q">月</li>
+				<li onclick="inputClick(this);" id="8">月</li>
+				<li onclick="inputClick(this);" id="9">月</li>
+				<li onclick="inputClick(this);" id="17">月</li>
+				<li onclick="inputClick(this);" id="10">月</li>
+				
+				<li onclick="inputClick(this);" id="11">日</li>
+				<li onclick="inputClick(this);" id="12">日</li>
+				<li onclick="inputClick(this);" id="13">日</li>
+				<li onclick="inputClick(this);" id="14">日</li>
+				<li onclick="inputClick(this);" id="15">日</li>
+				<li onclick="inputClick(this);" id="16">日</li> -->
+			</ul>
+			<p class="startTime">倒计时：<span class="countdown">100S</span></p>
+		</div>
+		<div id="startFoot">
+			<div class="startBtn">
+				<img src="img/return.png" alt="" onclick="showAlert();">
+				<img src="img/next.png" alt="" onclick="submit();">
+				<img src="img/clear.png" alt="" onclick="clearAnswer();">
+			</div>
+		</div>
+
+		<div id="mask"></div>
+		<div id="startShow">
+			<!-- <img src="img/close.png" alt="" class="closeAlert" onclick="hideAlert();">
+			<div class="success">
+				<p class="header"></p>
+				<p class="successText">是否放弃游戏回到首页</p>
+			</div>
+			<div class="btns">
+				<img src="img/yes.png" alt="">
+				<img src="img/again.png" alt="" onclick="hideAlert();">
+			</div> -->
+		</div>
+		<img src="img/shareHelp.png" alt="" class="shareHelp">
+	</div>
+</body>
+
+<script type="text/javascript">
+	var getTimestamp=new Date().getTime();
+	$.getScript("js/startGame.js?"+getTimestamp);
+</script>
+</html>

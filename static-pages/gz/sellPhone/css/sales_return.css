@@ -1,0 +1,114 @@
+html{
+	font-size: 100px;
+}
+body{
+	background:url(../image/tj_bg.jpg) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+nav{
+	font-size: 0.30rem;
+	overflow: hidden;
+	border-bottom: 1px solid #F1F1F1;
+	-webkit-box-shadow: 0 0 0.2rem #F3F3F3;  
+  	-moz-box-shadow: 0 0 0.2rem #F3F3F3;  
+  	box-shadow: 0 0 0.2rem #F3F3F3; 
+  	background: #fff; 
+}
+
+nav span:nth-child(1){
+	float: left;
+ 	padding-top: 0.09rem;
+
+}
+
+nav span:nth-child(2){
+	float: left;
+	margin-left: 24%;
+}
+
+nav span:nth-child(3){
+	float: right;
+	padding-top: 0.09rem;
+}
+
+nav span{
+	display:inline-block;
+	margin:0.24rem 0.40rem;
+	overflow: hidden;
+}
+
+nav span:nth-child(1) img{
+	width:0.40rem;
+	height:0.41rem;
+}
+
+.jx{
+	float: right;
+    width: 1.2rem;
+    margin-top: 0.15rem;
+    margin-right: 0.3rem;
+}
+
+.jx img{
+	width:0.34rem;
+	height: 0.40rem;
+	float: left;
+	margin-left: 0.35rem;
+}
+
+.jx h2{
+	float: left;
+	font-size: 0.20rem;
+}
+
+
+
+.tj_con14{
+	width: 90%;
+	/* background:url(../image/tj_bg.jpg) 0 0 no-repeat; */
+	background-size: 100% 100%;
+	padding: 0.56rem 0.46rem;
+}
+
+.bg_opactiy{
+	width:6.52rem;
+	background:rgba(0,0,0,0.2);
+	padding:0.32rem 0.1rem;
+	margin:0 auto;
+	border-radius:0.10rem;
+}
+
+.tj_title{
+	border-bottom: 3px dashed #cccc42;
+	color: #fff;
+	font-size: 0.36rem;
+	overflow: hidden;
+    padding-bottom: 0.18rem;
+
+}
+
+.tj_sjx{
+	width: 0;
+	height: 0;
+	border-top:0.4rem solid transparent;
+    border-bottom: 0.4rem solid transparent;
+    border-left: 0.4rem solid #cccc53;
+    float: left;
+}
+
+.tj_title p:nth-child(2){
+	margin-left: 0.2rem;
+    float: left;
+    margin-top: 0.18rem;
+}
+
+.rule_list{
+	color: #fff;
+	padding-top: 0.26rem;
+	font-size: 0.20rem;
+}
+
+.rule_list li{
+	margin:0.15rem 0;
+}
+

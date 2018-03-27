@@ -1,0 +1,144 @@
+html,body{font-size: 100px; overflow: auto;}
+.container{
+    background: url("../img/bgImg.jpg") 0 0 no-repeat;
+    background-size: 100% 100% ;
+    width: 100%;
+    padding:109% 0;
+    position: relative;
+}
+
+.contaiImg{
+    position: absolute;
+    top: 59%;
+    left: 21%;
+}
+.commonBtn{
+    width: 2.56rem;
+    height: .71rem;
+    position: absolute;
+    left: 28%;
+    top: 32%;
+}
+
+
+/* 模糊图层 */
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    display: none;
+}
+.login{
+    background: url("../img/alertbg_03.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 1.54rem;
+    left: .58rem;
+    width: 83%;
+    z-index: 101;
+    padding-bottom: .5rem;
+    display: none;
+}
+.closeAlert{
+    text-align: center;
+    line-height: 0;
+}
+.closeAlert span{
+    display: inline-block;
+    background: #fff;
+    font-size: .26rem;
+    padding: .2rem;
+    border-radius: 50%;
+    box-shadow: 0 .05rem .07rem rgba(0, 0, 0, .07);
+}
+.closeAlert img{
+    width: .23rem;
+    height: .23rem;
+    margin: 0;
+}
+.loginMsg{
+    margin-top: 1.4rem; 
+}
+.loginSuccess{
+    font-size: .25rem;
+    padding-left: .4rem;
+    width: 85%;
+    line-height: .35rem;
+    margin-top: .5rem; 
+    padding-bottom: .3rem;
+}
+.loginMsg .input-group{
+    line-height: 0;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: .15rem;
+    padding-left: .4rem;
+}
+.loginMsg input{
+    float: left;
+    width: 4rem;
+    height: .5rem;
+    padding-left: .3rem;    
+    border-radius: .2rem;
+    margin-top: .2rem; 
+    font-size: .22rem; 
+}
+.loginMsg input::-webkit-input-placeholder{
+    color: #000;
+}
+.errMsg{
+    text-align: center;
+    font-size: .22rem;
+    color: #CB1623;
+    line-height: .3rem;
+    padding: 0 .25rem;
+}
+.button{
+    margin-top: .2rem;
+}
+.affirmBtn{
+    background: url("../img/yanzheng.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    padding: 0 .97rem;
+    /*background: #ff3e5d;*/
+    /*font-size: .26rem;*/
+    color: #fff; 
+    border-radius: .3rem; 
+    height: .65rem;
+    line-height: .65rem;  
+    box-shadow: 0 .05rem .05rem rgb(242, 215, 232);
+    width: .62rem;
+}
+.successMsg{
+    text-align: center;
+    color: #FA677D;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    font-size: .28rem;
+}
+.lastp{
+    font-size: .24rem;
+}
+.redshow{
+    color: #E93654;
+}
+.foot{
+    position: absolute;
+    bottom: .4rem;
+    width: 95%;
+    left: 4%;
+}
+.foot ul li{
+    font-size: .24rem;
+    margin: .05rem auto;
+    line-height: .35rem;
+}
+.login_p{
+    font-size: 0.2rem;
+    text-align: center;
+}

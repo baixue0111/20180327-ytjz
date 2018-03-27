@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<title>新增地址</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/new_address.css">
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<span><img src="image/return.png" alt="" onclick="return_history()"></span>
+			<span>新增地址</span>
+			<span class="save" onclick="save()">保存</span>
+		</nav>
+		<div class="con">
+			<p><label>收货人</label><input type="text" placeholder="真实姓名" id="name" onfocus="focus_clear()"></p>
+			<p><label>手机号码</label><input type="number" placeholder="手机号" id="phone" onfocus="focus_clear()"></p>
+			<p><label>邮编</label><input type="text" placeholder="请填写邮编(选填)" id="postcode" onfocus="focus_clear()"></p>
+			<p class="no_border"><label>地址</label><textarea rows="3" cols="33"  placeholder="请填写详细地址，不少于5个字" id="address" onfocus="focus_clear()"></textarea></p>
+		</div>
+	</div>
+	<div class="message"></div>
+
+
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	var getTimestamp=new Date().getTime();
+	$.getScript("js/new_address.js?"+getTimestamp);
+</script>
+</body>
+</html>

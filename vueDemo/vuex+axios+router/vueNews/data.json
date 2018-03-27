@@ -1,0 +1,32 @@
+{
+    "test1": {
+        "name": "abai",
+        "age": "22",
+        "content": {
+            "click": "nimei",
+            "aaaa": "啊啊啊"
+        }
+    },
+    "test2": {
+        "name": "白白白",
+        "age": "111",
+        "event": {
+            "click": "嗯嗯嗯",
+            "aaaa": "好好啊好"
+        }
+    },
+    "data3": {
+        "name": "zhangpeng",
+        "age": "2222",
+        "eventHub": "什么鬼"   
+    },
+    "Arrary":[
+        {
+            "name": "白了个白"
+        },{
+            "name": "张朋朋"
+        },{
+            "name": "小月月"
+        }
+    ]
+}

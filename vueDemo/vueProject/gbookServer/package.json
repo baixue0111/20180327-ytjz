@@ -1,0 +1,29 @@
+{
+  "name": "gbook-server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "captchapng": "^0.0.1",
+    "cluster": "^0.7.7",
+    "compression": "^1.6.2",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.3",
+    "cos-nodejs-sdk-v5": "^1.2.5",
+    "express": "~4.13.4",
+    "express-mysql-session": "^1.2.0",
+    "express-session": "^1.15.3",
+    "helmet": "^3.6.1",
+    "ioredis": "^3.1.1",
+    "moment": "^2.15.2",
+    "morgan": "~1.7.0",
+    "multer": "^1.2.0",
+    "mysql": "^2.11.1",
+    "node-uuid": "^1.4.8",
+    "os": "^0.1.1",
+    "sequelize": "^3.24.0"
+  }
+}

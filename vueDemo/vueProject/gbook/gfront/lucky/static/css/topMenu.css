@@ -1,0 +1,23 @@
+.Menu_ul{width:100%;overflow: hidden;  border-bottom: 3px solid #ea4949; margin-top: 10px}
+.Menu_ul li{float: left;width:80px;height:35px;line-height: 35px;margin-left: 50px}
+.Menu_ul li a{color: #333;font-size: 15px}
+.Menu_ul:first-child{marin-left:100px}
+.Menu_ul h2{margin-left: 140px;float: left;height: 35px;width: 190px;background: #ea4949;color: #ffffff; font-size: 16px; font-weight: normal;text-align: center;line-height: 35px;}
+.pullDownList{margin-left: 140px;position:absolute;z-index: 3}
+.yMenuListCon{width:809px;height:483px;position: absolute;z-index:2;top: 190px;left:310px;overflow: hidden;}
+.yMenuListCon p{width:auto;color: #7f7e7e;font-size: 12px;margin:10px 6px 32px 14px;overflow: hidden;}
+.yMenuListCon p a{color: #222;font-size: 12px;padding: 0 8px;display: inline-block;float: left;margin-top: 5px;}
+.yMenuListCon p a.ecolor610{color: #222;}
+.yMenuListCon p a:hover{color: #a90000;text-decoration: underline;}
+.yMenuListConin{display: none; background: #d2d1d0;width:811px;height:483px;position: absolute;left: 0;top: 0; opacity:0.9}
+.yMenuLCinList{overflow: hidden; width:689px; padding-top:40px;}
+
+.yMenuLCinLisi { opacity:0.9; background:#f7f6f6; width:90px; height:483px; text-align:left; padding-top:60px; padding-left:30px}
+.yMenuLCinLisi ul li a {font-size:13px; font-weight:100; padding-bottom:60px; display:block;}
+.yMenuLCinLisi ul li a i {padding-right:20px;}
+
+.yMenuLCinList h3{position: relative;height: 20px;width: auto;margin: 25px auto 0;border-bottom: 1px solid #000;}
+.yMenuLCinList h3 a{font-size: 12px;color: #2d2d2d;position: absolute;bottom: 0px;display: block;}
+.yMenuLCinList h3 .yListMore{color: #666666;font-weight: normal;right: 0;with: 40px;height: 20px;}
+.yMenuLCinList h3 .yListName:hover{left:6px;}
+  

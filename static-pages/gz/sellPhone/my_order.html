@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<title>我的订单</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/my_order.css">
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="my_container">
+		<nav>
+			<span><img src="image/return.png" alt="" onclick="goback()"></span>
+			<span>我的订单</span>
+		</nav>
+		<div class="stay_payment">
+			<ul class="stay_payment_con">
+				<!-- <li>
+					<header><p class="order_name"><span>订单编号</span><span>1234567890</span></p><h2>待付款</h2></header>
+					<div class="order_phone">
+						<div class="phone_img"><img src="image/phone.jpg" alt=""></div>
+						<div class="phone_details">
+							<p class="name_fontSize">中兴小鲜4（BV0701）手机 </p>
+							<p class="name_color">颜色：金色     版本：全网通4G（2g ram+16Grom） </p>
+							<p class="money_count"><span class="name_money">￥<em>688.00</em></span><span class="name_count">X1</span></p>
+						</div>
+					</div>
+					<p class="phone_gift"><span>【赠品】  充电宝或手机支架随机发出 </span><span>X1</span></p>
+					<p class="phone_total"><span>合计：<em>688.00</em></span><span>共<em>2</em>件商品</span></p>
+					<div class="phone_btn"><p class="btn">付款</p></div>
+				</li> -->
+			</ul>
+		</div>
+		<div id="mask"></div>
+		<div id="loading">
+			<img src="image/jz.gif" alt="">
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	var getTimestamp=new Date().getTime();
+	$.getScript("js/my_order.js?"+getTimestamp);
+</script>
+
+</body>
+</html>

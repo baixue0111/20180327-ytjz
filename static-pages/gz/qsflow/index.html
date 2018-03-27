@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <title>贵州电信答题送流量</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<body>
+<div>
+    <div><img src="img/head.jpg"></div>
+    <div style="position: relative">
+        <div><button  type="button" class="btn-click"  onclick="loginMessage()"></button></div>
+        <div><img src="img/middle.jpg"></div>
+    </div>
+    <div >
+       <div><img src="img/foot.jpg"></div>
+        <div class="history" >
+            <div class="mess" id="history" >
+                <ul id="con1">
+                    <div class="history_message">
+                        <li>2016-05-27 11:36:37</li>
+                        <li>133****5689</li>
+                        <li>0元30M省内流量</li>
+                    </div>
+                    <div class="history_message">
+                        <li>2016-05-27 12:39:37</li>
+                        <li>153****5688</li>
+                        <li> 0元30M省内流量</li>
+                    </div>
+                    <div class="history_message">
+                        <li>2016-05-27 12:44:47</li>
+                        <li>181****8888</li>
+                        <li>0元30M省内流量</li>
+                    </div>
+                </ul>
+                <ul id="con2"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="load" onclick="loginclose();"></div>
+<div id="loginStr" style="display: none"></div>
+<div id="answerQuestion" style="display: none">
+    <div class="header"><span class="span" onclick="loginclose();" title="关闭"><img style="width: 20px;" src="img/close.png"/></span></div>
+    <div class="answerQuestion"><h3 id="title">数据加载失败</h3>
+        <div id="div">
+            <div class="as_error" id="as_error"></div>
+            <div><span><input type="radio" name="radio" value="1" onclick="radio_click(this)" id="value1"><label for="value1" id="label1"> </label></span></div>
+            <div><span><input type="radio" name="radio" value="2" onclick="radio_click(this)" id="value2"><label for="value2" id="label2"> </label></span></div>
+            <div><span><input type="radio" name="radio" value="3" onclick="radio_click(this)"id="value3"><label for="value3" id="label3"> </label></span></div>
+            <div><span><input type="radio" name="radio" value="4" onclick="radio_click(this)" id="value4"><label for="value4" id="label4"> </label></span></div>
+            <input type="hidden" name="hdncount" value="0" id="ddd" >
+            <div id="as_submit"> <button type="button" class="as_button" onclick="is()" ></button></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

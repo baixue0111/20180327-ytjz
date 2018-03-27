@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Expires" content="0" />
+	<title>众筹</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/login_binding.css"/>
+</head>
+	<body>
+		<div>
+			<div><img src="images/header.jpg"/></div>
+			<!--参加-->
+			<div id="content">
+					<div class="activeDate"><span id="start_date"></span>至<span id="stop_date"></span></div>
+				<div id="participants">
+					<p class="frequency">第<span id="round">0</span>轮</p>
+					<p class="beans">当前已筹到<span style="color: red;" id="point">0</span>棒豆</p>
+					<p class="p_name">需<span style="color: red;" id="usernum">0</span>名用户参加即可发放奖品</p>
+				</div>
+				<!--立即参加-->
+				<div class="participateIn" onclick="participateIn()"></div>
+				<!--邀请好友参加-->
+				<div class="invitation" onclick="share()"></div>
+				
+			</div>
+			<!--中奖名单-->
+			<div id="list">
+				<div id="list_h">
+					<ul id="biaotisad">
+						<li><span>日期</span><span>轮数</span><span>中奖用户</span><span>奖励（流量）</span></li>
+					</ul>
+					<div id="history">
+						<ul id="con1">
+							<!--<li class="com"><span>2017.05.16</span><span>第1轮</span><span>150****3802</span><span>1000</span></li>-->
+						</ul>
+						<ul id="con2">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--活动说明-->
+			<div id="footer">
+				<div class="explain">
+					1、活动时间为2017年5月20日-2017年6月30日；</br>
+					2、参加本活动一次需消耗50棒豆；</br>
+					3、每筹满1500棒豆抽取1名幸运用户，奖励1个免费流量包（1G省内3天包），并直接受理给中奖用户，受理成功短信将通过1065921710发送；</br>
+					4、每轮众筹结束后，上轮筹积棒豆将清零并重新开始累积；</br>
+					5、众筹次数每周最多100次；</br>
+					6、用户可重复参加多轮众筹，也可在一轮众筹中参加多次；</br>
+					7、用户参加本次活动消耗的棒豆不退还，活动时间已到期未筹满1500棒豆情况除外；</br>
+				</div>
+			</div>
+		</div>
+		<div id="loading">
+			<img src="images/loading.gif"/>
+		</div>
+		<!--遮罩层-->
+		<div id="loginMask"></div>
+		<!--绑定模态框-->
+		<div id="login_binding"></div>
+		<!--参加活动模态框-->
+		<div id="login">
+			<!--关闭-->
+			<!--<div class="login_close"></div>-->
+			<!--<div id="loginSuccess">-->
+				<!--<div class="loginPrompt"></div>-->
+				<!--<div class="loginQue">-->
+					<!--<img class="determin" src="images/determine.png" alt="确定">-->
+					<!--<img class="cancel" src="images/cancel.png" alt="取消">-->
+					<!--<img class="login_determine" src="images/determine.png" alt="确定">-->
+				<!--</div>-->
+			<!--</div>-->
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+			/***************** rem、兼容********************/
+			var code,productId,openID_value,getphone;
+			var html = document.getElementsByTagName('html')[0];
+			var W = document.documentElement.clientWidth;
+			html.style.fontSize = W*0.15625+'px';
+			// alert(W)
+			window.onresize = function(){
+				var html = document.getElementsByTagName('html')[0];
+				var W = document.documentElement.clientWidth;
+				html.style.fontSize = W*0.15625+'px';
+			}
+		</script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

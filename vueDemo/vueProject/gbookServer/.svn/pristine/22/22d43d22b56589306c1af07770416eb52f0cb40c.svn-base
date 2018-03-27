@@ -1,0 +1,92 @@
+var express = require('express');
+var mhelper = require('../models/mhelper.js');
+var _config=require('../common/_config');
+var http = require('http');
+var captchapng = require('captchapng');
+var qcloud = require('qcloud_cos');
+var fs = require('fs');
+var path = require('path');
+var iCode=require('../common/identifyCode');
+
+
+
+var router = express.Router();
+var baeBosUrl = _config.fileuploadpath.defaultPath;
+if (_config.isBaeBosUploadImages.isOpen) {
+	baeBosUrl = _config.isBaeBosUploadImages.url;
+}
+/*获取用户基本信息*/
+router.get('/getUser', function (req, res, next) {
+	var offset = req.query.offset;
+	var limit = req.query.limit;   
+	var id = req.query.id;  
+	var sql = "";
+	sql+=" SELECT user_id,name as user_name,nick_name,sex,headimg  ";  
+	sql+=" FROM user ";
+	sql+=" WHERE user_id = "+id;    
+	sql+= " LIMIT "+offset+","+limit; 
+
+	mhelper.query(sql).then(function (results) {
+		res.send(results[0]);
+		res.end();
+	});
+});
+
+router.get('/isExsis', function (req, res, next) {
+	var checkNumber = req.query.checkNumber;
+	var type = req.query.type;   
+	var sql = "";
+	sql+=" SELECT user_id,name as user_name,nick_name,sex,headimg  ";  
+	sql+=" FROM user ";
+	if ("mobile"==type){
+		sql+=" WHERE mobile = "+checkNumber;  
+	} 
+
+	mhelper.query(sql).then(function (results) {
+		res.send({is_exists:results[0].length,message:"cussous"});
+		res.end();
+	});
+});
+
+router.get('/getVCode', function (req, res, next) {
+	var img = iCode.makeCapcha();
+	res.setHeader('Content-Type', 'image/bmp');
+	// console.log("icode="+img.getFileData().code);
+	res.end(img.getFileData());
+});
+
+router.post('/login', function (req, res, next) {
+	var username = req.body.username;  
+	var password = req.body.password;  
+	var captcha_code = req.body.captcha_code;  
+	var sql = "";
+	sql+=" SELECT login_id,login_name,login_state,user_type ";  
+	sql+=" FROM login ";
+	sql+=" WHERE login_name ='"+username+"'"
+	sql+=" AND login_password = '"+password+"'"
+
+	mhelper.query(sql).then(function (results) {
+		res.send({data:results[0],message:"success"});
+		res.end();
+	});
+});
+
+router.post('/reguser', function (req, res, next) {
+	// var username = req.body.username;  
+	// var password = req.body.password;  
+	// var captcha_code = req.body.captcha_code;  
+	// var mobi_code = req.body.mobi_code; 
+	var data = eval(req.body);
+	var wData = {login_name:data.username};
+	var jData = {password:data.password,captcha_code:data.captcha_code,mobi_code:data.mobi_code};
+	mhelper.queryorinsert('login', wData, jData).then(function (results) {
+		res.send({data: {login_id:results[0][0].dataValues.login_id},message: 'success'});
+		res.end();
+	}).catch(function (error) {
+		console.log(error.stack);
+		res.send({message: 'failed', errormsg: error.stack});
+		res.end();
+	});	
+});
+
+module.exports = router;

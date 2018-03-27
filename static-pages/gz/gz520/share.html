@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Expires" content="0" />
+	<title>520活动</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/login_binding.css"/>
+</head>
+<body>
+	<div>
+	    <div><img src="images/share_header.jpg" alt=""></div>
+		<div id="content">
+			<img src="images/share_content.jpg" alt="" />
+			<div id="orderImmediately" onclick="orderImmediately()"></div>
+		</div>
+		<div><img src="images/share_footer.jpg" alt=""></div>
+	</div>
+	<div id="loginMask"></div>
+	<div id="loading">
+		<img src="images/loading.gif"/>
+	</div>
+	<!--微信绑定-->
+	<div id="login_binding"></div>
+	<!--未关注-->
+	<div id="notConcern">
+		<div id="follow_foote"><img src="images/wg.jpg"/></div>
+		<div class="follow_content">您目前未关注“中国电信贵州加油站”，请长按上方二维码关注后继续</div>
+			<!--关闭提示-->
+		<div id="follow_close" onclick="follow_close()"></div>
+    </div>
+    <!--订购页面-->
+    <div id="login">
+    	<div id="logink">
+    		<!--<div id="successful">-->
+    			
+    			<!--<span style="color: #fb2f8c;">恭喜您,</span>成功为1111111订购520M省内流量,系统将在24小时内为您受理,受理结果将通过短信进行告知.感谢您的参与!-->
+    		<div>
+    			<p><input class="input1" name="phoneNum2" id="phoneNum1" placeholder="请输入您的手机号"  onfocus="clearError()"/></p>
+    			<p><input class="input1" name="phoneNum2" id="phoneNum2" placeholder="请输入要赠送人的手机号码"  onfocus="clearError()"/></p>
+    			<p><input class="input1" name="phoneNum2" id="phoneNum3" placeholder="请再次确认要赠送的号码"  onfocus="clearError()"/></p>
+    			<p>
+    				<input class="input2"name="validate" id="validate" placeholder="请输入短信验证码"  onfocus="clearError()"/>
+    				<input class="input3" type="button" value="获取" onclick="validateInfo()">
+    			</p>
+    			<div id="messages">孙永恒人的催我</div>
+    		</div>
+    		<div id="queding"><button class="qued"></button></div>
+    	</div>
+    	<div id="login_gn"></div>
+    </div>
+    <!--重复订购-->
+    <div id="repeatOrder">
+					<!--关闭重复订购提示-->
+			<div class="irepeatClose"><img onclick="releatcolse()" src="images/close.png"/></div>
+			<div id="irepeatSucces">
+				<p class="irepeatding">您今天已经订购过此流量包</p>
+				<p class="irepaeatConfirm">请确定是否再次订购！</p>
+				<div id="irepeat">
+						<!--确定重复订购-->
+					<img class="irepatBut" onclick="repeatorderh()" src="images/but.png"/>
+						<!--取消重复订购-->
+					<img class="irepatBut1" onclick="releatcolse()" src="images/but2.png"/>
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript">
+		/***************** rem、兼容********************/
+		var code,productId,openID_value,getphone;
+		var html = document.getElementsByTagName('html')[0];
+		var W = document.documentElement.clientWidth;
+		html.style.fontSize = W*0.1333333333333333+'px';
+		// alert(W)
+		window.onresize = function(){
+			var html = document.getElementsByTagName('html')[0];
+			var W = document.documentElement.clientWidth;
+			html.style.fontSize = W*0.1333333333333333+'px';
+		}
+	</script>
+	<script type="text/javascript" src="js/share.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"Helvetica Neue",Helvetica,Arial,"Microsoft YaheiUI","Micrisoft YaHei",SimHei,"\5B88\4F53",simsun,sans-serif; font-size: 12px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;}
+a:link,a:visited,a:hover,a:active{text-decoration:none;} 
+/*==========================Reset_End===========================*/
+html{
+	font-size: 100px;
+}
+.container{
+	background: url("../img/bg.jpg") 0 0 no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	min-height: 13.7rem;
+	position: relative;
+}
+.title{
+	position: absolute;
+    top: .74rem;
+    width: 1.85rem;
+    margin-left: -.73rem;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+}
+.circle{
+	display: inline-block;
+	width: .05rem;
+	height: .05rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-bottom: 2px;
+	font-size: .19rem;
+}
+.hdDate	{
+	font-size: .19rem;
+}
+.date{
+	margin-top: 2px;
+	font-size: .2rem;
+}
+.rules{
+	position: absolute;
+    bottom: 1.9rem;
+    left: 0;
+    padding: 0 0.39rem;
+    color: #fff;
+}
+.rules li{
+	margin: .10rem 0;
+    letter-spacing: .03rem;
+	line-height: .35rem;	
+	font-size: .24rem;
+}
+.button{
+	background: url("../img/btn.png") 0 0 no-repeat;
+	background-size: 100% 100%;
+	width: 2.29rem;
+	height: .68rem;
+	position: absolute;
+	bottom: .7rem;
+	left: 50%;
+	margin-left: -1.15rem;
+	width: 2.29rem
+}
+
+/* 蒙版 */
+.mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .7);
+	z-index: 99;
+	display: none;
+}
+
+.login{
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	min-height: 5rem;
+	z-index: 100;
+	background: url("../img/alertBg.jpg") 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	width: 5rem;
+	margin-left: -2.5rem;
+	display: none;
+}
+
+.closeBtn{
+	background: url("../img/close.png") 0 0 no-repeat;
+	background-size: 100% 100%;
+	width: .56rem;
+	height: .56rem;
+	margin: 0 auto;
+	position: absolute;
+	top: -1rem;
+	left: 50%;
+	margin-left: -.28rem;
+	z-index: 100;
+}
+.loginAlert{
+	margin-top: 2.6rem;
+	color: #fff;
+	text-align: left;
+}
+.loginAlert p{
+	padding: 0 .2rem;
+}
+.login-col{
+	overflow: hidden;
+	line-height: .4rem;
+	margin-top: .2rem;
+}
+.text{
+	float: left;
+	font-size: .2rem;
+    color: #fff;
+	text-align: right;
+	width: 1.2rem;
+}
+.iptSize{
+	float: left;
+	width: 3.32rem;
+    height: .37rem;
+    padding-left: .05rem;
+	margin-left: .15rem;
+	font-size: .14rem;
+}
+.errorMsg{
+	margin-top: .2rem;
+	color: #000;
+	text-align: center;
+}
+.subBtn{
+	background: url("../img/sub.png") 0 0 no-repeat;
+	background-size: 100% 100%;
+	width: 3.31rem;
+	height: .5rem;
+	margin: .2rem auto;
+    margin-left: 1.2rem;
+}

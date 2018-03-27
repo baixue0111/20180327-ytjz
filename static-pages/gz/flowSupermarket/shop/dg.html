@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>订购</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	</head>
+	<body style="background-color: #f6f0e4;">
+		<!--订购成功弹出框-->
+		<div id="su">
+			<div id="successMessage">
+				<div class="su1"></div>
+				<div class="su2">
+					<img class="su3" src="img/zz.png" alt="" />
+				</div>
+			</div>
+		</div>
+			<!--<div style="position: absolute;font-size: 1rem;text-align: center;top: 3.8rem;width: 100%;color: red;">活动时间：2017年1月4日-2017年1月15日</div>-->
+		<div id="header" style="height: 6.53rem;">
+			<img src="img/head.png" alt="" />
+		</div>
+		<!--产品-->
+		<div class="c_jieshao">
+				<div class="c_jie">流量包介绍</div>
+				<div id="c_qing">
+					<!--<div class="c_jie1">
+						全国流量（不含港澳台地区），2G/3G/4G网络通用，包内流量可结转。
+						订购成功立即生效，每月自动续订，退订次月生效。<br />
+						未实名认证用户不能订购。<br />
+						手机销号、停机、未正常开机等原因，可能造成流量无法正常到账使用，为保证正常使用所订购的流量，请在订购成功后重启网络。<br />
+						订购当月功能费及流量按日计扣（入网当日到月底）。<br />
+					</div>-->
+				</div>
+		<div class="c_content">
+			<!--介绍-->
+			
+				<div class="ding" id="xiang">
+			<!--<div class="ding1">
+				 <div class="dingImg">
+					<img src="img/1433472596956.jpg" alt="">
+				</div>
+				<div class="ding3">
+					 <p class="a_groupList3">4G流量加餐包...</p>
+					<p class="a_price">￥10</p>
+					<p class="a_song">订购就送30MB</p>
+				</div>
+			</div>-->
+		</div>
+			<!--输入手机号，发送验证码订购-->
+			<div id="login" style="text-align: center;">
+				<!--<div id="login1">-->
+				<!--<input class="input1" name="phoneNum" id="phoneNum" placeholder="请输入您手机号"/>
+				<input class="input2"name="validate" id="validate" placeholder="请输入短信验证码"/>
+				<input class="input3" type="button" alue="获取验证码">
+				<button id="login_button" class="button">立即订购</button>-->
+				<!--</div>-->
+			</div>	
+		</div>
+		<div id="loginMask"></div>
+		<!--重复订购弹出框-->
+		<div id="repeatOrder">
+					<!--关闭重复订购提示-->
+			<div class="repeatClose"><img onclick="releatcolse()" src="img/zz.png"/></div>
+			<div id="repeatSucces">
+				<p class="repeatding">您今天已经订购过此流量包</p>
+				<p class="repaeatConfirm">请确定是否再次订购！</p>
+				<!--<div id="repaeatsu"></div>-->
+				<div id="repeat">
+						<!--确定重复订购-->
+					<img class="repatBut" onclick="repeatorder()" src="img/but.png"/>
+						<!--取消重复订购-->
+					<img class="repatBut1" onclick="releatcolse()" src="img/but2.png"/>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/dg.js"></script>
+	</body>
+</html>

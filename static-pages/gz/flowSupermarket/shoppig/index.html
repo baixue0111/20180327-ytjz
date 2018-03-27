@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>流量超市</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/axpage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/days.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header">
+			<!--添加时间限制-->
+			<!--<div style="position: absolute;font-size: 1rem;text-align: center;top: 3.6rem;width: 100%;color: red;">活动时间：2017年1月4日-2017年1月15日</div>-->
+			<img src="img/head.png" alt="" />
+		</div>
+		<!--tab切换-->
+		<div id="tab_q">
+			<div id="titList">
+				<span class="tit spanFocus">安心包</span>
+				 <span class="tit">按天包</span>
+				<span class="tit">无限流量包</span>
+				<span class="tit" onclick="pageInit()">4G加餐包</span>
+				<span class="tit" onclick="pageInit1()">4G包月包</span>
+			</div>
+			<div id="content">
+				<!-- 安心包 -->
+				<div class="zzz focus">
+					<div>
+						<div class="container">
+							<p class="dateFlow" style="display: none;">赠送流量活动时间：2017年12月8日-2017年12月13日</p>
+							<div class="order" onclick="showAlert()"></div>
+							<p class="orderText" style="display: none;">
+								<img src="img/wenzi.png" style="width: 2.84rem; height: .51rem; margin: 0 auto;">
+							</p>
+							<ul class="rules">
+								<li>
+									<div><span class="fontBlod">有效期限：</span>订购当日<span class="fontColor">（第一个自然日）</span>立即生效，包内流量当日有效，不结转到次日。</div>
+								</li>
+								<li>
+									<div><span class="fontBlod">使用范围：</span>限省内使用，套餐流量每日每500M只需2元<span class="fontColor">（不满500M按500M计），</span>适用4G、3G、2G上网方式，不含WLAN(WI-FI)上网。</div>
+								</li>
+								<li>
+									<div><span class="fontBlod">业务规则：</span>省内流量安心包自动续订。流量不能共享，副卡可单独订购省内流量安心包。订购成功后需要重启上网功能才能生效<span class="fontColor">（建议手机断网时间间隔3分钟以上），详情咨询10000号。</span></div>
+								</li>
+								<li>
+									<div><span class="fontBlod">退订方式：</span>发送qx891到10001789即可退订，退订次月生效。</div>
+								</li>
+							</ul>
+							<p class="dayTips" style="display: none;">免费流量赠送规则：免费流量只赠送一次，再次订购将不再赠送流量，赠送流量为省内流量，当月赠送当月生效，次月自动失效，剩余流量不结转。</p>
+						</div>
+						<div class="mask" onclick="hideAlert()"></div>
+						<div class="modal">
+							
+						</div>
+					</div>
+				</div>
+				<!--按天包-->
+				<div class="zzz">
+					<div>
+						<div class="days">
+							<div class="days-three">
+								<img src="images/days/daysThree.png" alt="三天包">
+								<!-- <div class="days-song">订购就送<span style="color: yellow;">20</span>棒豆</div> -->
+								<div class="days-Panic" onclick="daysOrder('holiday310');">立即订购</div>
+							</div>
+							<div class="days-seven">
+								<img src="images/days/daysSeven.png" alt="七天包">
+								<!-- <div class="days-song" style="margin-top: 0.5rem;">订购就送<span style="color: yellow;">30</span>棒豆</div> -->
+								<div class="days-Panic" onclick="daysOrder('holiday720');">立即订购</div>
+							</div>
+							<div class="days-Choice">
+								<p>15元3天包1.5G省内流量</p>
+								<img src="images/days/daysplus.png" alt="">
+								<p>0.5G国内流量</p>
+							</div>
+							<div class="days-Choice1">
+								<p>30元7天包3G省内流量</p>
+								<img class="daysplus" src="images/days/daysplus.png" alt="">
+								<p>1G国内流量</p>
+								<img class="daysImg" id="daystiao" src="images/days/daysJump.png" alt="">
+							</div>
+							<ul class="daysRules">
+								<li>
+									<div style="width: 95%;"><span class="fontBlod">有效期限：</span>订购成功当日（第一个自然日）立即生效，有效期至第七个自然日24:00（例如12月15号订购了七天流量包，有效期至12月21号24:00），3天包生效后有效期至第3个自然日，两款流量包均支持跨月；</div>
+								</li>
+								<li>
+									<div><span class="fontBlod">使用范围：</span>适用4G、3G、2G上网方式，不含WLAN(WI-FI)上网；</div>
+								</li>
+								<li>
+									<div><span class="fontBlod">办理须知：</span>流量包不退订，到期自动失效、剩余流量不结转，副卡不可分享主卡订购7天流量包内流量，副卡可单独订购流量包，流量优惠需重启上网功能才能生效（建议手机断网时间间隔3分钟以上）；</div>
+								</li>
+								<li>
+									<div><span class="fontBlod">温馨提示：</span>棒豆可在公众号菜单“我的棒豆”中兑换为流量，1棒豆=1M省内流量，未实名认证用户、证件号码下移动用户超过5个用户、个人定制套餐、飞young4G定制套餐、乐享家套餐、十全十美套餐、4G+云卡套餐和3G网络时长类套餐均不能订购此两款流量包。</div>
+								</li>
+							</ul>
+						</div>
+						<div class="daysMask"></div>
+						<div class="daysLogin">
+
+						</div>
+					</div>
+				</div>
+				<!--无限流量包-->
+				<div class="zzz">
+					<div><img src="images/header.jpg"/></div>
+					<div id="content1">
+						<div class="contenter1">
+							<p class="content_title1">
+								流量王中王可选包-50元<br />
+								50元/月
+							</p>
+							<p class="content_middle1">（含省内流量不限量）</p>
+							<p class="content_bottom1">
+								仅限以下套餐订购： <br />
+								乐享4G201407 99元-主套餐、<br />
+								乐享4G201407 129元-主套餐、新乐享4G201703 59元。
+							</p>
+						</div>
+						<div class="conter_one1" onclick="ordera('50')"></div>
+						<div class="conter_two1" onclick="ordera('30')"></div>
+						<div></div>
+						<div class="conter_footer1">
+							<p class="content_title1">
+								流量王中王可选包-30元<br />
+								30元/月
+							</p>
+							<p class="content_middle1">（含省内流量不限量）</p>
+							<p class="content_bottom1">
+								仅限以下套餐订购：<br />
+								乐享4G169-999元、乐享家169-999元；
+							</p>
+						</div>
+					</div>
+					<div id="footer1">
+						<h2>活动详情</h2>
+						<div>
+							流量王中王可选包50元/月：<br />
+							仅限以下套餐订购：<br />
+							乐享4G201407 99元-主套餐、乐享4G201407 129元-主套餐、新乐享4G201703 59元；<br />
+							流量王中王可选包30元/月：<br />
+							仅限以下套餐订购：<br />
+							乐享4G169-999元、乐享家169-999元；<br />
+							一、可选包内资费：<br />
+							1.流量王中王可选包30元/月，每月使用费30元，包含省内流量不限量；<br />
+							2.流量王中王可选包50元/月，每月使用费50元，包含省内流量不限量；<br />
+							二、可选包内业务使用规则<br />
+							1.套内流量当月有效，不结转；<br />
+							2.当月数据可选包省内流量达到40GB后，则下行限速至最高384kbps，次月1日恢复原速率；<br />
+							三、其他规则<br />
+              1.订购立即生效，当月全额收取月使用费，流量全额赠送。次月起每月一次性扣取套餐使用费，赠送套内全额流量。<br />
+              2.各卡订购的可选包内流量仅本卡使用，不能与其他卡共享。<br />
+							3.更改、退订、拆机：次月生效；<br />
+							4.若需更改、退订可选包请咨询10000号。
+						</div>
+					</div>
+				</div>
+				<div class="zzz">
+					<!--4G加餐包简介-->
+					<div class="jiacan">
+						<div class="ziti">国内4G加餐包</div>
+						<div class="jiacan2">
+							简介：全国流量（不含港澳台地区），2G/3G/4G网络通用。<br />
+							包内流量不可结转，可重复订购。 <br />
+							订购成功立即生效，下月自动退订，副卡不可共享包内流量。<br />
+							<!--<div style="color: red;"> 注：购流量包送的棒豆可在微信菜单“我的棒豆”中随时兑换成省内流量，1棒豆=1M流量</div>-->
+							<!--赠送流量将在24小时内为您送出，请耐心等候，赠送成功后将短信通知您。<br />
+							赠送省内流量不可转接至下月。-->
+						</div>
+					</div>
+					<!--产品展示-->
+					<ul class="b_group" id="b_group1"></ul>
+				</div>
+				<div class="zzz">
+					<!--4G包月包简介-->
+					<div class="baoyue">
+						<div class="ziti">国内4G包月流量包</div>
+						<div class="jiacan2">
+							简介：全国流量（不含港澳台地区），2G/3G/4G网络通用。
+							包内流量可结转，不可重复订购，只限订购其中一种。<br />
+							订购成功立即生效，每月自动续订，退订次月生效，当月取消，剩余流量无法结转到次月。<br />
+							订购当月功能费及流量按日计扣（入网当日到月底），副卡不可共享包内流量。<br />
+							<!--<div style="color: red;"> 注：购流量包送的棒豆可在微信菜单“我的棒豆”中随时兑换成省内流量，1棒豆=1M流量</div>-->
+							
+							<!--赠送流量将在24小时内为您送出，请耐心等候，赠送成功后将短信通知您。<br />
+							赠送省内流量不可转接至下月。-->
+						</div>
+					</div>
+					<!--产品展示-->
+					<ul class="b_group" id="b_group2"></ul>
+				</div>
+			</div>
+		</div>
+		<div id="loginMask"></div>
+		<div id="loading">
+			<img src="img/loading.gif" alt="">
+		</div>
+		<div id="login3"></div>
+		<div id="login2"></div>
+		<div id="login1"></div>
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/axpage.js"></script>
+		<script type="text/javascript" src="js/days.js"></script>
+	</body>
+</html>
+

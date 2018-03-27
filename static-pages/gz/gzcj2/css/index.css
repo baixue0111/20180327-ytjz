@@ -1,0 +1,363 @@
+/*重置样式*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+table,
+th,
+td,
+a,
+img,
+span,
+strong,
+var,
+em,
+input,
+textarea,
+select,
+option {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "微软雅黑", "宋体", Arail, Tabhoma;
+    font-size: 12px;
+    text-align: left;
+}
+
+img {
+    border: 0;
+    width: 100%;
+    display: block;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+input,
+select,
+textarea {
+    outline: 0;
+}
+
+html {
+    font-size: 100px;
+}
+
+#hender {
+    width: 100%;
+    height: 9.34rem;
+    position: relative;
+    background: url(../images/header.jpg);
+    background-size: 100% auto;
+}
+
+#draw {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    top: 31%;
+}
+
+
+/*点击进行抽奖*/
+
+#drawHis {
+    width: 26%;
+    position: absolute;
+    left: 37%;
+    top: 49%;
+}
+
+
+/*抽奖次数*/
+
+#contt {
+    width: 100%;
+    background-color: #ff5242;
+    background-size: 100% auto;
+    height: 1.0rem;
+    color: white;
+    text-align: center;
+}
+
+#contt div {
+    width: 100%;
+    font-size: 0.1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.lucky {
+    width: 100%;
+    text-align: center;
+    color: #fccb03;
+    font-size: 0.3rem;
+}
+
+
+/*分享提示*/
+
+#contn {
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    background: #ff5242;
+}
+
+#contn img {
+    width: 24%;
+    margin-left: 38%;
+}
+
+
+/*中间名单*/
+
+#content {
+    width: 100%;
+    height: 9rem;
+    position: relative;
+    background: url(../images/conten.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#history {
+    width: 5.6rem;
+    position: absolute;
+    left: 12%;
+    top: 28%;
+    /* background: red; */
+    height: 2.5rem;
+    overflow: hidden;
+}
+
+.histo {
+    width: 5.6rem;
+    position: absolute;
+    left: 12%;
+    top: 23%;
+    color: white;
+}
+
+.histo span {
+    width: 33.3%;
+    text-align: center;
+    float: left;
+}
+
+.com {
+    width: 100%;
+    color: white;
+    line-height: 0.5rem;
+}
+
+.com span {
+    width: 33.3%;
+    text-align: center;
+    float: left;
+    font-size: 0.2rem;
+}
+
+.guize {
+    position: absolute;
+    top: 80%;
+    width: 73%;
+    left: 16%;
+    font-size: 0.23rem;
+    color: white;
+}
+
+
+/*抽奖成功提示*/
+
+#login {
+    width: 87%;
+    height: 4.5rem;
+    position: fixed;
+    top: 1.5rem;
+    left: 0.4rem;
+    z-index: 102;
+    display: none;
+    /*text-align:center;*/
+    background: url(../images/login.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-border-radius: 0.10rem;
+    /* Firefox */
+    -webkit-border-radius: 0.10rem;
+    /* Safari 和 Chrome */
+    border-radius: 0.10rem;
+    /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+
+#colse {
+    width: 100%;
+    text-align: center;
+}
+
+#colse img {
+    width: 14%;
+    margin-top: 3%;
+    margin-left: 43%;
+}
+
+#successMessage {
+    width: 90%;
+    margin-left: 5%;
+    height: 3rem;
+}
+
+.lottery {
+    width: 100%;
+    color: red;
+    text-align: center;
+}
+
+.inform {
+    margin-top: 0.3rem;
+}
+
+#footer {
+    width: 100%;
+    height: 16rem;
+    background: url("../images/footer.jpg");
+    background-size: 100% 100%;
+}
+
+#footer h2 {
+    text-align: center;
+    margin-top: 1.6rem;
+    float: left;
+    width: 100%;
+}
+
+#footer div {
+    float: left;
+    width: 90%;
+    margin-top: 0.1rem;
+    margin-left: 5%;
+    font-size: 0.2rem;
+    color: #6b4f0e;
+}
+
+
+/*抽奖过期*/
+
+#yjgq {
+    width: 87%;
+    height: 4.5rem;
+    position: fixed;
+    top: 1.5rem;
+    left: 0.4rem;
+    z-index: 102;
+    display: none;
+    /*text-align:center;*/
+    background: url(../images/login.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-border-radius: 0.10rem;
+    /* Firefox */
+    -webkit-border-radius: 0.10rem;
+    /* Safari 和 Chrome */
+    border-radius: 0.10rem;
+    /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+
+#yigq_colse {
+    width: 100%;
+    text-align: center;
+}
+
+#yigq_colse img {
+    width: 14%;
+    margin-top: 3%;
+    margin-left: 43%;
+}
+
+#yigq_success {
+    width: 90%;
+    margin-left: 5%;
+    height: 3rem;
+}
+
+
+/*兑换棒豆*/
+
+.duihuan {
+    width: 100%;
+    text-align: center;
+    color: red;
+    margin-top: 0.2rem;
+}
+
+.butttt {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.4rem;
+}
+
+.butt1 {
+    width: 32%;
+    margin-left: 5%;
+    float: left;
+}
+
+.butt2 {
+    width: 32%;
+    float: left;
+    margin-left: 26%;
+}
+
+
+/*兑换棒豆*/
+
+.succesOk {
+    width: 100%;
+    text-align: center;
+    font-size: 0.4rem;
+}
+
+.fail {
+    margin-top: 7%;
+}
+
+#fenxiang {
+    width: 70%;
+    height: 4.5rem;
+    position: fixed;
+    top: 22%;
+    left: 13%;
+    z-index: 102;
+    display: none;
+    background-repeat: no-repeat;
+}
+
+.fxgb {
+    width: 20%;
+    height: 1rem;
+    background: red;
+}
+
+.yjgq_le {
+    width: 100%;
+    margin-top: 6%;
+    text-align: center;
+    font-size: 0.4rem;
+}

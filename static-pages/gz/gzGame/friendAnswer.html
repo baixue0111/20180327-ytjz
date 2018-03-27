@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<title>正在答题</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="http://www.gongjuji.net/Content/files/jquery.md5.js"></script>
+</head>
+<body>
+	<div id="startDemo">
+		<div class="startTop">
+			<ul class="startText">
+				
+			</ul>
+		</div>
+		<div id="startlist">
+			<ul id="textList">
+
+			</ul>
+			<p class="startTime">倒计时：<span class="countdown"></span></p>
+		</div>
+		<div id="startFoot">
+			<div class="startBtn">
+				<img src="img/friendSub_03.png" alt="" onclick="friendSub();">
+				<img src="img/clear.png" alt="" class="friendClear" onclick="clearAnswer();">
+			</div>
+		</div>
+
+		<div id="mask"></div>
+		<div id="startShow">
+			
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	var getTimestamp=new Date().getTime();
+	$.getScript("js/friendAnswer.js?"+getTimestamp);
+</script>
+</html>

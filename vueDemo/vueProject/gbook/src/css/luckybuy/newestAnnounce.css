@@ -1,0 +1,51 @@
+.glb_announce{width: 1170px;float: left ;}
+.glb_announce_bt{width: 1154px;height: 50px;}
+.glb_announce_bt_p1{width: 120px;height:50px;line-height: 50px;font-size: 20px;text-align: center;float: left}
+.glb_announce_bt_p1 i{ border-left: 4px solid #ec2d21;display: inline-block;font-size: 0px;height: 22px; margin-right: 7px;overflow: hidden;position: relative;top: 3px;width: 0px;}
+
+.glb_announce_bt_p2{ width: 80px;height:30px;line-height: 30px;font-size: 14px;text-align: center;float: right;margin-right: 10px;color: #BEBEBE;margin-top: 10px}
+.glb_announce_bt_p2 i{float: right;background-color:#BEBEBE; border-radius: 30px;width: 20px;height: 20px;color:white;margin-top: 5px;font-style:normal;line-height: 20px }
+.glb_announce_bt_p2 a{text-decoration:none;color: #7F7F7F }
+.glb_announce_con{float: left;}
+.glb_announce_div{width: 220px;height:350px;border: 1px solid #e6e6e6;float: left;position: relative;margin-right:11px;margin-bottom: 10px;cursor:pointer}
+.glb_announce_div:hover{ border: 1px solid #7997B9; -webkit-box-shadow: 0 0  3px 3px  #BCBCBC ; -moz-box-shadow: 3px 3px   #BCBCBC ; box-shadow: 0 0 3px 3px  #BCBCBC ;}
+.glb_announce_img{width: 220px;height: 200px;}
+.glb_announce_img img{width: 220px;height: 200px;}
+.glb_announce_p{width: 220px;height: 150px;}
+.glb_announce_p_con{width: 200px;height: 40px;font-size: 14px;margin-left: 15px;line-height: 20px}
+.glb_announce_con1{width: 200px;height: 30px;font-size: 13px;margin-left: 15px;line-height:30px;color:#999 }
+.glb_announce_time{width: 200px;height:25px;margin-left: 15px;margin-top: 15px}
+.hm{color: #DB2C29;padding-right:5px;font-size:18px;font-weight: bold;font-family:SimHei ;}
+.dd{font-size:18px;color: red;margin-left: -5px;margin-right: -5px}
+.str{ color: #fffdfd;line-height:25px; background:#D70302; padding:4px; margin-right:0px;}
+.glb_announce_img_bt{position: absolute;top: 0;left: 0;}
+
+.jxtime1{
+    margin-left: 5px;
+    margin-top: 10px;
+
+}
+
+.jxtime1 .jxss{
+    color: #fffdfd;
+    line-height:40px;
+    font-size:20px;
+    margin-left: 2px;
+    background: #DB2C29;
+    padding:4px 6px 4px 6px;
+    border-radius: 2px;
+}
+.jxtime1 .jxhm{
+    color: #DB2C29;
+    padding-right:5px;
+    font-size:18px;
+    font-weight: bold;
+    font-family:SimHei ;
+}
+
+.jxtime1 .jxdd{
+    font-size:18px;
+    color: #DB2C29;
+}
+
+.msecond_show{color: #fff;line-height:45px;font-size:14px;margin-left: 5px;margin-right:5px;background: #DC302D;padding:5px;border-radius: 5px}

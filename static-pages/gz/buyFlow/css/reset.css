@@ -1,0 +1,54 @@
+@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"Helvetica Neue",Helvetica,Arial,"Microsoft YaheiUI","Micrisoft YaHei",SimHei,"\5B88\4F53",simsun,sans-serif; font-size: 12px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;}
+a:link,a:visited,a:hover,a:active{text-decoration:none;} 
+/*==========================Reset_End===========================*/
+html{
+	font-size: 100px;
+}
+section{
+	background: url('../img/bg.jpg') 0 0 no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	padding-top: 6.9rem;
+	padding-bottom: 1.38rem;
+	text-align: center;
+}
+.btn{
+	background: url('../img/btn.png') 0 0 no-repeat;
+	background-size: 100% 100%;
+	width: 3.24rem;
+	height: .78rem;
+	margin: 0 auto;
+}
+
+.rules{
+	margin-top: 1.48rem;
+	width: 80%;
+	padding: .21rem .64rem .21rem .64rem;
+}
+.rules li{
+	text-align: left;
+	font-size: .24rem;
+	line-height: .35rem;
+	letter-spacing: .02rem;
+}
+.rules .fontBold{
+	font-weight: bold;
+}
+.tips{
+	font-size: .24rem;
+	color: #ee4745;
+	text-align: left;
+	padding: 0 .64rem;
+	font-weight: bold;
+	line-height: .35rem;
+}
